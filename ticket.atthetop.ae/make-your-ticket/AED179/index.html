@@ -972,185 +972,185 @@ NEWSLETTER</h4>
 </div> </div>
                             <button type="button" class="accept-cookies">Accept</button>
                     </div><script>
-                    if (!CLI_Cookie.exists("cookies_accept")){
-                        jQuery(".cookie-notice").removeClass("d-none");
-                    }
-                    jQuery(document).on("click", ".accept-cookies", function(){ 
                         if (!CLI_Cookie.exists("cookies_accept")){
-                            CLI_Cookie.set("cookies_accept", "yes", 30);
-                            jQuery(".cookie-notice").slideUp("normal", function() { jQuery(".cookie-notice").remove() } );
+                            jQuery(".cookie-notice").removeClass("d-none");
                         }
-                    });
-                    </script><link rel="stylesheet" id="wpforms-modern-full-css" href="css/wpforms-full.min_1.css" type="text/css" media="all">
-<link rel="stylesheet" id="wpforms-pro-modern-full-css" href="css/wpforms-full.min.css" type="text/css" media="all">
-<script type="text/javascript" id="rocket-browser-checker-js-after">
-/* <![CDATA[ */
-"use strict";var _createClass=function(){function defineProperties(target,props){for(var i=0;i<props.length;i++){var descriptor=props[i];descriptor.enumerable=descriptor.enumerable||!1,descriptor.configurable=!0,"value"in descriptor&&(descriptor.writable=!0),Object.defineProperty(target,descriptor.key,descriptor)}}return function(Constructor,protoProps,staticProps){return protoProps&&defineProperties(Constructor.prototype,protoProps),staticProps&&defineProperties(Constructor,staticProps),Constructor}}();function _classCallCheck(instance,Constructor){if(!(instance instanceof Constructor))throw new TypeError("Cannot call a class as a function")}var RocketBrowserCompatibilityChecker=function(){function RocketBrowserCompatibilityChecker(options){_classCallCheck(this,RocketBrowserCompatibilityChecker),this.passiveSupported=!1,this._checkPassiveOption(this),this.options=!!this.passiveSupported&&options}return _createClass(RocketBrowserCompatibilityChecker,[{key:"_checkPassiveOption",value:function(self){try{var options={get passive(){return!(self.passiveSupported=!0)}};window.addEventListener("test",null,options),window.removeEventListener("test",null,options)}catch(err){self.passiveSupported=!1}}},{key:"initRequestIdleCallback",value:function(){!1 in window&&(window.requestIdleCallback=function(cb){var start=Date.now();return setTimeout(function(){cb({didTimeout:!1,timeRemaining:function(){return Math.max(0,50-(Date.now()-start))}})},1)}),!1 in window&&(window.cancelIdleCallback=function(id){return clearTimeout(id)})}},{key:"isDataSaverModeOn",value:function(){return"connection"in navigator&&!0===navigator.connection.saveData}},{key:"supportsLinkPrefetch",value:function(){var elem=document.createElement("link");return elem.relList&&elem.relList.supports&&elem.relList.supports("prefetch")&&window.IntersectionObserver&&"isIntersecting"in IntersectionObserverEntry.prototype}},{key:"isSlowConnection",value:function(){return"connection"in navigator&&"effectiveType"in navigator.connection&&("2g"===navigator.connection.effectiveType||"slow-2g"===navigator.connection.effectiveType)}}]),RocketBrowserCompatibilityChecker}();
-/* ]]> */
-</script>
-<script type="text/javascript" id="rocket-preload-links-js-extra">
-/* <![CDATA[ */
-var RocketPreloadLinksConfig = {"excludeUris":"\/booking-successful\/|\/(?:.+\/)?feed(?:\/(?:.+\/?)?)?$|\/(?:.+\/)?embed\/|\/(index.php\/)?(.*)wp-json(\/.*|$)|\/refer\/|\/go\/|\/recommend\/|\/recommends\/","usesTrailingSlash":"1","imageExt":"jpg|jpeg|gif|png|tiff|bmp|webp|avif|pdf|doc|docx|xls|xlsx|php","fileExt":"jpg|jpeg|gif|png|tiff|bmp|webp|avif|pdf|doc|docx|xls|xlsx|php|html|htm","siteUrl":"https:\/\/ticket.atthetop.ae","onHoverDelay":"100","rateThrottle":"3"};
-/* ]]> */
-</script>
-<script type="text/javascript" id="rocket-preload-links-js-after">
-/* <![CDATA[ */
-(function() {
-"use strict";var r="function"==typeof Symbol&&"symbol"==typeof Symbol.iterator?function(e){return typeof e}:function(e){return e&&"function"==typeof Symbol&&e.constructor===Symbol&&e!==Symbol.prototype?"symbol":typeof e},e=function(){function i(e,t){for(var n=0;n<t.length;n++){var i=t[n];i.enumerable=i.enumerable||!1,i.configurable=!0,"value"in i&&(i.writable=!0),Object.defineProperty(e,i.key,i)}}return function(e,t,n){return t&&i(e.prototype,t),n&&i(e,n),e}}();function i(e,t){if(!(e instanceof t))throw new TypeError("Cannot call a class as a function")}var t=function(){function n(e,t){i(this,n),this.browser=e,this.config=t,this.options=this.browser.options,this.prefetched=new Set,this.eventTime=null,this.threshold=1111,this.numOnHover=0}return e(n,[{key:"init",value:function(){!this.browser.supportsLinkPrefetch()||this.browser.isDataSaverModeOn()||this.browser.isSlowConnection()||(this.regex={excludeUris:RegExp(this.config.excludeUris,"i"),images:RegExp(".("+this.config.imageExt+")$","i"),fileExt:RegExp(".("+this.config.fileExt+")$","i")},this._initListeners(this))}},{key:"_initListeners",value:function(e){-1<this.config.onHoverDelay&&document.addEventListener("mouseover",e.listener.bind(e),e.listenerOptions),document.addEventListener("mousedown",e.listener.bind(e),e.listenerOptions),document.addEventListener("touchstart",e.listener.bind(e),e.listenerOptions)}},{key:"listener",value:function(e){var t=e.target.closest("a"),n=this._prepareUrl(t);if(null!==n)switch(e.type){case"mousedown":case"touchstart":this._addPrefetchLink(n);break;case"mouseover":this._earlyPrefetch(t,n,"mouseout")}}},{key:"_earlyPrefetch",value:function(t,e,n){var i=this,r=setTimeout(function(){if(r=null,0===i.numOnHover)setTimeout(function(){return i.numOnHover=0},1e3);else if(i.numOnHover>i.config.rateThrottle)return;i.numOnHover++,i._addPrefetchLink(e)},this.config.onHoverDelay);t.addEventListener(n,function e(){t.removeEventListener(n,e,{passive:!0}),null!==r&&(clearTimeout(r),r=null)},{passive:!0})}},{key:"_addPrefetchLink",value:function(i){return this.prefetched.add(i.href),new Promise(function(e,t){var n=document.createElement("link");n.rel="prefetch",n.href=i.href,n.onload=e,n.onerror=t,document.head.appendChild(n)}).catch(function(){})}},{key:"_prepareUrl",value:function(e){if(null===e||"object"!==(void 0===e?"undefined":r(e))||!1 in e||-1===["http:","https:"].indexOf(e.protocol))return null;var t=e.href.substring(0,this.config.siteUrl.length),n=this._getPathname(e.href,t),i={original:e.href,protocol:e.protocol,origin:t,pathname:n,href:t+n};return this._isLinkOk(i)?i:null}},{key:"_getPathname",value:function(e,t){var n=t?e.substring(this.config.siteUrl.length):e;return n.startsWith("/")||(n="/"+n),this._shouldAddTrailingSlash(n)?n+"/":n}},{key:"_shouldAddTrailingSlash",value:function(e){return this.config.usesTrailingSlash&&!e.endsWith("/")&&!this.regex.fileExt.test(e)}},{key:"_isLinkOk",value:function(e){return null!==e&&"object"===(void 0===e?"undefined":r(e))&&(!this.prefetched.has(e.href)&&e.origin===this.config.siteUrl&&-1===e.href.indexOf("?")&&-1===e.href.indexOf("#")&&!this.regex.excludeUris.test(e.href)&&!this.regex.images.test(e.href))}}],[{key:"run",value:function(){"undefined"!=typeof RocketPreloadLinksConfig&&new n(new RocketBrowserCompatibilityChecker({capture:!0,passive:!0}),RocketPreloadLinksConfig).init()}}]),n}();t.run();
-}());
-/* ]]> */
-</script>
-<script type="text/javascript" id="rocket_lazyload_css-js-extra">
-/* <![CDATA[ */
-var rocket_lazyload_css_data = {"threshold":"300"};
-/* ]]> */
-</script>
-<script type="text/javascript" id="rocket_lazyload_css-js-after">
-/* <![CDATA[ */
-!function o(n,c,a){function s(t,e){if(!c[t]){if(!n[t]){var r="function"==typeof require&&require;if(!e&&r)return r(t,!0);if(u)return u(t,!0);throw(r=new Error("Cannot find module '"+t+"'")).code="MODULE_NOT_FOUND",r}r=c[t]={exports:{}},n[t][0].call(r.exports,function(e){return s(n[t][1][e]||e)},r,r.exports,o,n,c,a)}return c[t].exports}for(var u="function"==typeof require&&require,e=0;e<a.length;e++)s(a[e]);return s}({1:[function(e,t,r){"use strict";!function(){const r="undefined"==typeof rocket_pairs?[]:rocket_pairs,e="undefined"==typeof rocket_excluded_pairs?[]:rocket_excluded_pairs;e.map(t=>{var e=t.selector;const r=document.querySelectorAll(e);r.forEach(e=>{e.setAttribute("data-rocket-lazy-bg-".concat(t.hash),"excluded")})});const o=document.querySelector("#wpr-lazyload-bg-container");var t=rocket_lazyload_css_data.threshold||300;const n=new IntersectionObserver(e=>{e.forEach(t=>{if(t.isIntersecting){const e=r.filter(e=>t.target.matches(e.selector));e.map(t=>{var e;t&&((e=document.createElement("style")).textContent=t.style,o.insertAdjacentElement("afterend",e),t.elements.forEach(e=>{n.unobserve(e),e.setAttribute("data-rocket-lazy-bg-".concat(t.hash),"loaded")}))})}})},{rootMargin:t+"px"});function c(){0<(0<arguments.length&&void 0!==arguments[0]?arguments[0]:[]).length&&r.forEach(t=>{try{const e=document.querySelectorAll(t.selector);e.forEach(e=>{"loaded"!==e.getAttribute("data-rocket-lazy-bg-".concat(t.hash))&&"excluded"!==e.getAttribute("data-rocket-lazy-bg-".concat(t.hash))&&(n.observe(e),(t.elements||(t.elements=[])).push(e))})}catch(e){console.error(e)}})}c();const a=function(){const o=window.MutationObserver;return function(e,t){if(e&&1===e.nodeType){const r=new o(t);return r.observe(e,{attributes:!0,childList:!0,subtree:!0}),r}}}();t=document.querySelector("body"),a(t,c)}()},{}]},{},[1]);
-//# sourceMappingURL=lazyload-css.min.js.map
-/* ]]> */
-</script>
-<script type="text/javascript" src="js/jquery.min_1.js" id="jquery-3.7.0-js"></script>
-<script type="text/javascript" id="ajax-admin-url-js-extra">
-/* <![CDATA[ */
-var Aurl = {"ajaxurl":"https:\/\/ticket.atthetop.ae\/wp-admin\/admin-ajax.php","api_nonce":"54ba9aee60","theme_url":"https:\/\/ticket.atthetop.ae\/wp-content\/themes\/salient-att-child","site_url":"https:\/\/ticket.atthetop.ae","newsletter_nonce":"558789f506"};
-/* ]]> */
-</script>
-<script type="text/javascript" src="js/localize-script.js" id="ajax-admin-url-js"></script>
-<script type="text/javascript" src="js/popper.min.js" id="popper-js"></script>
-<script type="text/javascript" src="js/bootstrap.min.js" id="bootstrap-min-js"></script>
-<script type="text/javascript" src="js/gsap.min.js" id="gsap-js"></script>
-<script type="text/javascript" src="js/ScrollMagic.min.js" id="scrollmagic-js"></script>
-<script type="text/javascript" src="js/custom.js" id="custom-js"></script>
-<script type="text/javascript" src="js/owl.carousel.min.js" id="carousel-js-js"></script>
-<script type="text/javascript" src="js/jquery-ui.min.js" id="jquery-ui-js"></script>
-<script type="text/javascript" src="js/sweetalert2%4011.js" id="sweetalert-js"></script>
-<script type="text/javascript" src="js/booking.js" id="TicketBookingJs-js"></script>
-<script type="text/javascript" src="js/moment-with-locales.min.js" id="moment-js-js"></script>
-<script type="text/javascript" src="js/cart-count.js" id="cart-count-js"></script>
-<script type="text/javascript" src="js/jquery.validate.min.js" id="wpforms-validation-js"></script>
-<script type="text/javascript" src="js/mailcheck.min.js" id="wpforms-mailcheck-js"></script>
-<script type="text/javascript" src="js/punycode.min.js" id="wpforms-punycode-js"></script>
-<script type="text/javascript" src="js/utils.min.js" id="wpforms-generic-utils-js"></script>
-<script type="text/javascript" src="js/wpforms.min.js" id="wpforms-js"></script>
-<script type="text/javascript" src="js/wpforms-modern.min.js" id="wpforms-modern-js"></script>
-<script type="text/javascript" src="js/api.js" id="wpforms-recaptcha-js"></script>
-<script type="text/javascript" id="wpforms-recaptcha-js-after">
-/* <![CDATA[ */
-if (!Element.prototype.matches) {
-				Element.prototype.matches = Element.prototype.msMatchesSelector || Element.prototype.webkitMatchesSelector;
-			}
-			if (!Element.prototype.closest) {
-				Element.prototype.closest = function (s) {
-					var el = this;
-					do {
-						if (Element.prototype.matches.call(el, s)) { return el; }
-						el = el.parentElement || el.parentNode;
-					} while (el !== null && el.nodeType === 1);
-					return null;
-				};
-			}
-		var wpformsDispatchEvent = function (el, ev, custom) {
-				var e = document.createEvent(custom ? "CustomEvent" : "HTMLEvents");
-				custom ? e.initCustomEvent(ev, true, true, false) : e.initEvent(ev, true, true);
-				el.dispatchEvent(e);
-			};
-		var wpformsRecaptchaLoad = function () {
-					Array.prototype.forEach.call(document.querySelectorAll(".g-recaptcha"), function (el) {
-						try {
-							var recaptchaID = grecaptcha.render(el, {
-								callback: function () {
-									wpformsRecaptchaCallback(el);
-								}
-							}, true);
-							el.closest("form").querySelector("button[type=submit]").recaptchaID = recaptchaID;
-						} catch (error) {}
-					});
-					wpformsDispatchEvent(document, "wpformsRecaptchaLoaded", true);
-				};
-				var wpformsRecaptchaCallback = function (el) {
-					var $form = el.closest("form");
-					if (typeof wpforms.formSubmit === "function") {
-						wpforms.formSubmit($form);
-					} else {
-						$form.querySelector("button[type=submit]").recaptchaID = false;
-						$form.submit();
-					}
-				};
-			
-/* ]]> */
-</script>
-<script type="text/javascript">
-/* <![CDATA[ */
-var wpforms_settings = {"val_required":"This field is required.","val_email":"Please enter a valid email address.","val_email_suggestion":"Did you mean {suggestion}?","val_email_suggestion_title":"Click to accept this suggestion.","val_email_restricted":"This email address is not allowed.","val_number":"Please enter a valid number.","val_number_positive":"Please enter a valid positive number.","val_confirm":"Field values do not match.","val_checklimit":"You have exceeded the number of allowed selections: {#}.","val_limit_characters":"","val_limit_words":"","val_recaptcha_fail_msg":"Google reCAPTCHA verification failed, please try again later.","val_turnstile_fail_msg":"Cloudflare Turnstile verification failed, please try again later.","val_inputmask_incomplete":"Please fill out the field in required format.","uuid_cookie":"1","locale":"en","wpforms_plugin_url":"https:\/\/ticket.atthetop.ae\/wp-content\/plugins\/wpforms\/","gdpr":"","ajaxurl":"https:\/\/ticket.atthetop.ae\/wp-admin\/admin-ajax.php","mailcheck_enabled":"","mailcheck_domains":[],"mailcheck_toplevel_domains":["dev"],"is_ssl":"1","page_title":"Make your ticket","page_id":"1062","currency_code":"USD","currency_thousands":",","currency_decimals":"2","currency_decimal":".","currency_symbol":"$","currency_symbol_pos":"left","css_vars":["field-border-radius","field-background-color","field-border-color","field-text-color","label-color","label-sublabel-color","label-error-color","button-border-radius","button-background-color","button-text-color","field-size-input-height","field-size-input-spacing","field-size-font-size","field-size-line-height","field-size-padding-h","field-size-checkbox-size","field-size-sublabel-spacing","field-size-icon-size","label-size-font-size","label-size-line-height","label-size-sublabel-font-size","label-size-sublabel-line-height","button-size-font-size","button-size-height","button-size-padding-h","button-size-margin-top"],"val_requiredpayment":"Payment is required.","val_creditcard":"Please enter a valid credit card number.","val_post_max_size":"The total size of the selected files {totalSize} MB exceeds the allowed limit {maxSize} MB.","val_time12h":"Please enter time in 12-hour AM\/PM format (eg 8:45 AM).","val_time24h":"Please enter time in 24-hour format (eg 22:45).","val_time_limit":"Please enter time between {minTime} and {maxTime}.","val_url":"Please enter a valid URL.","val_fileextension":"File type is not allowed.","val_filesize":"File exceeds max size allowed. File was not uploaded.","post_max_size":"104857600","isModernMarkupEnabled":"1","formErrorMessagePrefix":"Form error message","errorMessagePrefix":"Error message","submitBtnDisabled":"Submit button is disabled during form submission.","val_password_strength":"A stronger password is required. Consider using upper and lower case letters, numbers, and symbols.","val_phone":"Please enter a valid phone number.","indicatorStepsPattern":"Step {current} of {total}","richtext_add_media_button":"","entry_preview_iframe_styles":["https:\/\/ticket.atthetop.ae\/wp-includes\/js\/tinymce\/skins\/lightgray\/content.min.css?ver=6.7.1","https:\/\/ticket.atthetop.ae\/wp-includes\/css\/dashicons.min.css?ver=6.7.1","https:\/\/ticket.atthetop.ae\/wp-includes\/js\/tinymce\/skins\/wordpress\/wp-content.css?ver=6.7.1"]}
-/* ]]> */
-</script>
-            <script nowprocket="">
-                jQuery(document).on("wpformsReady",function(){jQuery("form .wpforms-smart-phone-field").each(function(n){var t,i=jQuery(this),e=i.data("plugin_intlTelInput");e.d?t=Object.assign({},e.d):e.options&&(t=Object.assign({},e.options)),t&&(i.intlTelInput("destroy"),t.separateDialCode=!0,i.intlTelInput(t),i.siblings('input[type="hidden"]').attr("name","wpforms[fields]["+t.hiddenInput+"]"))})});
-                jQuery(document).on("wpformsReady",function(){jQuery(".wpforms-smart-phone-field").each(function(n){var i,t=jQuery(this),s=t.data("plugin_intlTelInput");s.d?i=Object.assign({},s.d):s.options&&(i=Object.assign({},s.options)),i&&(t.intlTelInput("destroy"),i.initialCountry="ae",i.preferredCountries=['ae'],t.intlTelInput(i),t.siblings('input[type="hidden"]').attr("name","wpforms[fields]["+i.hiddenInput+"]"))})});
-            </script>
-                    <script type="text/javascript">
-                //remove before space
-                !function(t){t("input[type='text'],input[type='email'], input[type='tel'], textarea").on("keypress keyup keydown",function(e){var n=t.trim(t(this).val());0==n.length&&t(this).val(n)})}(jQuery);
-                //validation for email
-                !function(a){var i={init:function(){a(document).on("wpformsReady",i.customRules)},customRules:function(){if(void 0!==a.fn.validate&&a.validator.addMethod("check_for_email_validate",function(i,t,e){return a(t),this.optional(t)||/^[a-zA-Z][a-zA-Z0-9_]*(\.[a-zA-Z][a-zA-Z0-9_]*)?@[a-z][a-zA-Z-0-9]*\.[a-z]+(\.[a-z]+)?$/.test(i)},a.validator.format("Please enter a valid email.")),a(".email-validate input").length)for(var i=a(".email-validate input"),t=0;t<i.length;t++)a(".email-validate input").eq(t).rules("add",{check_for_email_validate:!0})}};i.init()}(jQuery);
-                //Validation for numbers class -> no-numbers
-                !function(n){var t={init:function(){n(document).on("wpformsReady",t.customRules)},customRules:function(){if(void 0!==n.fn.validate&&n.validator.addMethod("check_for_number",function(t,o,i){return n(o),this.optional(o)||!/\d/.test(t)},n.validator.format("This field cannot accept numbers.")),n(".no-numbers input").length)for(var t=n(".no-numbers input"),o=0;o<t.length;o++)n(".no-numbers input").eq(o).rules("add",{check_for_number:!0})}};t.init()}(jQuery);
-                //Validation form special characters class -> no-special-char
-                !function(a){var i={init:function(){a(document).on("wpformsReady",i.customRules)},customRules:function(){if(void 0!==a.fn.validate&&a.validator.addMethod("check_for_special_characters",function(i,t,c){return a(t),this.optional(t)||!/[^A-Za-z 0-9]/g.test(i)},a.validator.format("This field cannot accept special characters.")),a(".no-special-char input").length)for(var i=a(".no-special-char input"),t=0;t<i.length;t++)a(".no-special-char input").eq(t).rules("add",{check_for_special_characters:!0})}};i.init()}(jQuery);
-                //Validation for positive integer class -> positive-int
-                !function(i){var t={init:function(){i(document).on("wpformsReady",t.customRules)},customRules:function(){if(void 0!==i.fn.validate&&i.validator.addMethod("check_for_positive_integer",function(t,n,e){var o=i(n);return isNaN(parseFloat(t))?(o.val(""),!1):!(0>=parseFloat(t))&&!!Number.isInteger(parseFloat(t))&&(o.val(parseFloat(t)),!0)},i.validator.format("Only Positive Integer allowed")),i(".positive-int input").length)for(var t=i(".positive-int input"),n=0;n<t.length;n++)i(".positive-int input").eq(n).rules("add",{check_for_positive_integer:!0})}};t.init()}(jQuery);
-                //open popup when submission
-                //         jQuery(window).on("load",function(){jQuery(".wpforms-form").on("wpformsAjaxSubmitSuccess",function(o,p){"popupform"==p.type&&(jQuery("#open-confirm-popup .modal-content").html(p.data),jQuery("#open-confirm-popup").modal("show"),setTimeout(function(){var o=jQuery("#open-confirm-popup .target_link_popup").attr("href");""!=o&&void 0!==o?window.location.href=o:window.location.reload()},15e3)),"newletter"==p.type&&(jQuery(".newsletter-response").html(p.data), setTimeout(function() {
-                //     jQuery(".newsletter-response").empty();
-                // }, 5000))})});
-                jQuery(window).on("load",function(){jQuery(".wpforms-form").on("wpformsAjaxSubmitSuccess",function(o,e){"popupform"==e.type&&(jQuery("#open-confirm-popup .modal-content").html(e.data),jQuery("#open-confirm-popup").modal("show"),setTimeout(function(){var o=jQuery("#open-confirm-popup .target_link_popup").attr("href");""!=o&&void 0!==o?window.location.href=o:window.location.reload()},150000000)),"newletter"==e.type&&(jQuery(".newsletter-response").html(e.data),setTimeout(function(){jQuery(".newsletter-response").empty()},5e3))}),jQuery('input[type="email"]').on("keyup",function(){jQuery(".newsletter-response").empty()})});
-                //zero value remove
-                !function(t){var o={init:function(){t(document).on("wpformsReady",o.customRules)},customRules:function(){setTimeout(function(){var o=t(".wpforms-smart-phone-field"),n=o.attr("placeholder");if(n){console.log(n);var e=n.replace(/^0+/,"");o.attr("placeholder",e)}},5e3)}};o.init()}(jQuery),function(t){var o={init:function(){t(document).on("countrychange",o.customRules)},customRules:function(){var o=t(".wpforms-smart-phone-field"),n=o.attr("placeholder");if(n){console.log(n);var e=n.replace(/^0+/,"");o.attr("placeholder",e)}}};o.init()}(jQuery);
-            </script>
-            <style>
-                .wpforms-container .wpforms-submit-spinner {
-                    display: none !important
+                        jQuery(document).on("click", ".accept-cookies", function(){ 
+                            if (!CLI_Cookie.exists("cookies_accept")){
+                                CLI_Cookie.set("cookies_accept", "yes", 30);
+                                jQuery(".cookie-notice").slideUp("normal", function() { jQuery(".cookie-notice").remove() } );
+                            }
+                        });
+                        </script><link rel='stylesheet' id='wpforms-modern-full-css' href='https://ticket.atthetop.ae/wp-content/plugins/wpforms/assets/css/frontend/modern/wpforms-full.min.css?ver=1.8.3.2' type='text/css' media='all' />
+    <link rel='stylesheet' id='wpforms-pro-modern-full-css' href='https://ticket.atthetop.ae/wp-content/plugins/wpforms/assets/pro/css/frontend/modern/wpforms-full.min.css?ver=1.8.3.2' type='text/css' media='all' />
+    <script type="text/javascript" id="rocket-browser-checker-js-after">
+    /* <![CDATA[ */
+    "use strict";var _createClass=function(){function defineProperties(target,props){for(var i=0;i<props.length;i++){var descriptor=props[i];descriptor.enumerable=descriptor.enumerable||!1,descriptor.configurable=!0,"value"in descriptor&&(descriptor.writable=!0),Object.defineProperty(target,descriptor.key,descriptor)}}return function(Constructor,protoProps,staticProps){return protoProps&&defineProperties(Constructor.prototype,protoProps),staticProps&&defineProperties(Constructor,staticProps),Constructor}}();function _classCallCheck(instance,Constructor){if(!(instance instanceof Constructor))throw new TypeError("Cannot call a class as a function")}var RocketBrowserCompatibilityChecker=function(){function RocketBrowserCompatibilityChecker(options){_classCallCheck(this,RocketBrowserCompatibilityChecker),this.passiveSupported=!1,this._checkPassiveOption(this),this.options=!!this.passiveSupported&&options}return _createClass(RocketBrowserCompatibilityChecker,[{key:"_checkPassiveOption",value:function(self){try{var options={get passive(){return!(self.passiveSupported=!0)}};window.addEventListener("test",null,options),window.removeEventListener("test",null,options)}catch(err){self.passiveSupported=!1}}},{key:"initRequestIdleCallback",value:function(){!1 in window&&(window.requestIdleCallback=function(cb){var start=Date.now();return setTimeout(function(){cb({didTimeout:!1,timeRemaining:function(){return Math.max(0,50-(Date.now()-start))}})},1)}),!1 in window&&(window.cancelIdleCallback=function(id){return clearTimeout(id)})}},{key:"isDataSaverModeOn",value:function(){return"connection"in navigator&&!0===navigator.connection.saveData}},{key:"supportsLinkPrefetch",value:function(){var elem=document.createElement("link");return elem.relList&&elem.relList.supports&&elem.relList.supports("prefetch")&&window.IntersectionObserver&&"isIntersecting"in IntersectionObserverEntry.prototype}},{key:"isSlowConnection",value:function(){return"connection"in navigator&&"effectiveType"in navigator.connection&&("2g"===navigator.connection.effectiveType||"slow-2g"===navigator.connection.effectiveType)}}]),RocketBrowserCompatibilityChecker}();
+    /* ]]> */
+    </script>
+    <script type="text/javascript" id="rocket-preload-links-js-extra">
+    /* <![CDATA[ */
+    var RocketPreloadLinksConfig = {"excludeUris":"\/booking-successful\/|\/(?:.+\/)?feed(?:\/(?:.+\/?)?)?$|\/(?:.+\/)?embed\/|\/(index.php\/)?(.*)wp-json(\/.*|$)|\/refer\/|\/go\/|\/recommend\/|\/recommends\/","usesTrailingSlash":"1","imageExt":"jpg|jpeg|gif|png|tiff|bmp|webp|avif|pdf|doc|docx|xls|xlsx|php","fileExt":"jpg|jpeg|gif|png|tiff|bmp|webp|avif|pdf|doc|docx|xls|xlsx|php|html|htm","siteUrl":"https:\/\/ticket.atthetop.ae","onHoverDelay":"100","rateThrottle":"3"};
+    /* ]]> */
+    </script>
+    <script type="text/javascript" id="rocket-preload-links-js-after">
+    /* <![CDATA[ */
+    (function() {
+    "use strict";var r="function"==typeof Symbol&&"symbol"==typeof Symbol.iterator?function(e){return typeof e}:function(e){return e&&"function"==typeof Symbol&&e.constructor===Symbol&&e!==Symbol.prototype?"symbol":typeof e},e=function(){function i(e,t){for(var n=0;n<t.length;n++){var i=t[n];i.enumerable=i.enumerable||!1,i.configurable=!0,"value"in i&&(i.writable=!0),Object.defineProperty(e,i.key,i)}}return function(e,t,n){return t&&i(e.prototype,t),n&&i(e,n),e}}();function i(e,t){if(!(e instanceof t))throw new TypeError("Cannot call a class as a function")}var t=function(){function n(e,t){i(this,n),this.browser=e,this.config=t,this.options=this.browser.options,this.prefetched=new Set,this.eventTime=null,this.threshold=1111,this.numOnHover=0}return e(n,[{key:"init",value:function(){!this.browser.supportsLinkPrefetch()||this.browser.isDataSaverModeOn()||this.browser.isSlowConnection()||(this.regex={excludeUris:RegExp(this.config.excludeUris,"i"),images:RegExp(".("+this.config.imageExt+")$","i"),fileExt:RegExp(".("+this.config.fileExt+")$","i")},this._initListeners(this))}},{key:"_initListeners",value:function(e){-1<this.config.onHoverDelay&&document.addEventListener("mouseover",e.listener.bind(e),e.listenerOptions),document.addEventListener("mousedown",e.listener.bind(e),e.listenerOptions),document.addEventListener("touchstart",e.listener.bind(e),e.listenerOptions)}},{key:"listener",value:function(e){var t=e.target.closest("a"),n=this._prepareUrl(t);if(null!==n)switch(e.type){case"mousedown":case"touchstart":this._addPrefetchLink(n);break;case"mouseover":this._earlyPrefetch(t,n,"mouseout")}}},{key:"_earlyPrefetch",value:function(t,e,n){var i=this,r=setTimeout(function(){if(r=null,0===i.numOnHover)setTimeout(function(){return i.numOnHover=0},1e3);else if(i.numOnHover>i.config.rateThrottle)return;i.numOnHover++,i._addPrefetchLink(e)},this.config.onHoverDelay);t.addEventListener(n,function e(){t.removeEventListener(n,e,{passive:!0}),null!==r&&(clearTimeout(r),r=null)},{passive:!0})}},{key:"_addPrefetchLink",value:function(i){return this.prefetched.add(i.href),new Promise(function(e,t){var n=document.createElement("link");n.rel="prefetch",n.href=i.href,n.onload=e,n.onerror=t,document.head.appendChild(n)}).catch(function(){})}},{key:"_prepareUrl",value:function(e){if(null===e||"object"!==(void 0===e?"undefined":r(e))||!1 in e||-1===["http:","https:"].indexOf(e.protocol))return null;var t=e.href.substring(0,this.config.siteUrl.length),n=this._getPathname(e.href,t),i={original:e.href,protocol:e.protocol,origin:t,pathname:n,href:t+n};return this._isLinkOk(i)?i:null}},{key:"_getPathname",value:function(e,t){var n=t?e.substring(this.config.siteUrl.length):e;return n.startsWith("/")||(n="/"+n),this._shouldAddTrailingSlash(n)?n+"/":n}},{key:"_shouldAddTrailingSlash",value:function(e){return this.config.usesTrailingSlash&&!e.endsWith("/")&&!this.regex.fileExt.test(e)}},{key:"_isLinkOk",value:function(e){return null!==e&&"object"===(void 0===e?"undefined":r(e))&&(!this.prefetched.has(e.href)&&e.origin===this.config.siteUrl&&-1===e.href.indexOf("?")&&-1===e.href.indexOf("#")&&!this.regex.excludeUris.test(e.href)&&!this.regex.images.test(e.href))}}],[{key:"run",value:function(){"undefined"!=typeof RocketPreloadLinksConfig&&new n(new RocketBrowserCompatibilityChecker({capture:!0,passive:!0}),RocketPreloadLinksConfig).init()}}]),n}();t.run();
+    }());
+    /* ]]> */
+    </script>
+    <script type="text/javascript" id="rocket_lazyload_css-js-extra">
+    /* <![CDATA[ */
+    var rocket_lazyload_css_data = {"threshold":"300"};
+    /* ]]> */
+    </script>
+    <script type="text/javascript" id="rocket_lazyload_css-js-after">
+    /* <![CDATA[ */
+    !function o(n,c,a){function s(t,e){if(!c[t]){if(!n[t]){var r="function"==typeof require&&require;if(!e&&r)return r(t,!0);if(u)return u(t,!0);throw(r=new Error("Cannot find module '"+t+"'")).code="MODULE_NOT_FOUND",r}r=c[t]={exports:{}},n[t][0].call(r.exports,function(e){return s(n[t][1][e]||e)},r,r.exports,o,n,c,a)}return c[t].exports}for(var u="function"==typeof require&&require,e=0;e<a.length;e++)s(a[e]);return s}({1:[function(e,t,r){"use strict";!function(){const r="undefined"==typeof rocket_pairs?[]:rocket_pairs,e="undefined"==typeof rocket_excluded_pairs?[]:rocket_excluded_pairs;e.map(t=>{var e=t.selector;const r=document.querySelectorAll(e);r.forEach(e=>{e.setAttribute("data-rocket-lazy-bg-".concat(t.hash),"excluded")})});const o=document.querySelector("#wpr-lazyload-bg-container");var t=rocket_lazyload_css_data.threshold||300;const n=new IntersectionObserver(e=>{e.forEach(t=>{if(t.isIntersecting){const e=r.filter(e=>t.target.matches(e.selector));e.map(t=>{var e;t&&((e=document.createElement("style")).textContent=t.style,o.insertAdjacentElement("afterend",e),t.elements.forEach(e=>{n.unobserve(e),e.setAttribute("data-rocket-lazy-bg-".concat(t.hash),"loaded")}))})}})},{rootMargin:t+"px"});function c(){0<(0<arguments.length&&void 0!==arguments[0]?arguments[0]:[]).length&&r.forEach(t=>{try{const e=document.querySelectorAll(t.selector);e.forEach(e=>{"loaded"!==e.getAttribute("data-rocket-lazy-bg-".concat(t.hash))&&"excluded"!==e.getAttribute("data-rocket-lazy-bg-".concat(t.hash))&&(n.observe(e),(t.elements||(t.elements=[])).push(e))})}catch(e){console.error(e)}})}c();const a=function(){const o=window.MutationObserver;return function(e,t){if(e&&1===e.nodeType){const r=new o(t);return r.observe(e,{attributes:!0,childList:!0,subtree:!0}),r}}}();t=document.querySelector("body"),a(t,c)}()},{}]},{},[1]);
+    //# sourceMappingURL=lazyload-css.min.js.map
+    /* ]]> */
+    </script>
+    <script type="text/javascript" src="https://ticket.atthetop.ae/wp-content/themes/salient-att-child/assets/js/jquery.min.js?ver=6.7.1" id="jquery-3.7.0-js"></script>
+    <script type="text/javascript" id="ajax-admin-url-js-extra">
+    /* <![CDATA[ */
+    var Aurl = {"ajaxurl":"https:\/\/ticket.atthetop.ae\/wp-admin\/admin-ajax.php","api_nonce":"db8127dc99","theme_url":"https:\/\/ticket.atthetop.ae\/wp-content\/themes\/salient-att-child","site_url":"https:\/\/ticket.atthetop.ae","newsletter_nonce":"7493474eaf"};
+    /* ]]> */
+    </script>
+    <script type="text/javascript" src="https://ticket.atthetop.ae/wp-content/themes/salient-att-child/assets/js/localize-script.js?ver=6.7.1" id="ajax-admin-url-js"></script>
+    <script type="text/javascript" src="https://ticket.atthetop.ae/wp-content/themes/salient-att-child/assets/js/popper.min.js?ver=5.1.1" id="popper-js"></script>
+    <script type="text/javascript" src="https://ticket.atthetop.ae/wp-content/themes/salient-att-child/assets/js/bootstrap.min.js?ver=6.7.1" id="bootstrap-min-js"></script>
+    <script type="text/javascript" src="https://ticket.atthetop.ae/wp-content/themes/salient-att-child/assets/js/gsap.min.js?ver=6.7.1" id="gsap-js"></script>
+    <script type="text/javascript" src="https://ticket.atthetop.ae/wp-content/themes/salient-att-child/assets/js/ScrollMagic.min.js?ver=6.7.1" id="scrollmagic-js"></script>
+    <script type="text/javascript" src="https://ticket.atthetop.ae/wp-content/themes/salient-att-child/assets/js/custom.js?ver=5.1.1" id="custom-js"></script>
+    <script type="text/javascript" src="https://ticket.atthetop.ae/wp-content/themes/salient-att-child/assets/js/owl.carousel.min.js?ver=6.7.1" id="carousel-js-js"></script>
+    <script type="text/javascript" src="https://ticket.atthetop.ae/wp-content/themes/salient-att-child/assets/js/jquery-ui.min.js?ver=6.7.1" id="jquery-ui-js"></script>
+    <script type="text/javascript" src="https://ticket.atthetop.ae/wp-content/themes/salient-att-child/assets/js/sweetalert2@11.js?ver=6.7.1" id="sweetalert-js"></script>
+    <script type="text/javascript" src="https://ticket.atthetop.ae/wp-content/themes/salient-att-child/assets/js/booking.js?ver=5.1.1" id="TicketBookingJs-js"></script>
+    <script type="text/javascript" src="https://ticket.atthetop.ae/wp-content/themes/salient-att-child/assets/js/moment-with-locales.min.js?ver=5.1.1" id="moment-js-js"></script>
+    <script type="text/javascript" src="https://ticket.atthetop.ae/wp-content/themes/salient-att-child/assets/js/cart-count.js?ver=5.1.1" id="cart-count-js"></script>
+    <script type="text/javascript" src="https://ticket.atthetop.ae/wp-content/plugins/wpforms/assets/lib/jquery.validate.min.js?ver=1.19.5" id="wpforms-validation-js"></script>
+    <script type="text/javascript" src="https://ticket.atthetop.ae/wp-content/plugins/wpforms/assets/lib/mailcheck.min.js?ver=1.1.2" id="wpforms-mailcheck-js"></script>
+    <script type="text/javascript" src="https://ticket.atthetop.ae/wp-content/plugins/wpforms/assets/lib/punycode.min.js?ver=1.0.0" id="wpforms-punycode-js"></script>
+    <script type="text/javascript" src="https://ticket.atthetop.ae/wp-content/plugins/wpforms/assets/js/utils.min.js?ver=1.8.3.2" id="wpforms-generic-utils-js"></script>
+    <script type="text/javascript" src="https://ticket.atthetop.ae/wp-content/plugins/wpforms/assets/js/wpforms.min.js?ver=1.8.3.2" id="wpforms-js"></script>
+    <script type="text/javascript" src="https://ticket.atthetop.ae/wp-content/plugins/wpforms/assets/js/wpforms-modern.min.js?ver=1.8.3.2" id="wpforms-modern-js"></script>
+    <script type="text/javascript" src="https://www.google.com/recaptcha/api.js?onload=wpformsRecaptchaLoad&amp;render=explicit" id="wpforms-recaptcha-js"></script>
+    <script type="text/javascript" id="wpforms-recaptcha-js-after">
+    /* <![CDATA[ */
+    if (!Element.prototype.matches) {
+                    Element.prototype.matches = Element.prototype.msMatchesSelector || Element.prototype.webkitMatchesSelector;
                 }
-            </style>
-                    <script nowprocket="">
-                jQuery(document).on("wpformsReady",function(){jQuery("#newsletter-form input[type=email]").after('<div class="input-group-append">                                <span class="input-group-text footer_g_text newsletter-submit-btn"><svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M0 0H8C10.2091 0 12 1.79086 12 4V8C12 10.2091 10.2091 12 8 12H0V0Z" fill="#A79D96" /><path fill-rule="evenodd" clip-rule="evenodd" d="M4.25591 10.8571C3.96187 10.6321 3.9142 10.2217 4.14943 9.9404L7.44504 6L4.14943 2.0596C3.9142 1.77835 3.96187 1.36794 4.25591 1.14294C4.54995 0.91793 4.97901 0.963531 5.21425 1.24479L8.85059 5.59259C9.0498 5.83078 9.0498 6.16922 8.85059 6.40741L5.21425 10.7552C4.97902 11.0365 4.54995 11.0821 4.25591 10.8571Z" fill="white" /></svg></span>                              </div>'),jQuery(".newsletter-submit-btn").on("click",function(){jQuery(this).closest("form").submit();})});
-            </script>
-                <script type="text/javascript">
-                    // Run this snippet on all WPForms forms
-                    jQuery( 'form.wpforms-form' ).bind( 'keypress keydown keyup', function(e) {
-                        if (e.keyCode == 13) {
-                            e.preventDefault();
+                if (!Element.prototype.closest) {
+                    Element.prototype.closest = function (s) {
+                        var el = this;
+                        do {
+                            if (Element.prototype.matches.call(el, s)) { return el; }
+                            el = el.parentElement || el.parentNode;
+                        } while (el !== null && el.nodeType === 1);
+                        return null;
+                    };
+                }
+            var wpformsDispatchEvent = function (el, ev, custom) {
+                    var e = document.createEvent(custom ? "CustomEvent" : "HTMLEvents");
+                    custom ? e.initCustomEvent(ev, true, true, false) : e.initEvent(ev, true, true);
+                    el.dispatchEvent(e);
+                };
+            var wpformsRecaptchaLoad = function () {
+                        Array.prototype.forEach.call(document.querySelectorAll(".g-recaptcha"), function (el) {
+                            try {
+                                var recaptchaID = grecaptcha.render(el, {
+                                    callback: function () {
+                                        wpformsRecaptchaCallback(el);
+                                    }
+                                }, true);
+                                el.closest("form").querySelector("button[type=submit]").recaptchaID = recaptchaID;
+                            } catch (error) {}
+                        });
+                        wpformsDispatchEvent(document, "wpformsRecaptchaLoaded", true);
+                    };
+                    var wpformsRecaptchaCallback = function (el) {
+                        var $form = el.closest("form");
+                        if (typeof wpforms.formSubmit === "function") {
+                            wpforms.formSubmit($form);
+                        } else {
+                            $form.querySelector("button[type=submit]").recaptchaID = false;
+                            $form.submit();
                         }
-                    });
+                    };
+                
+    /* ]]> */
+    </script>
+    <script type='text/javascript'>
+    /* <![CDATA[ */
+    var wpforms_settings = {"val_required":"This field is required.","val_email":"Please enter a valid email address.","val_email_suggestion":"Did you mean {suggestion}?","val_email_suggestion_title":"Click to accept this suggestion.","val_email_restricted":"This email address is not allowed.","val_number":"Please enter a valid number.","val_number_positive":"Please enter a valid positive number.","val_confirm":"Field values do not match.","val_checklimit":"You have exceeded the number of allowed selections: {#}.","val_limit_characters":"","val_limit_words":"","val_recaptcha_fail_msg":"Google reCAPTCHA verification failed, please try again later.","val_turnstile_fail_msg":"Cloudflare Turnstile verification failed, please try again later.","val_inputmask_incomplete":"Please fill out the field in required format.","uuid_cookie":"1","locale":"en","wpforms_plugin_url":"https:\/\/ticket.atthetop.ae\/wp-content\/plugins\/wpforms\/","gdpr":"","ajaxurl":"https:\/\/ticket.atthetop.ae\/wp-admin\/admin-ajax.php","mailcheck_enabled":"","mailcheck_domains":[],"mailcheck_toplevel_domains":["dev"],"is_ssl":"1","page_title":"Make your ticket","page_id":"1062","currency_code":"USD","currency_thousands":",","currency_decimals":"2","currency_decimal":".","currency_symbol":"$","currency_symbol_pos":"left","css_vars":["field-border-radius","field-background-color","field-border-color","field-text-color","label-color","label-sublabel-color","label-error-color","button-border-radius","button-background-color","button-text-color","field-size-input-height","field-size-input-spacing","field-size-font-size","field-size-line-height","field-size-padding-h","field-size-checkbox-size","field-size-sublabel-spacing","field-size-icon-size","label-size-font-size","label-size-line-height","label-size-sublabel-font-size","label-size-sublabel-line-height","button-size-font-size","button-size-height","button-size-padding-h","button-size-margin-top"],"val_requiredpayment":"Payment is required.","val_creditcard":"Please enter a valid credit card number.","val_post_max_size":"The total size of the selected files {totalSize} MB exceeds the allowed limit {maxSize} MB.","val_time12h":"Please enter time in 12-hour AM\/PM format (eg 8:45 AM).","val_time24h":"Please enter time in 24-hour format (eg 22:45).","val_time_limit":"Please enter time between {minTime} and {maxTime}.","val_url":"Please enter a valid URL.","val_fileextension":"File type is not allowed.","val_filesize":"File exceeds max size allowed. File was not uploaded.","post_max_size":"104857600","isModernMarkupEnabled":"1","formErrorMessagePrefix":"Form error message","errorMessagePrefix":"Error message","submitBtnDisabled":"Submit button is disabled during form submission.","val_password_strength":"A stronger password is required. Consider using upper and lower case letters, numbers, and symbols.","val_phone":"Please enter a valid phone number.","indicatorStepsPattern":"Step {current} of {total}","richtext_add_media_button":"","entry_preview_iframe_styles":["https:\/\/ticket.atthetop.ae\/wp-includes\/js\/tinymce\/skins\/lightgray\/content.min.css?ver=6.7.1","https:\/\/ticket.atthetop.ae\/wp-includes\/css\/dashicons.min.css?ver=6.7.1","https:\/\/ticket.atthetop.ae\/wp-includes\/js\/tinymce\/skins\/wordpress\/wp-content.css?ver=6.7.1"]}
+    /* ]]> */
+    </script>
+                <script nowprocket>
+                    jQuery(document).on("wpformsReady",function(){jQuery("form .wpforms-smart-phone-field").each(function(n){var t,i=jQuery(this),e=i.data("plugin_intlTelInput");e.d?t=Object.assign({},e.d):e.options&&(t=Object.assign({},e.options)),t&&(i.intlTelInput("destroy"),t.separateDialCode=!0,i.intlTelInput(t),i.siblings('input[type="hidden"]').attr("name","wpforms[fields]["+t.hiddenInput+"]"))})});
+                    jQuery(document).on("wpformsReady",function(){jQuery(".wpforms-smart-phone-field").each(function(n){var i,t=jQuery(this),s=t.data("plugin_intlTelInput");s.d?i=Object.assign({},s.d):s.options&&(i=Object.assign({},s.options)),i&&(t.intlTelInput("destroy"),i.initialCountry="ae",i.preferredCountries=['ae'],t.intlTelInput(i),t.siblings('input[type="hidden"]').attr("name","wpforms[fields]["+i.hiddenInput+"]"))})});
                 </script>
-            
-        						<style>
-                            .otgs-development-site-front-end a { color: white; }
-                            .otgs-development-site-front-end .icon {
-                                background: url(images/icon-wpml-info-white.svg) no-repeat;
-                                width: 20px;
-                                height: 20px;
-                                display: inline-block;
-                                position: absolute;
-                                margin-left: -23px;
+                        <script type="text/javascript">
+                    //remove before space
+                    !function(t){t("input[type='text'],input[type='email'], input[type='tel'], textarea").on("keypress keyup keydown",function(e){var n=t.trim(t(this).val());0==n.length&&t(this).val(n)})}(jQuery);
+                    //validation for email
+                    !function(a){var i={init:function(){a(document).on("wpformsReady",i.customRules)},customRules:function(){if(void 0!==a.fn.validate&&a.validator.addMethod("check_for_email_validate",function(i,t,e){return a(t),this.optional(t)||/^[a-zA-Z][a-zA-Z0-9_]*(\.[a-zA-Z][a-zA-Z0-9_]*)?@[a-z][a-zA-Z-0-9]*\.[a-z]+(\.[a-z]+)?$/.test(i)},a.validator.format("Please enter a valid email.")),a(".email-validate input").length)for(var i=a(".email-validate input"),t=0;t<i.length;t++)a(".email-validate input").eq(t).rules("add",{check_for_email_validate:!0})}};i.init()}(jQuery);
+                    //Validation for numbers class -> no-numbers
+                    !function(n){var t={init:function(){n(document).on("wpformsReady",t.customRules)},customRules:function(){if(void 0!==n.fn.validate&&n.validator.addMethod("check_for_number",function(t,o,i){return n(o),this.optional(o)||!/\d/.test(t)},n.validator.format("This field cannot accept numbers.")),n(".no-numbers input").length)for(var t=n(".no-numbers input"),o=0;o<t.length;o++)n(".no-numbers input").eq(o).rules("add",{check_for_number:!0})}};t.init()}(jQuery);
+                    //Validation form special characters class -> no-special-char
+                    !function(a){var i={init:function(){a(document).on("wpformsReady",i.customRules)},customRules:function(){if(void 0!==a.fn.validate&&a.validator.addMethod("check_for_special_characters",function(i,t,c){return a(t),this.optional(t)||!/[^A-Za-z 0-9]/g.test(i)},a.validator.format("This field cannot accept special characters.")),a(".no-special-char input").length)for(var i=a(".no-special-char input"),t=0;t<i.length;t++)a(".no-special-char input").eq(t).rules("add",{check_for_special_characters:!0})}};i.init()}(jQuery);
+                    //Validation for positive integer class -> positive-int
+                    !function(i){var t={init:function(){i(document).on("wpformsReady",t.customRules)},customRules:function(){if(void 0!==i.fn.validate&&i.validator.addMethod("check_for_positive_integer",function(t,n,e){var o=i(n);return isNaN(parseFloat(t))?(o.val(""),!1):!(0>=parseFloat(t))&&!!Number.isInteger(parseFloat(t))&&(o.val(parseFloat(t)),!0)},i.validator.format("Only Positive Integer allowed")),i(".positive-int input").length)for(var t=i(".positive-int input"),n=0;n<t.length;n++)i(".positive-int input").eq(n).rules("add",{check_for_positive_integer:!0})}};t.init()}(jQuery);
+                    //open popup when submission
+                    //         jQuery(window).on("load",function(){jQuery(".wpforms-form").on("wpformsAjaxSubmitSuccess",function(o,p){"popupform"==p.type&&(jQuery("#open-confirm-popup .modal-content").html(p.data),jQuery("#open-confirm-popup").modal("show"),setTimeout(function(){var o=jQuery("#open-confirm-popup .target_link_popup").attr("href");""!=o&&void 0!==o?window.location.href=o:window.location.reload()},15e3)),"newletter"==p.type&&(jQuery(".newsletter-response").html(p.data), setTimeout(function() {
+                    //     jQuery(".newsletter-response").empty();
+                    // }, 5000))})});
+                    jQuery(window).on("load",function(){jQuery(".wpforms-form").on("wpformsAjaxSubmitSuccess",function(o,e){"popupform"==e.type&&(jQuery("#open-confirm-popup .modal-content").html(e.data),jQuery("#open-confirm-popup").modal("show"),setTimeout(function(){var o=jQuery("#open-confirm-popup .target_link_popup").attr("href");""!=o&&void 0!==o?window.location.href=o:window.location.reload()},150000000)),"newletter"==e.type&&(jQuery(".newsletter-response").html(e.data),setTimeout(function(){jQuery(".newsletter-response").empty()},5e3))}),jQuery('input[type="email"]').on("keyup",function(){jQuery(".newsletter-response").empty()})});
+                    //zero value remove
+                    !function(t){var o={init:function(){t(document).on("wpformsReady",o.customRules)},customRules:function(){setTimeout(function(){var o=t(".wpforms-smart-phone-field"),n=o.attr("placeholder");if(n){console.log(n);var e=n.replace(/^0+/,"");o.attr("placeholder",e)}},5e3)}};o.init()}(jQuery),function(t){var o={init:function(){t(document).on("countrychange",o.customRules)},customRules:function(){var o=t(".wpforms-smart-phone-field"),n=o.attr("placeholder");if(n){console.log(n);var e=n.replace(/^0+/,"");o.attr("placeholder",e)}}};o.init()}(jQuery);
+                </script>
+                <style>
+                    .wpforms-container .wpforms-submit-spinner {
+                        display: none !important
+                    }
+                </style>
+                        <script nowprocket>
+                    jQuery(document).on("wpformsReady",function(){jQuery("#newsletter-form input[type=email]").after('<div class="input-group-append">                                <span class="input-group-text footer_g_text newsletter-submit-btn"><svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M0 0H8C10.2091 0 12 1.79086 12 4V8C12 10.2091 10.2091 12 8 12H0V0Z" fill="#A79D96" /><path fill-rule="evenodd" clip-rule="evenodd" d="M4.25591 10.8571C3.96187 10.6321 3.9142 10.2217 4.14943 9.9404L7.44504 6L4.14943 2.0596C3.9142 1.77835 3.96187 1.36794 4.25591 1.14294C4.54995 0.91793 4.97901 0.963531 5.21425 1.24479L8.85059 5.59259C9.0498 5.83078 9.0498 6.16922 8.85059 6.40741L5.21425 10.7552C4.97902 11.0365 4.54995 11.0821 4.25591 10.8571Z" fill="white" /></svg></span>                              </div>'),jQuery(".newsletter-submit-btn").on("click",function(){jQuery(this).closest("form").submit();})});
+                </script>
+                    <script type="text/javascript">
+                        // Run this snippet on all WPForms forms
+                        jQuery( 'form.wpforms-form' ).bind( 'keypress keydown keyup', function(e) {
+                            if (e.keyCode == 13) {
+                                e.preventDefault();
                             }
-                            .otgs-development-site-front-end {
-                                background-size: 32px;
-                                padding: 22px 0px;
-                                font-size: 12px;
-                                font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif;
-                                line-height: 18px;
-                                text-align: center;
-                                color: white;
-                                background-color: #33879E;
-                            }
-						</style>
-						<div class="otgs-development-site-front-end"><span class="icon"></span>This site is registered on <a href="https://wpml.org">wpml.org</a> as a development site. Switch to a production site key to <a href="https://wpml.org/faq/how-to-remove-the-this-site-is-registered-on-wpml-org-as-a-development-site-notice/">remove this banner</a>.</div><script>window.lazyLoadOptions=[{elements_selector:"img[data-lazy-src],.rocket-lazyload,iframe[data-lazy-src]",data_src:"lazy-src",data_srcset:"lazy-srcset",data_sizes:"lazy-sizes",class_loading:"lazyloading",class_loaded:"lazyloaded",threshold:300,callback_loaded:function(element){if(element.tagName==="IFRAME"&&element.dataset.rocketLazyload=="fitvidscompatible"){if(element.classList.contains("lazyloaded")){if(typeof window.jQuery!="undefined"){if(jQuery.fn.fitVids){jQuery(element).parent().fitVids()}}}}}},{elements_selector:".rocket-lazyload",data_src:"lazy-src",data_srcset:"lazy-srcset",data_sizes:"lazy-sizes",class_loading:"lazyloading",class_loaded:"lazyloaded",threshold:300,}];window.addEventListener('LazyLoad::Initialized',function(e){var lazyLoadInstance=e.detail.instance;if(window.MutationObserver){var observer=new MutationObserver(function(mutations){var image_count=0;var iframe_count=0;var rocketlazy_count=0;mutations.forEach(function(mutation){for(var i=0;i<mutation.addedNodes.length;i++){if(typeof mutation.addedNodes[i].getElementsByTagName!=='function'){continue}
-if(typeof mutation.addedNodes[i].getElementsByClassName!=='function'){continue}
-images=mutation.addedNodes[i].getElementsByTagName('img');is_image=mutation.addedNodes[i].tagName=="IMG";iframes=mutation.addedNodes[i].getElementsByTagName('iframe');is_iframe=mutation.addedNodes[i].tagName=="IFRAME";rocket_lazy=mutation.addedNodes[i].getElementsByClassName('rocket-lazyload');image_count+=images.length;iframe_count+=iframes.length;rocketlazy_count+=rocket_lazy.length;if(is_image){image_count+=1}
-if(is_iframe){iframe_count+=1}}});if(image_count>0||iframe_count>0||rocketlazy_count>0){lazyLoadInstance.update()}});var b=document.getElementsByTagName("body")[0];var config={childList:!0,subtree:!0};observer.observe(b,config)}},!1)</script><script data-no-minify="1" async="" src="js/lazyload.min.js"></script>
-
-
-</body></html>
+                        });
+                    </script>
+                
+                                    <style>
+                                .otgs-development-site-front-end a { color: white; }
+                                .otgs-development-site-front-end .icon {
+                                    background: url(https://ticket.atthetop.ae/wp-content/plugins/sitepress-multilingual-cms/vendor/otgs/installer//res/img/icon-wpml-info-white.svg) no-repeat;
+                                    width: 20px;
+                                    height: 20px;
+                                    display: inline-block;
+                                    position: absolute;
+                                    margin-left: -23px;
+                                }
+                                .otgs-development-site-front-end {
+                                    background-size: 32px;
+                                    padding: 22px 0px;
+                                    font-size: 12px;
+                                    font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif;
+                                    line-height: 18px;
+                                    text-align: center;
+                                    color: white;
+                                    background-color: #33879E;
+                                }
+                            </style>
+                            <div class="otgs-development-site-front-end"><span class="icon"></span>This site is registered on <a href="https://wpml.org">wpml.org</a> as a development site. Switch to a production site key to <a href="https://wpml.org/faq/how-to-remove-the-this-site-is-registered-on-wpml-org-as-a-development-site-notice/">remove this banner</a>.</div ><script>window.lazyLoadOptions=[{elements_selector:"img[data-lazy-src],.rocket-lazyload,iframe[data-lazy-src]",data_src:"lazy-src",data_srcset:"lazy-srcset",data_sizes:"lazy-sizes",class_loading:"lazyloading",class_loaded:"lazyloaded",threshold:300,callback_loaded:function(element){if(element.tagName==="IFRAME"&&element.dataset.rocketLazyload=="fitvidscompatible"){if(element.classList.contains("lazyloaded")){if(typeof window.jQuery!="undefined"){if(jQuery.fn.fitVids){jQuery(element).parent().fitVids()}}}}}},{elements_selector:".rocket-lazyload",data_src:"lazy-src",data_srcset:"lazy-srcset",data_sizes:"lazy-sizes",class_loading:"lazyloading",class_loaded:"lazyloaded",threshold:300,}];window.addEventListener('LazyLoad::Initialized',function(e){var lazyLoadInstance=e.detail.instance;if(window.MutationObserver){var observer=new MutationObserver(function(mutations){var image_count=0;var iframe_count=0;var rocketlazy_count=0;mutations.forEach(function(mutation){for(var i=0;i<mutation.addedNodes.length;i++){if(typeof mutation.addedNodes[i].getElementsByTagName!=='function'){continue}
+    if(typeof mutation.addedNodes[i].getElementsByClassName!=='function'){continue}
+    images=mutation.addedNodes[i].getElementsByTagName('img');is_image=mutation.addedNodes[i].tagName=="IMG";iframes=mutation.addedNodes[i].getElementsByTagName('iframe');is_iframe=mutation.addedNodes[i].tagName=="IFRAME";rocket_lazy=mutation.addedNodes[i].getElementsByClassName('rocket-lazyload');image_count+=images.length;iframe_count+=iframes.length;rocketlazy_count+=rocket_lazy.length;if(is_image){image_count+=1}
+    if(is_iframe){iframe_count+=1}}});if(image_count>0||iframe_count>0||rocketlazy_count>0){lazyLoadInstance.update()}});var b=document.getElementsByTagName("body")[0];var config={childList:!0,subtree:!0};observer.observe(b,config)}},!1)</script><script data-no-minify="1" async src="https://ticket.atthetop.ae/wp-content/plugins/wp-rocket/assets/js/lazyload/17.8.3/lazyload.min.js"></script>
+    </body>
+    
+    </html>
