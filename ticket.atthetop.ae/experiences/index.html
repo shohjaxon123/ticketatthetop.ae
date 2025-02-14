@@ -1,0 +1,1063 @@
+<!DOCTYPE html><html lang="en-US" class="js" translate="no"><head><meta charset="UTF-8"><script async="" src="js/gtm.js"></script><script>if(navigator.userAgent.match(/MSIE|Internet Explorer/i)||navigator.userAgent.match(/Trident\/7\..*?rv:11/i)){var href=document.location.href;if(!href.match(/[?&]nowprocket/)){if(href.indexOf("?")==-1){if(href.indexOf("#")==-1){document.location.href=href+"?nowprocket=1"}else{document.location.href=href.replace("#","?nowprocket=1#")}}else{if(href.indexOf("#")==-1){document.location.href=href+"&nowprocket=1"}else{document.location.href=href.replace("#","&nowprocket=1#")}}}}</script><script>(()=>{class RocketLazyLoadScripts{constructor(){this.v="1.2.5.1",this.triggerEvents=["keydown","mousedown","mousemove","touchmove","touchstart","touchend","wheel"],this.userEventHandler=this.t.bind(this),this.touchStartHandler=this.i.bind(this),this.touchMoveHandler=this.o.bind(this),this.touchEndHandler=this.h.bind(this),this.clickHandler=this.u.bind(this),this.interceptedClicks=[],this.interceptedClickListeners=[],this.l(this),window.addEventListener("pageshow",(t=>{this.persisted=t.persisted,this.everythingLoaded&&this.m()})),document.addEventListener("DOMContentLoaded",(()=>{this.p()})),this.delayedScripts={normal:[],async:[],defer:[]},this.trash=[],this.allJQueries=[]}k(t){document.hidden?t.t():(this.triggerEvents.forEach((e=>window.addEventListener(e,t.userEventHandler,{passive:!0}))),window.addEventListener("touchstart",t.touchStartHandler,{passive:!0}),window.addEventListener("mousedown",t.touchStartHandler),document.addEventListener("visibilitychange",t.userEventHandler))}_(){this.triggerEvents.forEach((t=>window.removeEventListener(t,this.userEventHandler,{passive:!0}))),document.removeEventListener("visibilitychange",this.userEventHandler)}i(t){"HTML"!==t.target.tagName&&(window.addEventListener("touchend",this.touchEndHandler),window.addEventListener("mouseup",this.touchEndHandler),window.addEventListener("touchmove",this.touchMoveHandler,{passive:!0}),window.addEventListener("mousemove",this.touchMoveHandler),t.target.addEventListener("click",this.clickHandler),this.L(t.target,!0),this.M(t.target,"onclick","rocket-onclick"),this.C())}o(t){window.removeEventListener("touchend",this.touchEndHandler),window.removeEventListener("mouseup",this.touchEndHandler),window.removeEventListener("touchmove",this.touchMoveHandler,{passive:!0}),window.removeEventListener("mousemove",this.touchMoveHandler),t.target.removeEventListener("click",this.clickHandler),this.L(t.target,!1),this.M(t.target,"rocket-onclick","onclick"),this.O()}h(){window.removeEventListener("touchend",this.touchEndHandler),window.removeEventListener("mouseup",this.touchEndHandler),window.removeEventListener("touchmove",this.touchMoveHandler,{passive:!0}),window.removeEventListener("mousemove",this.touchMoveHandler)}u(t){t.target.removeEventListener("click",this.clickHandler),this.L(t.target,!1),this.M(t.target,"rocket-onclick","onclick"),this.interceptedClicks.push(t),t.preventDefault(),t.stopPropagation(),t.stopImmediatePropagation(),this.O()}D(){window.removeEventListener("touchstart",this.touchStartHandler,{passive:!0}),window.removeEventListener("mousedown",this.touchStartHandler),this.interceptedClicks.forEach((t=>{t.target.dispatchEvent(new MouseEvent("click",{view:t.view,bubbles:!0,cancelable:!0}))}))}l(t){EventTarget.prototype.addEventListenerBase=EventTarget.prototype.addEventListener,EventTarget.prototype.addEventListener=function(e,i,o){"click"!==e||t.windowLoaded||i===t.clickHandler||t.interceptedClickListeners.push({target:this,func:i,options:o}),(this||window).addEventListenerBase(e,i,o)}}L(t,e){this.interceptedClickListeners.forEach((i=>{i.target===t&&(e?t.removeEventListener("click",i.func,i.options):t.addEventListener("click",i.func,i.options))})),t.parentNode!==document.documentElement&&this.L(t.parentNode,e)}S(){return new Promise((t=>{this.T?this.O=t:t()}))}C(){this.T=!0}O(){this.T=!1}M(t,e,i){t.hasAttribute&&t.hasAttribute(e)&&(event.target.setAttribute(i,event.target.getAttribute(e)),event.target.removeAttribute(e))}t(){this._(this),"loading"===document.readyState?document.addEventListener("DOMContentLoaded",this.R.bind(this)):this.R()}p(){let t=[];document.querySelectorAll("script[type=rocketlazyloadscript][data-rocket-src]").forEach((e=>{let i=e.getAttribute("data-rocket-src");if(i&&0!==i.indexOf("data:")){0===i.indexOf("//")&&(i=location.protocol+i);try{const o=new URL(i).origin;o!==location.origin&&t.push({src:o,crossOrigin:e.crossOrigin||"module"===e.getAttribute("data-rocket-type")})}catch(t){}}})),t=[...new Map(t.map((t=>[JSON.stringify(t),t]))).values()],this.j(t,"preconnect")}async R(){this.lastBreath=Date.now(),this.P(this),this.F(this),this.q(),this.A(),this.I(),await this.U(this.delayedScripts.normal),await this.U(this.delayedScripts.defer),await this.U(this.delayedScripts.async);try{await this.W(),await this.H(this),await this.J()}catch(t){console.error(t)}window.dispatchEvent(new Event("rocket-allScriptsLoaded")),this.everythingLoaded=!0,this.S().then((()=>{this.D()})),this.N()}A(){document.querySelectorAll("script[type=rocketlazyloadscript]").forEach((t=>{t.hasAttribute("data-rocket-src")?t.hasAttribute("async")&&!1!==t.async?this.delayedScripts.async.push(t):t.hasAttribute("defer")&&!1!==t.defer||"module"===t.getAttribute("data-rocket-type")?this.delayedScripts.defer.push(t):this.delayedScripts.normal.push(t):this.delayedScripts.normal.push(t)}))}async B(t){if(await this.G(),!0!==t.noModule||!("noModule"in HTMLScriptElement.prototype))return new Promise((e=>{let i;function o(){(i||t).setAttribute("data-rocket-status","executed"),e()}try{if(navigator.userAgent.indexOf("Firefox/")>0||""===navigator.vendor)i=document.createElement("script"),[...t.attributes].forEach((t=>{let e=t.nodeName;"type"!==e&&("data-rocket-type"===e&&(e="type"),"data-rocket-src"===e&&(e="src"),i.setAttribute(e,t.nodeValue))})),t.text&&(i.text=t.text),i.hasAttribute("src")?(i.addEventListener("load",o),i.addEventListener("error",(function(){i.setAttribute("data-rocket-status","failed"),e()})),setTimeout((()=>{i.isConnected||e()}),1)):(i.text=t.text,o()),t.parentNode.replaceChild(i,t);else{const i=t.getAttribute("data-rocket-type"),n=t.getAttribute("data-rocket-src");i?(t.type=i,t.removeAttribute("data-rocket-type")):t.removeAttribute("type"),t.addEventListener("load",o),t.addEventListener("error",(function(){t.setAttribute("data-rocket-status","failed"),e()})),n?(t.removeAttribute("data-rocket-src"),t.src=n):t.src="data:text/javascript;base64,"+window.btoa(unescape(encodeURIComponent(t.text)))}}catch(i){t.setAttribute("data-rocket-status","failed"),e()}}));t.setAttribute("data-rocket-status","skipped")}async U(t){const e=t.shift();return e&&e.isConnected?(await this.B(e),this.U(t)):Promise.resolve()}I(){this.j([...this.delayedScripts.normal,...this.delayedScripts.defer,...this.delayedScripts.async],"preload")}j(t,e){var i=document.createDocumentFragment();t.forEach((t=>{const o=t.getAttribute&&t.getAttribute("data-rocket-src")||t.src;if(o){const n=document.createElement("link");n.href=o,n.rel=e,"preconnect"!==e&&(n.as="script"),t.getAttribute&&"module"===t.getAttribute("data-rocket-type")&&(n.crossOrigin=!0),t.crossOrigin&&(n.crossOrigin=t.crossOrigin),t.integrity&&(n.integrity=t.integrity),i.appendChild(n),this.trash.push(n)}})),document.head.appendChild(i)}P(t){let e={};function i(i,o){return e[o].eventsToRewrite.indexOf(i)>=0&&!t.everythingLoaded?"rocket-"+i:i}function o(t,o){!function(t){e[t]||(e[t]={originalFunctions:{add:t.addEventListener,remove:t.removeEventListener},eventsToRewrite:[]},t.addEventListener=function(){arguments[0]=i(arguments[0],t),e[t].originalFunctions.add.apply(t,arguments)},t.removeEventListener=function(){arguments[0]=i(arguments[0],t),e[t].originalFunctions.remove.apply(t,arguments)})}(t),e[t].eventsToRewrite.push(o)}function n(e,i){let o=e[i];e[i]=null,Object.defineProperty(e,i,{get:()=>o||function(){},set(n){t.everythingLoaded?o=n:e["rocket"+i]=o=n}})}o(document,"DOMContentLoaded"),o(window,"DOMContentLoaded"),o(window,"load"),o(window,"pageshow"),o(document,"readystatechange"),n(document,"onreadystatechange"),n(window,"onload"),n(window,"onpageshow")}F(t){let e;function i(e){return t.everythingLoaded?e:e.split(" ").map((t=>"load"===t||0===t.indexOf("load.")?"rocket-jquery-load":t)).join(" ")}function o(o){if(o&&o.fn&&!t.allJQueries.includes(o)){o.fn.ready=o.fn.init.prototype.ready=function(e){return t.domReadyFired?e.bind(document)(o):document.addEventListener("rocket-DOMContentLoaded",(()=>e.bind(document)(o))),o([])};const e=o.fn.on;o.fn.on=o.fn.init.prototype.on=function(){return this[0]===window&&("string"==typeof arguments[0]||arguments[0]instanceof String?arguments[0]=i(arguments[0]):"object"==typeof arguments[0]&&Object.keys(arguments[0]).forEach((t=>{const e=arguments[0][t];delete arguments[0][t],arguments[0][i(t)]=e}))),e.apply(this,arguments),this},t.allJQueries.push(o)}e=o}o(window.jQuery),Object.defineProperty(window,"jQuery",{get:()=>e,set(t){o(t)}})}async H(t){const e=document.querySelector("script[data-webpack]");e&&(await async function(){return new Promise((t=>{e.addEventListener("load",t),e.addEventListener("error",t)}))}(),await t.K(),await t.H(t))}async W(){this.domReadyFired=!0,await this.G(),document.dispatchEvent(new Event("rocket-readystatechange")),await this.G(),document.rocketonreadystatechange&&document.rocketonreadystatechange(),await this.G(),document.dispatchEvent(new Event("rocket-DOMContentLoaded")),await this.G(),window.dispatchEvent(new Event("rocket-DOMContentLoaded"))}async J(){await this.G(),document.dispatchEvent(new Event("rocket-readystatechange")),await this.G(),document.rocketonreadystatechange&&document.rocketonreadystatechange(),await this.G(),window.dispatchEvent(new Event("rocket-load")),await this.G(),window.rocketonload&&window.rocketonload(),await this.G(),this.allJQueries.forEach((t=>t(window).trigger("rocket-jquery-load"))),await this.G();const t=new Event("rocket-pageshow");t.persisted=this.persisted,window.dispatchEvent(t),await this.G(),window.rocketonpageshow&&window.rocketonpageshow({persisted:this.persisted}),this.windowLoaded=!0}m(){document.onreadystatechange&&document.onreadystatechange(),window.onload&&window.onload(),window.onpageshow&&window.onpageshow({persisted:this.persisted})}q(){const t=new Map;document.write=document.writeln=function(e){const i=document.currentScript;i||console.error("WPRocket unable to document.write this: "+e);const o=document.createRange(),n=i.parentElement;let s=t.get(i);void 0===s&&(s=i.nextSibling,t.set(i,s));const c=document.createDocumentFragment();o.setStart(c,0),c.appendChild(o.createContextualFragment(e)),n.insertBefore(c,s)}}async G(){Date.now()-this.lastBreath>45&&(await this.K(),this.lastBreath=Date.now())}async K(){return document.hidden?new Promise((t=>setTimeout(t))):new Promise((t=>requestAnimationFrame(t)))}N(){this.trash.forEach((t=>t.remove()))}static run(){const t=new RocketLazyLoadScripts;t.k(t)}}RocketLazyLoadScripts.run()})();</script>
+    
+    <meta name="google" content="notranslate">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
+    <link rel="profile" href="http://gmpg.org/xfn/11">
+    
+    <meta name="robots" content="noindex, nofollow">
+	<style>img:is([sizes="auto" i], [sizes^="auto," i]) { contain-intrinsic-size: 3000px 1500px }</style>
+	<link rel="alternate" hreflang="ar-ae" href="https://ticket.atthetop.ae/ar/experiences/">
+<link rel="alternate" hreflang="zh-cn" href="https://ticket.atthetop.ae/zh-hans/experiences/">
+<link rel="alternate" hreflang="en-ae" href="https://ticket.atthetop.ae/experiences/">
+<link rel="alternate" hreflang="ru-ru" href="https://ticket.atthetop.ae/ru/experiences/">
+<link rel="alternate" hreflang="x-default" href="https://ticket.atthetop.ae/experiences/">
+
+	<!-- This site is optimized with the Yoast SEO Premium plugin v22.3 (Yoast SEO v24.1) - https://yoast.com/wordpress/plugins/seo/ -->
+	<title>Discover At The Top Burj Khalifa's Experiences</title><link rel="preload" as="style" href="https://fonts.googleapis.com/css?family=Open%20Sans%3A300%2C400%2C600%2C700&subset=latin%2Clatin-ext&display=swap"><link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open%20Sans%3A300%2C400%2C600%2C700&subset=latin%2Clatin-ext&display=swap" media="print" onload="this.media='all'"><noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open%20Sans%3A300%2C400%2C600%2C700&subset=latin%2Clatin-ext&display=swap" /></noscript><link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Noto+Sans%3Awght%40300%3B400%3B500%3B600%3B700&ver=6.7.1&display=swap"><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans%3Awght%40300%3B400%3B500%3B600%3B700&ver=6.7.1&display=swap" media="print" onload="this.media='all'"><noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans%3Awght%40300%3B400%3B500%3B600%3B700&ver=6.7.1&display=swap" /></noscript><link rel="preload" as="image" href="https://ticket.atthetop.ae/wp-content/uploads/sites/2/2024/01/MicrosoftTeams-image-712.webp%20linear" fetchpriority="high">
+	<meta name="description" content="Explore unique experiences at the Burj Khalifa. From Sky Views Observatory to Edge Walk, Dubai Fountain Broadwalk, Lake Ride & more. Discover all the memorable options available.">
+	<meta property="og:locale" content="en_US">
+	<meta property="og:type" content="article">
+	<meta property="og:title" content="Experiences">
+	<meta property="og:description" content="Explore unique experiences at the Burj Khalifa. From Sky Views Observatory to Edge Walk, Dubai Fountain Broadwalk, Lake Ride & more. Discover all the memorable options available.">
+	<meta property="og:url" content="https://ticket.atthetop.ae/experiences/">
+	<meta property="og:site_name" content="At the Top Burj Khalifa">
+	<meta property="article:publisher" content="https://www.facebook.com/AtthetopBurjkhalifa/">
+	<meta property="article:modified_time" content="2024-08-13T07:14:46+00:00">
+	<meta name="twitter:card" content="summary_large_image">
+	<script type="application/ld+json" class="yoast-schema-graph">{"@context":"https://schema.org","@graph":[{"@type":"WebPage","@id":"https://ticket.atthetop.ae/experiences/","url":"https://ticket.atthetop.ae/experiences/","name":"Discover At The Top Burj Khalifa's Experiences","isPartOf":{"@id":"https://ticket.atthetop.ae/#website"},"datePublished":"2023-08-03T10:18:54+00:00","dateModified":"2024-08-13T07:14:46+00:00","description":"Explore unique experiences at the Burj Khalifa. From Sky Views Observatory to Edge Walk, Dubai Fountain Broadwalk, Lake Ride & more. Discover all the memorable options available.","breadcrumb":{"@id":"https://ticket.atthetop.ae/experiences/#breadcrumb"},"inLanguage":"en-US","potentialAction":[{"@type":"ReadAction","target":["https://ticket.atthetop.ae/experiences/"]}]},{"@type":"BreadcrumbList","@id":"https://ticket.atthetop.ae/experiences/#breadcrumb","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://ticket.atthetop.ae/"},{"@type":"ListItem","position":2,"name":"Experiences"}]},{"@type":"WebSite","@id":"https://ticket.atthetop.ae/#website","url":"https://ticket.atthetop.ae/","name":"At the Top Burj Khalifa","description":"","publisher":{"@id":"https://ticket.atthetop.ae/#organization"},"potentialAction":[{"@type":"SearchAction","target":{"@type":"EntryPoint","urlTemplate":"https://ticket.atthetop.ae/?s={search_term_string}"},"query-input":{"@type":"PropertyValueSpecification","valueRequired":true,"valueName":"search_term_string"}}],"inLanguage":"en-US"},{"@type":"Organization","@id":"https://ticket.atthetop.ae/#organization","name":"At the Top Burj Khalifa","url":"https://ticket.atthetop.ae/","logo":{"@type":"ImageObject","inLanguage":"en-US","@id":"https://ticket.atthetop.ae/#/schema/logo/image/","url":"https://ticket.atthetop.ae/wp-content/uploads/sites/2/2023/09/att-logo-vector-1.svg","contentUrl":"https://ticket.atthetop.ae/wp-content/uploads/sites/2/2023/09/att-logo-vector-1.svg","width":260,"height":40,"caption":"At the Top Burj Khalifa"},"image":{"@id":"https://ticket.atthetop.ae/#/schema/logo/image/"},"sameAs":["https://www.facebook.com/AtthetopBurjkhalifa/","https://www.instagram.com/atthetopburjkhalifa/"],"description":"Book your tickets to the top of the Burj Khalifa, the world's tallest building, and experience breathtaking views of Dubai.","email":"info@atthetop.ae","telephone":"800 28843867"}]}</script>
+	<!-- / Yoast SEO Premium plugin. -->
+
+
+<link rel="dns-prefetch" href="//fonts.googleapis.com">
+<link href="https://fonts.gstatic.com" crossorigin="" rel="preconnect">
+<style id="wp-emoji-styles-inline-css" type="text/css">
+
+	img.wp-smiley, img.emoji {
+		display: inline !important;
+		border: none !important;
+		box-shadow: none !important;
+		height: 1em !important;
+		width: 1em !important;
+		margin: 0 0.07em !important;
+		vertical-align: -0.1em !important;
+		background: none !important;
+		padding: 0 !important;
+	}
+</style>
+<style id="classic-theme-styles-inline-css" type="text/css">
+/*! This file is auto-generated */
+.wp-block-button__link{color:#fff;background-color:#32373c;border-radius:9999px;box-shadow:none;text-decoration:none;padding:calc(.667em + 2px) calc(1.333em + 2px);font-size:1.125em}.wp-block-file__button{background:#32373c;color:#fff;text-decoration:none}
+</style>
+<style id="global-styles-inline-css" type="text/css">
+:root{--wp--preset--aspect-ratio--square: 1;--wp--preset--aspect-ratio--4-3: 4/3;--wp--preset--aspect-ratio--3-4: 3/4;--wp--preset--aspect-ratio--3-2: 3/2;--wp--preset--aspect-ratio--2-3: 2/3;--wp--preset--aspect-ratio--16-9: 16/9;--wp--preset--aspect-ratio--9-16: 9/16;--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: #abb8c3;--wp--preset--color--white: #ffffff;--wp--preset--color--pale-pink: #f78da7;--wp--preset--color--vivid-red: #cf2e2e;--wp--preset--color--luminous-vivid-orange: #ff6900;--wp--preset--color--luminous-vivid-amber: #fcb900;--wp--preset--color--light-green-cyan: #7bdcb5;--wp--preset--color--vivid-green-cyan: #00d084;--wp--preset--color--pale-cyan-blue: #8ed1fc;--wp--preset--color--vivid-cyan-blue: #0693e3;--wp--preset--color--vivid-purple: #9b51e0;--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple: linear-gradient(135deg,rgba(6,147,227,1) 0%,rgb(155,81,224) 100%);--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan: linear-gradient(135deg,rgb(122,220,180) 0%,rgb(0,208,130) 100%);--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange: linear-gradient(135deg,rgba(252,185,0,1) 0%,rgba(255,105,0,1) 100%);--wp--preset--gradient--luminous-vivid-orange-to-vivid-red: linear-gradient(135deg,rgba(255,105,0,1) 0%,rgb(207,46,46) 100%);--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray: linear-gradient(135deg,rgb(238,238,238) 0%,rgb(169,184,195) 100%);--wp--preset--gradient--cool-to-warm-spectrum: linear-gradient(135deg,rgb(74,234,220) 0%,rgb(151,120,209) 20%,rgb(207,42,186) 40%,rgb(238,44,130) 60%,rgb(251,105,98) 80%,rgb(254,248,76) 100%);--wp--preset--gradient--blush-light-purple: linear-gradient(135deg,rgb(255,206,236) 0%,rgb(152,150,240) 100%);--wp--preset--gradient--blush-bordeaux: linear-gradient(135deg,rgb(254,205,165) 0%,rgb(254,45,45) 50%,rgb(107,0,62) 100%);--wp--preset--gradient--luminous-dusk: linear-gradient(135deg,rgb(255,203,112) 0%,rgb(199,81,192) 50%,rgb(65,88,208) 100%);--wp--preset--gradient--pale-ocean: linear-gradient(135deg,rgb(255,245,203) 0%,rgb(182,227,212) 50%,rgb(51,167,181) 100%);--wp--preset--gradient--electric-grass: linear-gradient(135deg,rgb(202,248,128) 0%,rgb(113,206,126) 100%);--wp--preset--gradient--midnight: linear-gradient(135deg,rgb(2,3,129) 0%,rgb(40,116,252) 100%);--wp--preset--font-size--small: 13px;--wp--preset--font-size--medium: 20px;--wp--preset--font-size--large: 36px;--wp--preset--font-size--x-large: 42px;--wp--preset--spacing--20: 0.44rem;--wp--preset--spacing--30: 0.67rem;--wp--preset--spacing--40: 1rem;--wp--preset--spacing--50: 1.5rem;--wp--preset--spacing--60: 2.25rem;--wp--preset--spacing--70: 3.38rem;--wp--preset--spacing--80: 5.06rem;--wp--preset--shadow--natural: 6px 6px 9px rgba(0, 0, 0, 0.2);--wp--preset--shadow--deep: 12px 12px 50px rgba(0, 0, 0, 0.4);--wp--preset--shadow--sharp: 6px 6px 0px rgba(0, 0, 0, 0.2);--wp--preset--shadow--outlined: 6px 6px 0px -3px rgba(255, 255, 255, 1), 6px 6px rgba(0, 0, 0, 1);--wp--preset--shadow--crisp: 6px 6px 0px rgba(0, 0, 0, 1);}:where(.is-layout-flex){gap: 0.5em;}:where(.is-layout-grid){gap: 0.5em;}body .is-layout-flex{display: flex;}.is-layout-flex{flex-wrap: wrap;align-items: center;}.is-layout-flex > :is(*, div){margin: 0;}body .is-layout-grid{display: grid;}.is-layout-grid > :is(*, div){margin: 0;}:where(.wp-block-columns.is-layout-flex){gap: 2em;}:where(.wp-block-columns.is-layout-grid){gap: 2em;}:where(.wp-block-post-template.is-layout-flex){gap: 1.25em;}:where(.wp-block-post-template.is-layout-grid){gap: 1.25em;}.has-black-color{color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-color{color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-color{color: var(--wp--preset--color--white) !important;}.has-pale-pink-color{color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-color{color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-color{color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-color{color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-color{color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-color{color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-color{color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-color{color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-color{color: var(--wp--preset--color--vivid-purple) !important;}.has-black-background-color{background-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-background-color{background-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-background-color{background-color: var(--wp--preset--color--white) !important;}.has-pale-pink-background-color{background-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-background-color{background-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-background-color{background-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-background-color{background-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-background-color{background-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-background-color{background-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-background-color{background-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-background-color{background-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-background-color{background-color: var(--wp--preset--color--vivid-purple) !important;}.has-black-border-color{border-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-border-color{border-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-border-color{border-color: var(--wp--preset--color--white) !important;}.has-pale-pink-border-color{border-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-border-color{border-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-border-color{border-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-border-color{border-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-border-color{border-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-border-color{border-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-border-color{border-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-border-color{border-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-border-color{border-color: var(--wp--preset--color--vivid-purple) !important;}.has-vivid-cyan-blue-to-vivid-purple-gradient-background{background: var(--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple) !important;}.has-light-green-cyan-to-vivid-green-cyan-gradient-background{background: var(--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan) !important;}.has-luminous-vivid-amber-to-luminous-vivid-orange-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange) !important;}.has-luminous-vivid-orange-to-vivid-red-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-orange-to-vivid-red) !important;}.has-very-light-gray-to-cyan-bluish-gray-gradient-background{background: var(--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray) !important;}.has-cool-to-warm-spectrum-gradient-background{background: var(--wp--preset--gradient--cool-to-warm-spectrum) !important;}.has-blush-light-purple-gradient-background{background: var(--wp--preset--gradient--blush-light-purple) !important;}.has-blush-bordeaux-gradient-background{background: var(--wp--preset--gradient--blush-bordeaux) !important;}.has-luminous-dusk-gradient-background{background: var(--wp--preset--gradient--luminous-dusk) !important;}.has-pale-ocean-gradient-background{background: var(--wp--preset--gradient--pale-ocean) !important;}.has-electric-grass-gradient-background{background: var(--wp--preset--gradient--electric-grass) !important;}.has-midnight-gradient-background{background: var(--wp--preset--gradient--midnight) !important;}.has-small-font-size{font-size: var(--wp--preset--font-size--small) !important;}.has-medium-font-size{font-size: var(--wp--preset--font-size--medium) !important;}.has-large-font-size{font-size: var(--wp--preset--font-size--large) !important;}.has-x-large-font-size{font-size: var(--wp--preset--font-size--x-large) !important;}
+:where(.wp-block-post-template.is-layout-flex){gap: 1.25em;}:where(.wp-block-post-template.is-layout-grid){gap: 1.25em;}
+:where(.wp-block-columns.is-layout-flex){gap: 2em;}:where(.wp-block-columns.is-layout-grid){gap: 2em;}
+:root :where(.wp-block-pullquote){font-size: 1.5em;line-height: 1.6;}
+</style>
+<link rel="stylesheet" id="bootstrap-css" href="css/bootstrap.min.css" type="text/css" media="all">
+<link rel="stylesheet" id="at-the-top-all-styles-css" href="css/all.css" type="text/css" media="all">
+<link rel="stylesheet" id="carousel-styles-css" href="css/owl.carousel.css" type="text/css" media="all">
+
+<link rel="stylesheet" id="full-scroll-styles-css" href="css/fullpage.min.css" type="text/css" media="all">
+<link rel="stylesheet" id="experiences-css-css" href="css/experiences.css" type="text/css" media="all">
+<link rel="stylesheet" id="font-awesome-css" href="css/font-awesome-legacy.min.css" type="text/css" media="all">
+
+<link rel="stylesheet" id="salient-child-style-css" href="css/style.css" type="text/css" media="all">
+<script type="text/javascript" id="wpml-cookie-js-extra">
+/* <![CDATA[ */
+var wpml_cookies = {"wp-wpml_current_language":{"value":"en","expires":1,"path":"\/"}};
+var wpml_cookies = {"wp-wpml_current_language":{"value":"en","expires":1,"path":"\/"}};
+/* ]]> */
+</script>
+<script type="text/javascript" src="js/language-cookie.js" id="wpml-cookie-js" defer="defer" data-wp-strategy="defer"></script>
+<script type="text/javascript" id="emaar-enc-parameters-js-extra">
+/* <![CDATA[ */
+var EncParams = {"lc_cart_id":"xPnOhQgw142EMLsYZYlGvYM\/Ll71bg\/b4XDqE5EbUwe7KcdmKMquxG4sNQtowJdoVaqNisbl"};
+/* ]]> */
+</script>
+<script type="text/javascript" src="js/enc-params.js" id="emaar-enc-parameters-js"></script>
+<script type="text/javascript" src="js/jquery.min_1.js" id="jquery-core-js"></script>
+<script type="text/javascript" src="js/jquery-migrate.min.js" id="jquery-migrate-js"></script>
+<script type="text/javascript" src="js/emaar-custom-js.js" id="custom.js-js"></script>
+<link rel="https://api.w.org/" href="https://ticket.atthetop.ae/wp-json/"><link rel="alternate" title="JSON" type="application/json" href="https://ticket.atthetop.ae/wp-json/wp/v2/pages/148"><link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://ticket.atthetop.ae/xmlrpc.php?rsd">
+<link rel="shortlink" href="https://ticket.atthetop.ae/?p=148">
+<link rel="alternate" title="oEmbed (JSON)" type="application/json+oembed" href="https://ticket.atthetop.ae/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fticket.atthetop.ae%2Fexperiences%2F">
+<link rel="alternate" title="oEmbed (XML)" type="text/xml+oembed" href="https://ticket.atthetop.ae/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fticket.atthetop.ae%2Fexperiences%2F&format=xml">
+<meta name="generator" content="WPML ver:4.6.10 stt:5,59,1,45;">
+<link rel="icon" type="image/x-icon" href="images/favicon_1.svg" sizes="32x32"><script type="text/javascript" src="data:text/javascript;base64,IHZhciByb290ID0gZG9jdW1lbnQuZ2V0RWxlbWVudHNCeVRhZ05hbWUoICJodG1sIiApWzBdOyByb290LnNldEF0dHJpYnV0ZSggImNsYXNzIiwgImpzIiApOyA=" data-rocket-status="executed"> var root = document.getElementsByTagName( "html" )[0]; root.setAttribute( "class", "js" ); </script><link rel="icon" href="images/favicon.svg" sizes="32x32">
+<link rel="icon" href="images/favicon.svg" sizes="192x192">
+<link rel="apple-touch-icon" href="images/favicon.svg">
+<meta name="msapplication-TileImage" content="https://ticket.atthetop.ae/wp-content/uploads/sites/2/2023/08/favicon.svg">
+<noscript><style id="rocket-lazyload-nojs-css">.rll-youtube-player, [data-lazy-src]{display:none !important;}</style></noscript><style id="wpforms-css-vars-root">
+				:root {
+					--wpforms-field-border-radius: 3px;
+--wpforms-field-background-color: #ffffff;
+--wpforms-field-border-color: rgba( 0, 0, 0, 0.25 );
+--wpforms-field-text-color: rgba( 0, 0, 0, 0.7 );
+--wpforms-label-color: rgba( 0, 0, 0, 0.85 );
+--wpforms-label-sublabel-color: rgba( 0, 0, 0, 0.55 );
+--wpforms-label-error-color: #d63637;
+--wpforms-button-border-radius: 3px;
+--wpforms-button-background-color: #066aab;
+--wpforms-button-text-color: #ffffff;
+--wpforms-field-size-input-height: 43px;
+--wpforms-field-size-input-spacing: 15px;
+--wpforms-field-size-font-size: 16px;
+--wpforms-field-size-line-height: 19px;
+--wpforms-field-size-padding-h: 14px;
+--wpforms-field-size-checkbox-size: 16px;
+--wpforms-field-size-sublabel-spacing: 5px;
+--wpforms-field-size-icon-size: 1;
+--wpforms-label-size-font-size: 16px;
+--wpforms-label-size-line-height: 19px;
+--wpforms-label-size-sublabel-font-size: 14px;
+--wpforms-label-size-sublabel-line-height: 17px;
+--wpforms-button-size-font-size: 17px;
+--wpforms-button-size-height: 41px;
+--wpforms-button-size-padding-h: 15px;
+--wpforms-button-size-margin-top: 10px;
+
+				}
+			</style>    <script nowprocket="">window.dataLayer = window.dataLayer || [];</script>
+<!-- Google Tag Manager -->
+<script nowprocket="">(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-T3GKDZ');</script>
+<!-- End Google Tag Manager -->
+<!-- Hotjar Tracking Code for AtTheTop --> <script src="data:text/javascript;base64,KGZ1bmN0aW9uKGgsbyx0LGosYSxyKXsgICAgaC5oaj1oLmhqfHxmdW5jdGlvbigpeyhoLmhqLnE9aC5oai5xfHxbXSkucHVzaChhcmd1bWVudHMpfTsgICAgaC5faGpTZXR0aW5ncz17aGppZDo1MDgzODczLGhqc3Y6Nn07ICAgIGE9by5nZXRFbGVtZW50c0J5VGFnTmFtZSgnaGVhZCcpWzBdOyAgICByPW8uY3JlYXRlRWxlbWVudCgnc2NyaXB0Jyk7ci5hc3luYz0xOyAgICByLnNyYz10K2guX2hqU2V0dGluZ3MuaGppZCtqK2guX2hqU2V0dGluZ3MuaGpzdjsgICAgYS5hcHBlbmRDaGlsZChyKTt9KSh3aW5kb3csZG9jdW1lbnQsJ2h0dHBzOi8vc3RhdGljLmhvdGphci5jb20vYy9ob3RqYXItJywnLmpzP3N2PScpOyA=" data-rocket-status="executed">(function(h,o,t,j,a,r){    h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};    h._hjSettings={hjid:5083873,hjsv:6};    a=o.getElementsByTagName('head')[0];    r=o.createElement('script');r.async=1;    r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;    a.appendChild(r);})(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv='); </script>
+<!-- Start VWO Async SmartCode -->
+<link rel="preconnect" href="https://dev.visualwebsiteoptimizer.com">
+<script type="text/javascript" id="vwoCode" src="data:text/javascript;base64,CndpbmRvdy5fdndvX2NvZGUgfHwgKGZ1bmN0aW9uKCkgewp2YXIgYWNjb3VudF9pZD05MzA3MzAsCnZlcnNpb249Mi4xLApzZXR0aW5nc190b2xlcmFuY2U9MjAwMCwKaGlkZV9lbGVtZW50PSdib2R5JywKaGlkZV9lbGVtZW50X3N0eWxlID0gJ29wYWNpdHk6MCAhaW1wb3J0YW50O2ZpbHRlcjphbHBoYShvcGFjaXR5PTApICFpbXBvcnRhbnQ7YmFja2dyb3VuZDpub25lICFpbXBvcnRhbnQ7dHJhbnNpdGlvbjpub25lICFpbXBvcnRhbnQ7JywKLyogRE8gTk9UIEVESVQgQkVMT1cgVEhJUyBMSU5FICovCmY9ZmFsc2Usdz13aW5kb3csZD1kb2N1bWVudCx2PWQucXVlcnlTZWxlY3RvcignI3Z3b0NvZGUnKSxjSz0nX3Z3b18nK2FjY291bnRfaWQrJ19zZXR0aW5ncycsY2M9e307dHJ5e3ZhciBjPUpTT04ucGFyc2UobG9jYWxTdG9yYWdlLmdldEl0ZW0oJ192d29fJythY2NvdW50X2lkKydfY29uZmlnJykpO2NjPWMmJnR5cGVvZiBjPT09J29iamVjdCc/Yzp7fX1jYXRjaChlKXt9dmFyIHN0VD1jYy5zdFQ9PT0nc2Vzc2lvbic/dy5zZXNzaW9uU3RvcmFnZTp3LmxvY2FsU3RvcmFnZTtjb2RlPXtub25jZTp2JiZ2Lm5vbmNlLHVzZV9leGlzdGluZ19qcXVlcnk6ZnVuY3Rpb24oKXtyZXR1cm4gdHlwZW9mIHVzZV9leGlzdGluZ19qcXVlcnkhPT0ndW5kZWZpbmVkJz91c2VfZXhpc3RpbmdfanF1ZXJ5OnVuZGVmaW5lZH0sbGlicmFyeV90b2xlcmFuY2U6ZnVuY3Rpb24oKXtyZXR1cm4gdHlwZW9mIGxpYnJhcnlfdG9sZXJhbmNlIT09J3VuZGVmaW5lZCc/bGlicmFyeV90b2xlcmFuY2U6dW5kZWZpbmVkfSxzZXR0aW5nc190b2xlcmFuY2U6ZnVuY3Rpb24oKXtyZXR1cm4gY2Muc1R8fHNldHRpbmdzX3RvbGVyYW5jZX0saGlkZV9lbGVtZW50X3N0eWxlOmZ1bmN0aW9uKCl7cmV0dXJuJ3snKyhjYy5oRVN8fGhpZGVfZWxlbWVudF9zdHlsZSkrJ30nfSxoaWRlX2VsZW1lbnQ6ZnVuY3Rpb24oKXtpZihwZXJmb3JtYW5jZS5nZXRFbnRyaWVzQnlOYW1lKCdmaXJzdC1jb250ZW50ZnVsLXBhaW50JylbMF0pe3JldHVybicnfXJldHVybiB0eXBlb2YgY2MuaEU9PT0nc3RyaW5nJz9jYy5oRTpoaWRlX2VsZW1lbnR9LGdldFZlcnNpb246ZnVuY3Rpb24oKXtyZXR1cm4gdmVyc2lvbn0sZmluaXNoOmZ1bmN0aW9uKGUpe2lmKCFmKXtmPXRydWU7dmFyIHQ9ZC5nZXRFbGVtZW50QnlJZCgnX3Zpc19vcHRfcGF0aF9oaWRlcycpO2lmKHQpdC5wYXJlbnROb2RlLnJlbW92ZUNoaWxkKHQpO2lmKGUpKG5ldyBJbWFnZSkuc3JjPSdodHRwczovL2Rldi52aXN1YWx3ZWJzaXRlb3B0aW1pemVyLmNvbS9lZS5naWY/YT0nK2FjY291bnRfaWQrZX19LGZpbmlzaGVkOmZ1bmN0aW9uKCl7cmV0dXJuIGZ9LGFkZFNjcmlwdDpmdW5jdGlvbihlKXt2YXIgdD1kLmNyZWF0ZUVsZW1lbnQoJ3NjcmlwdCcpO3QudHlwZT0ndGV4dC9qYXZhc2NyaXB0JztpZihlLnNyYyl7dC5zcmM9ZS5zcmN9ZWxzZXt0LnRleHQ9ZS50ZXh0fXYmJnQuc2V0QXR0cmlidXRlKCdub25jZScsdi5ub25jZSk7ZC5nZXRFbGVtZW50c0J5VGFnTmFtZSgnaGVhZCcpWzBdLmFwcGVuZENoaWxkKHQpfSxsb2FkOmZ1bmN0aW9uKGUsdCl7dmFyIG49dGhpcy5nZXRTZXR0aW5ncygpLGk9ZC5jcmVhdGVFbGVtZW50KCdzY3JpcHQnKSxyPXRoaXM7dD10fHx7fTtpZihuKXtpLnRleHRDb250ZW50PW47ZC5nZXRFbGVtZW50c0J5VGFnTmFtZSgnaGVhZCcpWzBdLmFwcGVuZENoaWxkKGkpO2lmKCF3LlZXT3x8VldPLmNhRSl7c3RULnJlbW92ZUl0ZW0oY0spO3IubG9hZChlKX19ZWxzZXt2YXIgbz1uZXcgWE1MSHR0cFJlcXVlc3Q7by5vcGVuKCdHRVQnLGUsdHJ1ZSk7by53aXRoQ3JlZGVudGlhbHM9IXQuZFNDO28ucmVzcG9uc2VUeXBlPXQucmVzcG9uc2VUeXBlfHwndGV4dCc7by5vbmxvYWQ9ZnVuY3Rpb24oKXtpZih0Lm9ubG9hZENiKXtyZXR1cm4gdC5vbmxvYWRDYihvLGUpfWlmKG8uc3RhdHVzPT09MjAwfHxvLnN0YXR1cz09PTMwNCl7X3Z3b19jb2RlLmFkZFNjcmlwdCh7dGV4dDpvLnJlc3BvbnNlVGV4dH0pfWVsc2V7X3Z3b19jb2RlLmZpbmlzaCgnJmU9bG9hZGluZ19mYWlsdXJlOicrZSl9fTtvLm9uZXJyb3I9ZnVuY3Rpb24oKXtpZih0Lm9uZXJyb3JDYil7cmV0dXJuIHQub25lcnJvckNiKGUpfV92d29fY29kZS5maW5pc2goJyZlPWxvYWRpbmdfZmFpbHVyZTonK2UpfTtvLnNlbmQoKX19LGdldFNldHRpbmdzOmZ1bmN0aW9uKCl7dHJ5e3ZhciBlPXN0VC5nZXRJdGVtKGNLKTtpZighZSl7cmV0dXJufWU9SlNPTi5wYXJzZShlKTtpZihEYXRlLm5vdygpPmUuZSl7c3RULnJlbW92ZUl0ZW0oY0spO3JldHVybn1yZXR1cm4gZS5zfWNhdGNoKGUpe3JldHVybn19LGluaXQ6ZnVuY3Rpb24oKXtpZihkLlVSTC5pbmRleE9mKCdfX3Z3b19kaXNhYmxlX18nKT4tMSlyZXR1cm47dmFyIGU9dGhpcy5zZXR0aW5nc190b2xlcmFuY2UoKTt3Ll92d29fc2V0dGluZ3NfdGltZXI9c2V0VGltZW91dChmdW5jdGlvbigpe192d29fY29kZS5maW5pc2goKTtzdFQucmVtb3ZlSXRlbShjSyl9LGUpO3ZhciB0O2lmKHRoaXMuaGlkZV9lbGVtZW50KCkhPT0nYm9keScpe3Q9ZC5jcmVhdGVFbGVtZW50KCdzdHlsZScpO3ZhciBuPXRoaXMuaGlkZV9lbGVtZW50KCksaT1uP24rdGhpcy5oaWRlX2VsZW1lbnRfc3R5bGUoKTonJyxyPWQuZ2V0RWxlbWVudHNCeVRhZ05hbWUoJ2hlYWQnKVswXTt0LnNldEF0dHJpYnV0ZSgnaWQnLCdfdmlzX29wdF9wYXRoX2hpZGVzJyk7diYmdC5zZXRBdHRyaWJ1dGUoJ25vbmNlJyx2Lm5vbmNlKTt0LnNldEF0dHJpYnV0ZSgndHlwZScsJ3RleHQvY3NzJyk7aWYodC5zdHlsZVNoZWV0KXQuc3R5bGVTaGVldC5jc3NUZXh0PWk7ZWxzZSB0LmFwcGVuZENoaWxkKGQuY3JlYXRlVGV4dE5vZGUoaSkpO3IuYXBwZW5kQ2hpbGQodCl9ZWxzZXt0PWQuZ2V0RWxlbWVudHNCeVRhZ05hbWUoJ2hlYWQnKVswXTt2YXIgaT1kLmNyZWF0ZUVsZW1lbnQoJ2RpdicpO2kuc3R5bGUuY3NzVGV4dD0nei1pbmRleDogMjE0NzQ4MzY0NyAhaW1wb3J0YW50O3Bvc2l0aW9uOiBmaXhlZCAhaW1wb3J0YW50O2xlZnQ6IDAgIWltcG9ydGFudDt0b3A6IDAgIWltcG9ydGFudDt3aWR0aDogMTAwJSAhaW1wb3J0YW50O2hlaWdodDogMTAwJSAhaW1wb3J0YW50O2JhY2tncm91bmQ6IHdoaXRlICFpbXBvcnRhbnQ7JztpLnNldEF0dHJpYnV0ZSgnaWQnLCdfdmlzX29wdF9wYXRoX2hpZGVzJyk7aS5jbGFzc0xpc3QuYWRkKCdfdmlzX2hpZGVfbGF5ZXInKTt0LnBhcmVudE5vZGUuaW5zZXJ0QmVmb3JlKGksdC5uZXh0U2libGluZyl9dmFyIG89d2luZG93Ll92aXNfb3B0X3VybHx8ZC5VUkwscz0naHR0cHM6Ly9kZXYudmlzdWFsd2Vic2l0ZW9wdGltaXplci5jb20vai5waHA/YT0nK2FjY291bnRfaWQrJyZ1PScrZW5jb2RlVVJJQ29tcG9uZW50KG8pKycmdm49Jyt2ZXJzaW9uO2lmKHcubG9jYXRpb24uc2VhcmNoLmluZGV4T2YoJ192d29feGhyJykhPT0tMSl7dGhpcy5hZGRTY3JpcHQoe3NyYzpzfSl9ZWxzZXt0aGlzLmxvYWQocysnJng9dHJ1ZScpfX19O3cuX3Z3b19jb2RlPWNvZGU7Y29kZS5pbml0KCk7fSkoKTsK" data-rocket-status="executed">
+window._vwo_code || (function() {
+var account_id=930730,
+version=2.1,
+settings_tolerance=2000,
+hide_element='body',
+hide_element_style = 'opacity:0 !important;filter:alpha(opacity=0) !important;background:none !important;transition:none !important;',
+/* DO NOT EDIT BELOW THIS LINE */
+f=false,w=window,d=document,v=d.querySelector('#vwoCode'),cK='_vwo_'+account_id+'_settings',cc={};try{var c=JSON.parse(localStorage.getItem('_vwo_'+account_id+'_config'));cc=c&&typeof c==='object'?c:{}}catch(e){}var stT=cc.stT==='session'?w.sessionStorage:w.localStorage;code={nonce:v&&v.nonce,use_existing_jquery:function(){return typeof use_existing_jquery!=='undefined'?use_existing_jquery:undefined},library_tolerance:function(){return typeof library_tolerance!=='undefined'?library_tolerance:undefined},settings_tolerance:function(){return cc.sT||settings_tolerance},hide_element_style:function(){return'{'+(cc.hES||hide_element_style)+'}'},hide_element:function(){if(performance.getEntriesByName('first-contentful-paint')[0]){return''}return typeof cc.hE==='string'?cc.hE:hide_element},getVersion:function(){return version},finish:function(e){if(!f){f=true;var t=d.getElementById('_vis_opt_path_hides');if(t)t.parentNode.removeChild(t);if(e)(new Image).src='https://dev.visualwebsiteoptimizer.com/ee.gif?a='+account_id+e}},finished:function(){return f},addScript:function(e){var t=d.createElement('script');t.type='text/javascript';if(e.src){t.src=e.src}else{t.text=e.text}v&&t.setAttribute('nonce',v.nonce);d.getElementsByTagName('head')[0].appendChild(t)},load:function(e,t){var n=this.getSettings(),i=d.createElement('script'),r=this;t=t||{};if(n){i.textContent=n;d.getElementsByTagName('head')[0].appendChild(i);if(!w.VWO||VWO.caE){stT.removeItem(cK);r.load(e)}}else{var o=new XMLHttpRequest;o.open('GET',e,true);o.withCredentials=!t.dSC;o.responseType=t.responseType||'text';o.onload=function(){if(t.onloadCb){return t.onloadCb(o,e)}if(o.status===200||o.status===304){_vwo_code.addScript({text:o.responseText})}else{_vwo_code.finish('&e=loading_failure:'+e)}};o.onerror=function(){if(t.onerrorCb){return t.onerrorCb(e)}_vwo_code.finish('&e=loading_failure:'+e)};o.send()}},getSettings:function(){try{var e=stT.getItem(cK);if(!e){return}e=JSON.parse(e);if(Date.now()>e.e){stT.removeItem(cK);return}return e.s}catch(e){return}},init:function(){if(d.URL.indexOf('__vwo_disable__')>-1)return;var e=this.settings_tolerance();w._vwo_settings_timer=setTimeout(function(){_vwo_code.finish();stT.removeItem(cK)},e);var t;if(this.hide_element()!=='body'){t=d.createElement('style');var n=this.hide_element(),i=n?n+this.hide_element_style():'',r=d.getElementsByTagName('head')[0];t.setAttribute('id','_vis_opt_path_hides');v&&t.setAttribute('nonce',v.nonce);t.setAttribute('type','text/css');if(t.styleSheet)t.styleSheet.cssText=i;else t.appendChild(d.createTextNode(i));r.appendChild(t)}else{t=d.getElementsByTagName('head')[0];var i=d.createElement('div');i.style.cssText='z-index: 2147483647 !important;position: fixed !important;left: 0 !important;top: 0 !important;width: 100% !important;height: 100% !important;background: white !important;';i.setAttribute('id','_vis_opt_path_hides');i.classList.add('_vis_hide_layer');t.parentNode.insertBefore(i,t.nextSibling)}var o=window._vis_opt_url||d.URL,s='https://dev.visualwebsiteoptimizer.com/j.php?a='+account_id+'&u='+encodeURIComponent(o)+'&vn='+version;if(w.location.search.indexOf('_vwo_xhr')!==-1){this.addScript({src:s})}else{this.load(s+'&x=true')}}};w._vwo_code=code;code.init();})();
+</script>
+<!-- End VWO Async SmartCode --><style id="wpr-lazyload-bg-container"></style><style id="wpr-lazyload-bg-exclusion">.circle-icon{--wpr-bg-ee9e9788-8aad-4863-a89b-dbfbad271cfa: url('images/halfellipse.svg');}</style>
+<noscript>
+<style id="wpr-lazyload-bg-nostyle">#landing-carousel .owl-slide::before{--wpr-bg-04366822-9a38-43d9-a82c-15b7d86d230a: url('https://ticket.atthetop.ae/wp-content/themes/salient-att-child/assets/images/rectangebg.png');}.mainWrapperAtt
+    .collapsable-sidenav
+    .upper-portion
+    .navbar-nav
+    .nav-title
+    span::after{--wpr-bg-c3eb10c0-7d9f-4b57-93aa-ed805c0c9443: url('https://ticket.atthetop.ae/wp-content/themes/salient-att-child/assets/images/svg/arrowright-black.svg');}.footer .circle-icon{--wpr-bg-47263751-d4d1-4cb1-a720-df12140957db: url('https://ticket.atthetop.ae/wp-content/themes/salient-att-child/assets/images/svg/btn.svg');}.btn-footer-default{--wpr-bg-b9a8cdfb-c270-48b3-9890-7d9860918fac: url('https://ticket.atthetop.ae/wp-content/themes/salient-att-child/assets/images/svg/btn.svg');}.footer .footer-content .responsive-head::after{--wpr-bg-239b3cb5-f96b-4300-9357-e495f8c0b9e5: url('https://ticket.atthetop.ae/wp-content/themes/salient-att-child/assets/images/svg/arrowright-black.svg');}#faq .card .card-header .btn-header-link:after{--wpr-bg-89ec1ab9-b33b-4a75-9b01-1636d34557e9: url('https://ticket.atthetop.ae/wp-content/themes/salient-att-child/assets/images/dropdown-top.svg');}#faq .card .card-header .btn-header-link.collapsed:after{--wpr-bg-1d9225be-0516-4636-92ed-d397061ab1db: url('https://ticket.atthetop.ae/wp-content/themes/salient-att-child/assets/images/dropdown-down.svg');}.chipbox{--wpr-bg-bbf4fd0b-794b-4849-9a20-86a3f3ab3044: url('https://ticket.atthetop.ae/wp-content/themes/salient-att-child/assets/images/svg/polygon.svg');}.owl-carousel .owl-video-play-icon{--wpr-bg-a47c32ea-5629-4a19-a48d-c05efc066333: url('https://ticket.atthetop.ae/wp-content/themes/salient-att-child/assets/css/owl.video.play.png');}.wpforms-container .wpforms-datepicker-wrap .wpforms-datepicker-clear{--wpr-bg-a392efd8-52c9-47b7-a481-58eb3a1d3937: url('https://ticket.atthetop.ae/wp-content/plugins/wpforms/assets/pro/images/times-solid-white.svg');}.otgs-development-site-front-end .icon{--wpr-bg-e29dd64c-0c52-4441-9d8c-d35aabd400e8: url('https://ticket.atthetop.ae/wp-content/plugins/sitepress-multilingual-cms/vendor/otgs/installer//res/img/icon-wpml-info-white.svg');}</style>
+</noscript>
+<script type="application/javascript">const rocket_pairs = [{"selector":"#landing-carousel .owl-slide","style":"#landing-carousel .owl-slide::before{--wpr-bg-04366822-9a38-43d9-a82c-15b7d86d230a: url('https:\/\/ticket.atthetop.ae\/wp-content\/themes\/salient-att-child\/assets\/images\/rectangebg.png');}","hash":"04366822-9a38-43d9-a82c-15b7d86d230a","url":"https:\/\/ticket.atthetop.ae\/wp-content\/themes\/salient-att-child\/assets\/images\/rectangebg.png"},{"selector":".mainWrapperAtt\r\n    .collapsable-sidenav\r\n    .upper-portion\r\n    .navbar-nav\r\n    .nav-title\r\n    span","style":".mainWrapperAtt\r\n    .collapsable-sidenav\r\n    .upper-portion\r\n    .navbar-nav\r\n    .nav-title\r\n    span::after{--wpr-bg-c3eb10c0-7d9f-4b57-93aa-ed805c0c9443: url('https:\/\/ticket.atthetop.ae\/wp-content\/themes\/salient-att-child\/assets\/images\/svg\/arrowright-black.svg');}","hash":"c3eb10c0-7d9f-4b57-93aa-ed805c0c9443","url":"https:\/\/ticket.atthetop.ae\/wp-content\/themes\/salient-att-child\/assets\/images\/svg\/arrowright-black.svg"},{"selector":".footer .circle-icon","style":".footer .circle-icon{--wpr-bg-47263751-d4d1-4cb1-a720-df12140957db: url('https:\/\/ticket.atthetop.ae\/wp-content\/themes\/salient-att-child\/assets\/images\/svg\/btn.svg');}","hash":"47263751-d4d1-4cb1-a720-df12140957db","url":"https:\/\/ticket.atthetop.ae\/wp-content\/themes\/salient-att-child\/assets\/images\/svg\/btn.svg"},{"selector":".btn-footer-default","style":".btn-footer-default{--wpr-bg-b9a8cdfb-c270-48b3-9890-7d9860918fac: url('https:\/\/ticket.atthetop.ae\/wp-content\/themes\/salient-att-child\/assets\/images\/svg\/btn.svg');}","hash":"b9a8cdfb-c270-48b3-9890-7d9860918fac","url":"https:\/\/ticket.atthetop.ae\/wp-content\/themes\/salient-att-child\/assets\/images\/svg\/btn.svg"},{"selector":".footer .footer-content .responsive-head","style":".footer .footer-content .responsive-head::after{--wpr-bg-239b3cb5-f96b-4300-9357-e495f8c0b9e5: url('https:\/\/ticket.atthetop.ae\/wp-content\/themes\/salient-att-child\/assets\/images\/svg\/arrowright-black.svg');}","hash":"239b3cb5-f96b-4300-9357-e495f8c0b9e5","url":"https:\/\/ticket.atthetop.ae\/wp-content\/themes\/salient-att-child\/assets\/images\/svg\/arrowright-black.svg"},{"selector":"#faq .card .card-header .btn-header-link","style":"#faq .card .card-header .btn-header-link:after{--wpr-bg-89ec1ab9-b33b-4a75-9b01-1636d34557e9: url('https:\/\/ticket.atthetop.ae\/wp-content\/themes\/salient-att-child\/assets\/images\/dropdown-top.svg');}","hash":"89ec1ab9-b33b-4a75-9b01-1636d34557e9","url":"https:\/\/ticket.atthetop.ae\/wp-content\/themes\/salient-att-child\/assets\/images\/dropdown-top.svg"},{"selector":"#faq .card .card-header .btn-header-link.collapsed","style":"#faq .card .card-header .btn-header-link.collapsed:after{--wpr-bg-1d9225be-0516-4636-92ed-d397061ab1db: url('https:\/\/ticket.atthetop.ae\/wp-content\/themes\/salient-att-child\/assets\/images\/dropdown-down.svg');}","hash":"1d9225be-0516-4636-92ed-d397061ab1db","url":"https:\/\/ticket.atthetop.ae\/wp-content\/themes\/salient-att-child\/assets\/images\/dropdown-down.svg"},{"selector":".chipbox","style":".chipbox{--wpr-bg-bbf4fd0b-794b-4849-9a20-86a3f3ab3044: url('https:\/\/ticket.atthetop.ae\/wp-content\/themes\/salient-att-child\/assets\/images\/svg\/polygon.svg');}","hash":"bbf4fd0b-794b-4849-9a20-86a3f3ab3044","url":"https:\/\/ticket.atthetop.ae\/wp-content\/themes\/salient-att-child\/assets\/images\/svg\/polygon.svg"},{"selector":".owl-carousel .owl-video-play-icon","style":".owl-carousel .owl-video-play-icon{--wpr-bg-a47c32ea-5629-4a19-a48d-c05efc066333: url('https:\/\/ticket.atthetop.ae\/wp-content\/themes\/salient-att-child\/assets\/css\/owl.video.play.png');}","hash":"a47c32ea-5629-4a19-a48d-c05efc066333","url":"https:\/\/ticket.atthetop.ae\/wp-content\/themes\/salient-att-child\/assets\/css\/owl.video.play.png"},{"selector":".wpforms-container .wpforms-datepicker-wrap .wpforms-datepicker-clear","style":".wpforms-container .wpforms-datepicker-wrap .wpforms-datepicker-clear{--wpr-bg-a392efd8-52c9-47b7-a481-58eb3a1d3937: url('https:\/\/ticket.atthetop.ae\/wp-content\/plugins\/wpforms\/assets\/pro\/images\/times-solid-white.svg');}","hash":"a392efd8-52c9-47b7-a481-58eb3a1d3937","url":"https:\/\/ticket.atthetop.ae\/wp-content\/plugins\/wpforms\/assets\/pro\/images\/times-solid-white.svg"},{"selector":".otgs-development-site-front-end .icon","style":".otgs-development-site-front-end .icon{--wpr-bg-e29dd64c-0c52-4441-9d8c-d35aabd400e8: url('https:\/\/ticket.atthetop.ae\/wp-content\/plugins\/sitepress-multilingual-cms\/vendor\/otgs\/installer\/\/res\/img\/icon-wpml-info-white.svg');}","hash":"e29dd64c-0c52-4441-9d8c-d35aabd400e8","url":"https:\/\/ticket.atthetop.ae\/wp-content\/plugins\/sitepress-multilingual-cms\/vendor\/otgs\/installer\/\/res\/img\/icon-wpml-info-white.svg"}]; const rocket_excluded_pairs = [{"selector":".circle-icon","style":".circle-icon{--wpr-bg-ee9e9788-8aad-4863-a89b-dbfbad271cfa: url('https:\/\/ticket.atthetop.ae\/wp-content\/themes\/salient-att-child\/assets\/images\/halfellipse.svg');}","hash":"ee9e9788-8aad-4863-a89b-dbfbad271cfa","url":"https:\/\/ticket.atthetop.ae\/wp-content\/themes\/salient-att-child\/assets\/images\/halfellipse.svg"}];</script><script>
+    var language_site = 'en'
+</script><script async="" src="js/hotjar-5083873.js"></script></head>
+
+<body class="page-template page-template-template-experiences page-template-template-experiences-php page page-id-148  app-lang-en en material">
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-T3GKDZ" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->        <div id="site-loader">
+        <div class="loading">
+            <img width="1080" height="1080" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%201080%201080'%3E%3C/svg%3E" alt="Loader" data-lazy-src="https://ticket.atthetop.ae/wp-content/uploads/sites/2/2023/09/Att-Loader.gif"><noscript><img width="1080" height="1080" src="https://ticket.atthetop.ae/wp-content/uploads/sites/2/2023/09/Att-Loader.gif" alt="Loader" /></noscript>
+        </div>
+    </div>
+    <main class="mainwrapper mainWrapperAtt">
+        <div class="sidenav-overlay">
+            <div class="collapsable-sidenav">
+                <div class="upper-portion">
+                    <ul id="menu-primary-menu" class="navbar-nav mobile-menu-static m-auto"><li class="nav-list"><a class="active" href="/ticket.atthetop.ae/experiences/index.html">Experiences</a>
+                        <ul class="megamenu">
+	<li><a class="menu-heading" href="#">Observation Decks</a>
+	<ul>
+		<li><a href="/ticket.atthetop.ae/experiences/the-lounge/index.html">The Lounge, Burj Khalifa</a>
+</li>
+		<li><a href="/ticket.atthetop.ae/experiences/at-the-top-sky/index.html">At the Top, Burj Khalifa, SKY</a>
+</li>
+		<li><a href="/ticket.atthetop.ae/experiences/at-the-top-burj-khalifa/index.html">At the Top, Burj Khalifa</a>
+</li>
+	</ul>
+
+</li>
+	<li><a class="menu-heading" href="#">More Experiences</a>
+        <ul>
+		<li><a href="/ticket.atthetop.ae/experiences/sky-view-observatory/index.html">Sky Views Observatory</a>
+</li>
+		<li><a href="/ticket.atthetop.ae/experiences/sky-view-edge-walk/index.html">Sky Views Edge Walk</a>
+</li>
+		<li><a href="/ticket.atthetop.ae/experiences/dubai-opera-grand-tour/index.html">Dubai Opera Grand Tour</a>
+</li>
+		<li><a href="/ticket.atthetop.ae/experiences/dubai-fountain-lake-ride/index.html">Dubai Fountain Lake Ride</a>
+</li>
+		<li><a href="/ticket.atthetop.ae/experiences/dubai-fountain-broadwalk/index.html">Dubai Fountain Boardwalk</a>
+</li>
+	</ul>
+
+</li>
+</ul>
+
+</li>
+<li class="nav-list"><a href="/ticket.atthetop.ae/tickets/index.html">Tickets</a>
+<ul class="megamenu">
+	<li><a class="menu-heading" href="#">Book Experience</a>
+	<ul>
+		<li><a href="/ticket.atthetop.ae/tickets/book-tickets/index.html">Book Tickets</a>
+</li>
+		<li><a href="/ticket.atthetop.ae/tickets/book-tickets/index.html">Explore Packages</a>
+</li>
+		<li><a href="/ticket.atthetop.ae/tickets/find-my-booking/index.html">Find My Booking</a>
+</li>
+	</ul>
+
+</li>
+	<li><a class="menu-heading" href="#">OTHER ACTIVITIES</a>
+	<ul>
+		<li><a href="/ticket.atthetop.ae/tickets/group-visit/index.html">Group Visits</a>
+</li>
+		<li><a href="/ticket.atthetop.ae/tickets/school-visit/index.html">School Trip</a>
+</li>
+	</ul>
+
+</li>
+	<li><a class="menu-heading" href="#">Other Information</a>
+	<ul>
+		<li><a href="/ticket.atthetop.ae/tickets/frequently-asked-questions/index.html">FAQs</a>
+</li>
+	</ul>
+
+</li>
+</ul>
+
+</li>
+<li class="nav-list"><a target="_blank" href="/ticket.atthetop.ae/burjkhalifa.ae/index.html">Burj Khalifa</a>
+</li>
+</ul>                    <a href="/ticket.atthetop.ae/cart/index.html" class="cart-notify-cover header-cart-icon">
+                        <div class="position-relative cart-notify">
+                            <img src="images/cart.svg" alt="Cart" width="30" height="30">
+                            <span class="count cart_count" style="display: none;">0</span>
+                        </div>
+                        Cart                    </a>
+                </div>
+                <div class="change-language-cover dropdown lang-icon-header header-language-icon">
+                    Change Language                    <figure class="action-btn side-border dropbtn">
+                        <img width="17" height="18" src="images/lang.svg" alt="Language">
+                    </figure>
+                    <div class="dropdown-content">
+                        <h6>Change Language</h6>
+                        <a class="dropdown-item change-language-event" id="default" href="/ticket.atthetop.ae/experiences/index.html">English</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <nav class="navbar navbar-expand-md navbar-default header">
+            <div class="navbar-content">
+                <a class="brand-logo navbar-brand p-0 m-0" href="/index.html">
+                    <img src="images/att-logo-vector-1.svg" alt="At the Top Burj Khalifa logo" width="200" height="50">
+                </a>
+                <div class="collapse navbar-collapse middle-navbar">
+                    <ul id="menu-primary-menu-1" class="navbar-nav navbar-for-desktop m-auto"><li class="nav-list"><a class="active" href="/ticket.atthetop.ae/experiences/index.html">Experiences</a>
+                        <ul class="megamenu">
+	<li><a class="menu-heading" href="#">Observation Decks</a>
+	<ul>
+		<li><a href="/ticket.atthetop.ae/experiences/the-lounge/index.html">The Lounge, Burj Khalifa</a>
+</li>
+		<li><a href="/ticket.atthetop.ae/experiences/at-the-top-sky/index.html">At the Top, Burj Khalifa, SKY</a>
+</li>
+		<li><a href="/ticket.atthetop.ae/experiences/at-the-top-burj-khalifa/index.html">At the Top, Burj Khalifa</a>
+</li>
+	</ul>
+
+</li>
+	<li><a class="menu-heading" href="#">More Experiences</a>
+        <ul>
+		<li><a href="/ticket.atthetop.ae/experiences/sky-view-observatory/index.html">Sky Views Observatory</a>
+</li>
+		<li><a href="/ticket.atthetop.ae/experiences/sky-view-edge-walk/index.html">Sky Views Edge Walk</a>
+</li>
+		<li><a href="/ticket.atthetop.ae/experiences/dubai-opera-grand-tour/index.html">Dubai Opera Grand Tour</a>
+</li>
+		<li><a href="/ticket.atthetop.ae/experiences/dubai-fountain-lake-ride/index.html">Dubai Fountain Lake Ride</a>
+</li>
+		<li><a href="/ticket.atthetop.ae/experiences/dubai-fountain-broadwalk/index.html">Dubai Fountain Boardwalk</a>
+</li>
+	</ul>
+
+</li>
+</ul>
+
+</li>
+<li class="nav-list"><a href="/ticket.atthetop.ae/tickets/index.html">Tickets</a>
+<ul class="megamenu">
+	<li><a class="menu-heading" href="#">Book Experience</a>
+	<ul>
+		<li><a href="/ticket.atthetop.ae/tickets/book-tickets/index.html">Book Tickets</a>
+</li>
+		<li><a href="/ticket.atthetop.ae/tickets/book-tickets/index.html">Explore Packages</a>
+</li>
+		<li><a href="/ticket.atthetop.ae/tickets/find-my-booking/index.html">Find My Booking</a>
+</li>
+	</ul>
+
+</li>
+	<li><a class="menu-heading" href="#">OTHER ACTIVITIES</a>
+	<ul>
+		<li><a href="/ticket.atthetop.ae/tickets/group-visit/index.html">Group Visits</a>
+</li>
+		<li><a href="/ticket.atthetop.ae/tickets/school-visit/index.html">School Trip</a>
+</li>
+	</ul>
+
+</li>
+	<li><a class="menu-heading" href="#">Other Information</a>
+	<ul>
+		<li><a href="/ticket.atthetop.ae/tickets/frequently-asked-questions/index.html">FAQs</a>
+</li>
+	</ul>
+
+</li>
+</ul>
+
+</li>
+<li class="nav-list"><a target="_blank" href="/ticket.atthetop.ae/burjkhalifa.ae/index.html">Burj Khalifa</a>
+</li>
+</ul>                </div>
+                <div class="right-action-col">
+                    <a href="/ticket.atthetop.ae/tickets/book-tickets/index.html" class="book-ticket header-book-ticket-icon">
+                        <img src="images/ticket.svg" alt="book-ticket" width="25" height="25">
+                        Book tickets                    </a>
+                    <div class="action-group">
+                        <div class="dropdown lang-icon-header header-language-icon">
+                            <figure class="action-btn side-border dropbtn">
+                                <img src="images/lang.svg" alt="language icon" width="25" height="25">
+                            </figure>
+                            <div class="dropdown-content">
+                                <h6>Change Language</h6>
+                                <a class="dropdown-item change-language-event" id="default" href="/ticket.atthetop.ae/experiences/index.html">English</a>
+                            </div>
+                        </div>
+                        <a class="action-btn position-relative cart-notify header-cart-icon" href="/ticket.atthetop.ae/cart/index.html">
+                            <div class="cart-img-cover">
+                                <img src="images/cart.svg" alt="Cart Mobile" width="30" height="30">
+                                <span class="count cart_count" style="display: none;">0</span>
+                            </div>
+                        </a>
+                        <div class="action-btn hamburger-icon" id="hamburgerIcon">
+                            <div class="bar"></div>
+                            <div class="bar"></div>
+                            <div class="bar"></div>
+                            <span class="count cart_count count-1 header-cart-icon" style="display: none;">0</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>            
+<div id="experiences">
+            <section class="background section">
+        <div class="breadcrumb-top">
+               <ul class="breadcrumb"><li class="breadcrumb-item">
+                        <a href="/index.html" class="">HOME</a>
+                    </li><li class="breadcrumb-item">EXPERIENCES</li></ul>            </div>
+                                            <div data-bg="https://ticket.atthetop.ae/wp-content/uploads/sites/2/2024/01/MicrosoftTeams-image-712.webp" class="sec1 common_sec rocket-lazyload" style="background-size: cover;background-position: top;background-repeat: no-repeat;">
+                    <div class="text_slide_container">
+                        <div class="exper-slide">
+                            <!-- <div class="threesixty_section">
+                            <img width="500" height="500" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20500%20500'%3E%3C/svg%3E" data-lazy-src="https://ticket.atthetop.ae/wp-content/themes/salient-att-child/assets/images/360.gif"><noscript><img width="500" height="500" src="https://ticket.atthetop.ae/wp-content/themes/salient-att-child/assets/images/360.gif"></noscript>
+                        </div> -->
+                            <div class="container-fluid lounge_container_section">
+                                <div class="row">
+                                    <div class="col-lg-7 col-md-7 col-12">
+                                        <div class="txt_anim_panel txt_anim0">
+                                            <div class="lounge_banner my-4">
+                                                <div class="d-flex align-items-center">
+                                                    <h1 class="lounge_text label2 text-white">Observation Decks</h1>
+                                                                                                        <img src="images/luxury-en.svg" width="97px" alt="luxury experience icon in English">
+                                                </div>
+                                                <div class="lounge_subheading heading2">The Lounge, Burj Khalifa</div>
+                                                <div class="lounge_para">
+                                                                                                                <span class="ln1">Indulge in luxury while enjoying a fine selection of beverages and </span>
+                                                                                                                    <span class="ln2">gourmet canapés at the world’s highest lounge, set 585 metres up. </span>
+                                                                                                                    <span class="ln3">Savour the views and take an exclusive tour of the outdoor terrace. </span>
+                                                                                                        </div>
+                                            </div>
+
+                                            <div class="action-btn-group d-flex justify-content-left mb-4 align-items-center">
+                                                <div class="lounge_book_btn_wrap">
+                                                    <a href="/ticket.atthetop.ae/tickets/book-tickets/index.html" target="" class="btn lounge_book_btn">
+                                                        <span class=" d-flex align-items-center gap-10">
+                                                        <svg class="btnbook" xmlns="http://www.w3.org/2000/svg" width="8" height="14" viewBox="0 0 8 14" fill="none">
+                                                <path id="Vector" d="M1 13L6.53846 7.00027L1 1" stroke="" stroke-width="2" stroke-miterlimit="10"></path>
+                                            </svg>
+                                                            <!-- <img width="8" height="14" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%208%2014'%3E%3C/svg%3E" class="btnbook" data-lazy-src="https://ticket.atthetop.ae/wp-content/themes/salient-att-child/assets/images/rightarrow.svg"><noscript><img width="8" height="14" src="https://ticket.atthetop.ae/wp-content/themes/salient-att-child/assets/images/rightarrow.svg" class="btnbook"></noscript> -->
+                                                            <span>Book Now</span></span>
+                                                    </a>
+                                                </div>
+                                                <a href="/ticket.atthetop.ae/experiences/the-lounge/index.html" class="btn lounge_detail_btn fs-20 ml-90">
+                                                    <div class="circle-btn d-flex align-items-center gap-10">
+                                                        <div class="circle-icon" data-rocket-lazy-bg-ee9e9788-8aad-4863-a89b-dbfbad271cfa="excluded">
+                                                        <svg width="8" height="14" viewBox="0 0 8 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M1 13L6.53846 7.00027L1 1" stroke="" stroke-width="1.5" stroke-miterlimit="10"></path>
+</svg>
+                                                        </div>
+                                                        <div class="text-white viewdetailbtn">View Details</div>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-5 col-md-5 col-12 position-relative">
+                                    <div class="tower_img_section">
+                                                                                <div class="tower-level level1">
+                                            <div class="level1_txt">Level 152,153 & 154</div> <span></span>
+                                        </div>
+                                                                                <div class="tower-level level2">
+                                            <div class="level2_txt">Level 148</div> <span></span>
+                                        </div>
+                                                                                <div class="tower-level level3">
+                                            <div class="level3_txt">Level 124,125</div> <span></span>
+                                        </div>
+                                                                                <img width="62" height="251" src="images/burjkhalifa-tower.png" class="towerimg" alt="Burj Khalifa tower image">
+
+                                    </div>
+                                </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                                </section>
+            <section class="background section">
+        <div class="breadcrumb-top">
+               <ul class="breadcrumb"><li class="breadcrumb-item">
+                        <a href="/index.html" class="">HOME</a>
+                    </li><li class="breadcrumb-item">EXPERIENCES</li></ul>            </div>
+                                            <div data-bg="https://ticket.atthetop.ae/wp-content/uploads/sites/2/2024/01/73A8907-2113.webp" class="sec2 common_sec rocket-lazyload" style="background-size: cover;background-position: top;background-repeat: no-repeat;">
+                    <div class="text_slide_container">
+                        <div class="exper-slide">
+                            <!-- <div class="threesixty_section">
+                            <img width="500" height="500" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20500%20500'%3E%3C/svg%3E" data-lazy-src="https://ticket.atthetop.ae/wp-content/themes/salient-att-child/assets/images/360.gif"><noscript><img width="500" height="500" src="https://ticket.atthetop.ae/wp-content/themes/salient-att-child/assets/images/360.gif"></noscript>
+                        </div> -->
+                            <div class="container-fluid lounge_container_section">
+                                <div class="row">
+                                    <div class="col-lg-7 col-md-7 col-12">
+                                        <div class="txt_anim_panel txt_anim1">
+                                            <div class="lounge_banner my-4">
+                                                <div class="d-flex align-items-center">
+                                                    <h1 class="lounge_text label2 text-white">Observation Decks</h1>
+                                                                                                        <img src="images/premium-en.svg" width="97px" alt="premium experience icon in English">
+                                                </div>
+                                                <div class="lounge_subheading heading2">At the Top, Burj Khalifa, SKY</div>
+                                                <div class="lounge_para">
+                                                                                                                <span class="ln1">Located on Level 148 at Burj Khalifa, At the Top, Burj Khalifa SKY </span>
+                                                                                                                    <span class="ln2">offers an elevated experience in one of Dubai’s highest observation </span>
+                                                                                                                    <span class="ln3">decks. Savour delightful Arabic sweets and fragrant Arabian coffee as </span>
+                                                                                                                    <span class="ln4">you enjoy a guided tour by a Guest Ambassador. </span>
+                                                                                                        </div>
+                                            </div>
+
+                                            <div class="action-btn-group d-flex justify-content-left mb-4 align-items-center">
+                                                <div class="lounge_book_btn_wrap">
+                                                    <a href="/ticket.atthetop.ae/tickets/book-tickets/index.html" target="" class="btn lounge_book_btn">
+                                                        <span class=" d-flex align-items-center gap-10">
+                                                        <svg class="btnbook" xmlns="http://www.w3.org/2000/svg" width="8" height="14" viewBox="0 0 8 14" fill="none">
+                                                <path id="Vector" d="M1 13L6.53846 7.00027L1 1" stroke="" stroke-width="2" stroke-miterlimit="10"></path>
+                                            </svg>
+                                                            <!-- <img width="8" height="14" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%208%2014'%3E%3C/svg%3E" class="btnbook" data-lazy-src="https://ticket.atthetop.ae/wp-content/themes/salient-att-child/assets/images/rightarrow.svg"><noscript><img width="8" height="14" src="https://ticket.atthetop.ae/wp-content/themes/salient-att-child/assets/images/rightarrow.svg" class="btnbook"></noscript> -->
+                                                            <span>Book Now</span></span>
+                                                    </a>
+                                                </div>
+                                                <a href="/ticket.atthetop.ae/experiences/at-the-top-sky/index.html" class="btn lounge_detail_btn fs-20 ml-90">
+                                                    <div class="circle-btn d-flex align-items-center gap-10">
+                                                        <div class="circle-icon" data-rocket-lazy-bg-ee9e9788-8aad-4863-a89b-dbfbad271cfa="excluded">
+                                                        <svg width="8" height="14" viewBox="0 0 8 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M1 13L6.53846 7.00027L1 1" stroke="" stroke-width="1.5" stroke-miterlimit="10"></path>
+</svg>
+                                                        </div>
+                                                        <div class="text-white viewdetailbtn">View Details</div>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-5 col-md-5 col-12 position-relative">
+                                    <div class="tower_img_section">
+                                                                                <div class="tower-level level1">
+                                            <div class="level1_txt">Level 152,153 & 154</div> <span></span>
+                                        </div>
+                                                                                <div class="tower-level level2">
+                                            <div class="level2_txt">Level 148</div> <span></span>
+                                        </div>
+                                                                                <div class="tower-level level3">
+                                            <div class="level3_txt">Level 124,125</div> <span></span>
+                                        </div>
+                                                                                <img width="62" height="251" src="images/burjkhalifa-tower2.png" class="towerimg" alt="Burj Khalifa at night">
+
+                                    </div>
+                                </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                                </section>
+            <section class="background section">
+        <div class="breadcrumb-top">
+               <ul class="breadcrumb"><li class="breadcrumb-item">
+                        <a href="/index.html" class="">HOME</a>
+                    </li><li class="breadcrumb-item">EXPERIENCES</li></ul>            </div>
+                                            <div data-bg="https://ticket.atthetop.ae/wp-content/uploads/sites/2/2023/12/MicrosoftTeams-image-10-scaled.jpg" class="sec3 common_sec rocket-lazyload" style="background-size: cover;background-position: top;background-repeat: no-repeat;">
+                    <div class="text_slide_container">
+                        <div class="exper-slide">
+                            <!-- <div class="threesixty_section">
+                            <img width="500" height="500" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20500%20500'%3E%3C/svg%3E" data-lazy-src="https://ticket.atthetop.ae/wp-content/themes/salient-att-child/assets/images/360.gif"><noscript><img width="500" height="500" src="https://ticket.atthetop.ae/wp-content/themes/salient-att-child/assets/images/360.gif"></noscript>
+                        </div> -->
+                            <div class="container-fluid lounge_container_section">
+                                <div class="row">
+                                    <div class="col-lg-7 col-md-7 col-12">
+                                        <div class="txt_anim_panel txt_anim2">
+                                            <div class="lounge_banner my-4">
+                                                <div class="d-flex align-items-center">
+                                                    <h1 class="lounge_text label2 text-white">Observation Decks</h1>
+                                                                                                        <img src="images/classic-en.svg" width="97px" alt="classic experience icon in English">
+                                                </div>
+                                                <div class="lounge_subheading heading2">At the Top, Burj Khalifa</div>
+                                                <div class="lounge_para">
+                                                                                                                <span class="ln1">Enjoy an elevated experience on Levels 124 and 125 of the iconic Burj </span>
+                                                                                                                    <span class="ln2">Khalifa. Relish the views of Dubai from a breathtaking height of 456 </span>
+                                                                                                                    <span class="ln3">metres and be mesmerized by the panoramic views. </span>
+                                                                                                        </div>
+                                            </div>
+
+                                            <div class="action-btn-group d-flex justify-content-left mb-4 align-items-center">
+                                                <div class="lounge_book_btn_wrap">
+                                                    <a href="/ticket.atthetop.ae/tickets/book-tickets/index.html" target="" class="btn lounge_book_btn">
+                                                        <span class=" d-flex align-items-center gap-10">
+                                                        <svg class="btnbook" xmlns="http://www.w3.org/2000/svg" width="8" height="14" viewBox="0 0 8 14" fill="none">
+                                                <path id="Vector" d="M1 13L6.53846 7.00027L1 1" stroke="" stroke-width="2" stroke-miterlimit="10"></path>
+                                            </svg>
+                                                            <!-- <img width="8" height="14" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%208%2014'%3E%3C/svg%3E" class="btnbook" data-lazy-src="https://ticket.atthetop.ae/wp-content/themes/salient-att-child/assets/images/rightarrow.svg"><noscript><img width="8" height="14" src="https://ticket.atthetop.ae/wp-content/themes/salient-att-child/assets/images/rightarrow.svg" class="btnbook"></noscript> -->
+                                                            <span>Book Now</span></span>
+                                                    </a>
+                                                </div>
+                                                <a href="/ticket.atthetop.ae/experiences/at-the-top-burj-khalifa/index.html" class="btn lounge_detail_btn fs-20 ml-90">
+                                                    <div class="circle-btn d-flex align-items-center gap-10">
+                                                        <div class="circle-icon" data-rocket-lazy-bg-ee9e9788-8aad-4863-a89b-dbfbad271cfa="excluded">
+                                                        <svg width="8" height="14" viewBox="0 0 8 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M1 13L6.53846 7.00027L1 1" stroke="" stroke-width="1.5" stroke-miterlimit="10"></path>
+</svg>
+                                                        </div>
+                                                        <div class="text-white viewdetailbtn">View Details</div>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-5 col-md-5 col-12 position-relative">
+                                    <div class="tower_img_section">
+                                                                                <div class="tower-level level1">
+                                            <div class="level1_txt">Level 152,153 & 154</div> <span></span>
+                                        </div>
+                                                                                <div class="tower-level level2">
+                                            <div class="level2_txt">Level 148</div> <span></span>
+                                        </div>
+                                                                                <div class="tower-level level3">
+                                            <div class="level3_txt">Level 124,125</div> <span></span>
+                                        </div>
+                                                                                <img width="62" height="251" src="images/burjkhalifa-tower3.png" class="towerimg" alt="Burj Khalifa illuminated">
+
+                                    </div>
+                                </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                                        <div class="experience">
+                    <div class="container-fluid px-0 pb-0">
+                        <div class="row mx-0 justify-content-center scroll-content">
+                            <div class="col-xl-8 col-lg-8 col-md-8 col-12 mob-res">
+                                <div class="text-color-primary text-uppercase heading5 letter-spacing4 text-center mt-5 pt-5">
+                                    Experiences Nearby                                    <div class="section-border"></div>
+                                </div>
+                                <div class="body5 text-center mt-4 mb-100">
+                                     The experiences around Burj Khalifa are a combination of exhilarating heights, stunning visuals, and a perfect blend of modernity and luxury. It's a must-visit destination for anyone traveling to Dubai, offering a unique perspective on this vibrant city's grandeur and sophistication.                                 </div>
+                            </div>
+                                                                <div class="col-xl-6 col-lg-6 col-md-6 col-12 p-0 text-animation homebg h-95vh position-relative visible text-animation">
+                                        <div class="homebackground background-image-zoom position-relative">
+                                            <img src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20100%20100'%3E%3C/svg%3E" class="fullcolimg" width="100%" height="100%" alt="Panoramic view from At the Top" data-lazy-src="https://ticket.atthetop.ae/wp-content/uploads/sites/2/2023/09/ZIZ04986-scaled.jpg"><noscript><img src="https://ticket.atthetop.ae/wp-content/uploads/sites/2/2023/09/ZIZ04986-scaled.jpg" class="fullcolimg" width="100%" height="100%" alt="Panoramic view from At the Top"></noscript>
+                                            <div class="container absolute_bottom_section ">
+                                                <div class="experience_banner my-4">
+                                                    <div class="d-flex align-items-center">
+                                                        <div class="experience_text label2">Experiences Nearby</div>
+                                                    </div>
+                                                    <div class="experience_subheading heading2">Sky Views Observatory</div>
+                                                    <div class="experience_para mxwdth body5">A one-of-a kind experience in Dubai to embark on breath-taking adventures. Walk on glass 53 levels above the city scape, take a thrilling ride down a glass slide, experience awe-inspiring vistas, and more. </div>
+                                                </div>
+                                                <div class="action-btn-group d-flex justify-content-left mb-4 align-items-center">
+                                                    <div class="exp_lounge_book_btn">
+                                                        <a href="/ticket.atthetop.ae/tickets/book-tickets/index.html" target="" class="btn lounge_book_btn">
+                                                            <span class=" d-flex align-items-center">
+                                                            <svg class="btnbook" xmlns="http://www.w3.org/2000/svg" width="8" height="14" viewBox="0 0 8 14" fill="none">
+                                                <path id="Vector" d="M1 13L6.53846 7.00027L1 1" stroke="" stroke-width="2" stroke-miterlimit="10"></path>
+                                            </svg>
+                                                                <!-- <img width="8" height="14" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%208%2014'%3E%3C/svg%3E" class="btnbook" data-lazy-src="https://ticket.atthetop.ae/wp-content/themes/salient-att-child/assets/images/rightarrow.svg"><noscript><img width="8" height="14" src="https://ticket.atthetop.ae/wp-content/themes/salient-att-child/assets/images/rightarrow.svg" class="btnbook"></noscript> -->
+                                                                <span>Book Now</span> </span>
+                                                        </a>
+                                                    </div>
+                                                    <a href="/ticket.atthetop.ae/experiences/sky-view-observatory/index.html" class="btn exp_circle_btn lounge_detail_btn fs-20 ml-90">
+                                                        <div class="circle-btn d-flex align-items-center gap-10">
+                                                            <div class="circle-icon" data-rocket-lazy-bg-ee9e9788-8aad-4863-a89b-dbfbad271cfa="excluded">
+                                                            <svg width="8" height="14" viewBox="0 0 8 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M1 13L6.53846 7.00027L1 1" stroke="" stroke-width="1.5" stroke-miterlimit="10"></path>
+</svg>
+                                                            </div>
+                                                            <div class="text-white viewdetailbtn">View Details</div>
+                                                        </div>
+                                                    </a>
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                                                <div class="col-xl-6 col-lg-6 col-md-6 col-12 p-0 text-animation homebg h-95vh position-relative visible text-animation">
+                                        <div class="homebackground background-image-zoom position-relative">
+                                            <img src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20100%20100'%3E%3C/svg%3E" class="fullcolimg" width="100%" height="100%" alt="Edge Walk experience" data-lazy-src="https://ticket.atthetop.ae/wp-content/uploads/sites/2/2023/11/Edge-Walk-compressed.jpg"><noscript><img src="https://ticket.atthetop.ae/wp-content/uploads/sites/2/2023/11/Edge-Walk-compressed.jpg" class="fullcolimg" width="100%" height="100%" alt="Edge Walk experience"></noscript>
+                                            <div class="container absolute_bottom_section even-card">
+                                                <div class="experience_banner my-4">
+                                                    <div class="d-flex align-items-center">
+                                                        <div class="experience_text label2">Experiences Nearby</div>
+                                                    </div>
+                                                    <div class="experience_subheading heading2">Sky Views Edge Walk</div>
+                                                    <div class="experience_para mxwdth body5">This daring escapade takes you to the edge of a skyscraper 219.5 meters above the ground. A thrilling, hands-free experience, it is an extreme endeavour and the first of its kind in the region. </div>
+                                                </div>
+                                                <div class="action-btn-group d-flex justify-content-left mb-4 align-items-center">
+                                                    <div class="exp_lounge_book_btn">
+                                                        <a href="/ticket.atthetop.ae/tickets/book-tickets/index.html" target="" class="btn lounge_book_btn">
+                                                            <span class=" d-flex align-items-center">
+                                                            <svg class="btnbook" xmlns="http://www.w3.org/2000/svg" width="8" height="14" viewBox="0 0 8 14" fill="none">
+                                                <path id="Vector" d="M1 13L6.53846 7.00027L1 1" stroke="" stroke-width="2" stroke-miterlimit="10"></path>
+                                            </svg>
+                                                                <!-- <img width="8" height="14" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%208%2014'%3E%3C/svg%3E" class="btnbook" data-lazy-src="https://ticket.atthetop.ae/wp-content/themes/salient-att-child/assets/images/rightarrow.svg"><noscript><img width="8" height="14" src="https://ticket.atthetop.ae/wp-content/themes/salient-att-child/assets/images/rightarrow.svg" class="btnbook"></noscript> -->
+                                                                <span>Book Now</span> </span>
+                                                        </a>
+                                                    </div>
+                                                    <a href="/ticket.atthetop.ae/experiences/sky-view-edge-walk/index.html" class="btn exp_circle_btn lounge_detail_btn fs-20 ml-90">
+                                                        <div class="circle-btn d-flex align-items-center gap-10">
+                                                            <div class="circle-icon" data-rocket-lazy-bg-ee9e9788-8aad-4863-a89b-dbfbad271cfa="excluded">
+                                                            <svg width="8" height="14" viewBox="0 0 8 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M1 13L6.53846 7.00027L1 1" stroke="" stroke-width="1.5" stroke-miterlimit="10"></path>
+</svg>
+                                                            </div>
+                                                            <div class="text-white viewdetailbtn">View Details</div>
+                                                        </div>
+                                                    </a>
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                                                <div class="col-xl-6 col-lg-6 col-md-6 col-12 p-0 text-animation homebg h-95vh position-relative visible text-animation">
+                                        <div class="homebackground background-image-zoom position-relative">
+                                            <img src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20100%20100'%3E%3C/svg%3E" class="fullcolimg" width="100%" height="100%" alt="Dubai Fountain from At The Top" data-lazy-src="https://ticket.atthetop.ae/wp-content/uploads/sites/2/2023/11/Dubai-Fountain-compressed.jpg"><noscript><img src="https://ticket.atthetop.ae/wp-content/uploads/sites/2/2023/11/Dubai-Fountain-compressed.jpg" class="fullcolimg" width="100%" height="100%" alt="Dubai Fountain from At The Top"></noscript>
+                                            <div class="container absolute_bottom_section ">
+                                                <div class="experience_banner my-4">
+                                                    <div class="d-flex align-items-center">
+                                                        <div class="experience_text label2">Experiences Nearby</div>
+                                                    </div>
+                                                    <div class="experience_subheading heading2">Dubai Fountain Boardwalk</div>
+                                                    <div class="experience_para mxwdth body5">Positioned within Dubai Fountain, this floating platform gets you closer than ever to Dubai’s famed fountains. Stroll along the boardwalk and enjoy the dazzling spectacle from a new perspective. </div>
+                                                </div>
+                                                <div class="action-btn-group d-flex justify-content-left mb-4 align-items-center">
+                                                    <div class="exp_lounge_book_btn">
+                                                        <a href="/ticket.atthetop.ae/tickets/book-tickets/index.html" target="" class="btn lounge_book_btn">
+                                                            <span class=" d-flex align-items-center">
+                                                            <svg class="btnbook" xmlns="http://www.w3.org/2000/svg" width="8" height="14" viewBox="0 0 8 14" fill="none">
+                                                <path id="Vector" d="M1 13L6.53846 7.00027L1 1" stroke="" stroke-width="2" stroke-miterlimit="10"></path>
+                                            </svg>
+                                                                <!-- <img width="8" height="14" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%208%2014'%3E%3C/svg%3E" class="btnbook" data-lazy-src="https://ticket.atthetop.ae/wp-content/themes/salient-att-child/assets/images/rightarrow.svg"><noscript><img width="8" height="14" src="https://ticket.atthetop.ae/wp-content/themes/salient-att-child/assets/images/rightarrow.svg" class="btnbook"></noscript> -->
+                                                                <span>Book Now</span> </span>
+                                                        </a>
+                                                    </div>
+                                                    <a href="/ticket.atthetop.ae/experiences/dubai-fountain-broadwalk/index.html" class="btn exp_circle_btn lounge_detail_btn fs-20 ml-90">
+                                                        <div class="circle-btn d-flex align-items-center gap-10">
+                                                            <div class="circle-icon" data-rocket-lazy-bg-ee9e9788-8aad-4863-a89b-dbfbad271cfa="excluded">
+                                                            <svg width="8" height="14" viewBox="0 0 8 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M1 13L6.53846 7.00027L1 1" stroke="" stroke-width="1.5" stroke-miterlimit="10"></path>
+</svg>
+                                                            </div>
+                                                            <div class="text-white viewdetailbtn">View Details</div>
+                                                        </div>
+                                                    </a>
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                                                <div class="col-xl-6 col-lg-6 col-md-6 col-12 p-0 text-animation homebg h-95vh position-relative visible text-animation">
+                                        <div class="homebackground background-image-zoom position-relative">
+                                            <img src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20100%20100'%3E%3C/svg%3E" class="fullcolimg" width="100%" height="100%" alt="the lake ride experience" data-lazy-src="https://ticket.atthetop.ae/wp-content/uploads/sites/2/2023/11/Lakeride-4-compressed-1.jpg"><noscript><img src="https://ticket.atthetop.ae/wp-content/uploads/sites/2/2023/11/Lakeride-4-compressed-1.jpg" class="fullcolimg" width="100%" height="100%" alt="the lake ride experience"></noscript>
+                                            <div class="container absolute_bottom_section even-card">
+                                                <div class="experience_banner my-4">
+                                                    <div class="d-flex align-items-center">
+                                                        <div class="experience_text label2">Experiences Nearby</div>
+                                                    </div>
+                                                    <div class="experience_subheading heading2">Dubai Fountain Lake Ride</div>
+                                                    <div class="experience_para mxwdth body5"> Glide across Burj Lake on a traditional abra boat and enjoy unobstructed views of the world's largest fountain. Cruise near the fountain and marvel at the ultimate views of the dancing waters. </div>
+                                                </div>
+                                                <div class="action-btn-group d-flex justify-content-left mb-4 align-items-center">
+                                                    <div class="exp_lounge_book_btn">
+                                                        <a href="/ticket.atthetop.ae/tickets/book-tickets/index.html" target="" class="btn lounge_book_btn">
+                                                            <span class=" d-flex align-items-center">
+                                                            <svg class="btnbook" xmlns="http://www.w3.org/2000/svg" width="8" height="14" viewBox="0 0 8 14" fill="none">
+                                                <path id="Vector" d="M1 13L6.53846 7.00027L1 1" stroke="" stroke-width="2" stroke-miterlimit="10"></path>
+                                            </svg>
+                                                                <!-- <img width="8" height="14" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%208%2014'%3E%3C/svg%3E" class="btnbook" data-lazy-src="https://ticket.atthetop.ae/wp-content/themes/salient-att-child/assets/images/rightarrow.svg"><noscript><img width="8" height="14" src="https://ticket.atthetop.ae/wp-content/themes/salient-att-child/assets/images/rightarrow.svg" class="btnbook"></noscript> -->
+                                                                <span>Book Now</span> </span>
+                                                        </a>
+                                                    </div>
+                                                    <a href="/ticket.atthetop.ae/experiences/dubai-fountain-lake-ride/index.html" class="btn exp_circle_btn lounge_detail_btn fs-20 ml-90">
+                                                        <div class="circle-btn d-flex align-items-center gap-10">
+                                                            <div class="circle-icon" data-rocket-lazy-bg-ee9e9788-8aad-4863-a89b-dbfbad271cfa="excluded">
+                                                            <svg width="8" height="14" viewBox="0 0 8 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M1 13L6.53846 7.00027L1 1" stroke="" stroke-width="1.5" stroke-miterlimit="10"></path>
+</svg>
+                                                            </div>
+                                                            <div class="text-white viewdetailbtn">View Details</div>
+                                                        </div>
+                                                    </a>
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                                                <div class="col-xl-12 col-lg-12 col-md-12 col-12 p-0 text-animation homebg h-95vh position-relative visible text-animation">
+                                        <div class="homebackground background-image-zoom position-relative">
+                                            <img src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20100%20100'%3E%3C/svg%3E" class="fullcolimg" width="100%" height="100%" alt="Burj Khalifa observation deck with city view" data-lazy-src="https://ticket.atthetop.ae/wp-content/uploads/sites/2/2023/11/DSCF0471-copy-compressed.jpg"><noscript><img src="https://ticket.atthetop.ae/wp-content/uploads/sites/2/2023/11/DSCF0471-copy-compressed.jpg" class="fullcolimg" width="100%" height="100%" alt="Burj Khalifa observation deck with city view"></noscript>
+                                            <div class="container absolute_bottom_section ">
+                                                <div class="experience_banner my-4">
+                                                    <div class="d-flex align-items-center">
+                                                        <div class="experience_text label2">Experiences Nearby</div>
+                                                    </div>
+                                                    <div class="experience_subheading heading2">Dubai Opera Grand Tour</div>
+                                                    <div class="experience_para mxwdth body5">Dubai Opera is a cultural icon with distinct architecture. Take a Grand Tour and learn about the venue’s unique heritage, marvel at its architectural design and discover hidden, backstage gems. </div>
+                                                </div>
+                                                <div class="action-btn-group d-flex justify-content-left mb-4 align-items-center">
+                                                    <div class="exp_lounge_book_btn">
+                                                        <a href="/ticket.atthetop.ae/tickets/book-tickets/index.html" target="" class="btn lounge_book_btn">
+                                                            <span class=" d-flex align-items-center">
+                                                            <svg class="btnbook" xmlns="http://www.w3.org/2000/svg" width="8" height="14" viewBox="0 0 8 14" fill="none">
+                                                <path id="Vector" d="M1 13L6.53846 7.00027L1 1" stroke="" stroke-width="2" stroke-miterlimit="10"></path>
+                                            </svg>
+                                                                <!-- <img width="8" height="14" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%208%2014'%3E%3C/svg%3E" class="btnbook" data-lazy-src="https://ticket.atthetop.ae/wp-content/themes/salient-att-child/assets/images/rightarrow.svg"><noscript><img width="8" height="14" src="https://ticket.atthetop.ae/wp-content/themes/salient-att-child/assets/images/rightarrow.svg" class="btnbook"></noscript> -->
+                                                                <span>Book Now</span> </span>
+                                                        </a>
+                                                    </div>
+                                                    <a href="/ticket.atthetop.ae/experiences/dubai-opera-grand-tour/index.html" class="btn exp_circle_btn lounge_detail_btn fs-20 ml-90">
+                                                        <div class="circle-btn d-flex align-items-center gap-10">
+                                                            <div class="circle-icon" data-rocket-lazy-bg-ee9e9788-8aad-4863-a89b-dbfbad271cfa="excluded">
+                                                            <svg width="8" height="14" viewBox="0 0 8 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M1 13L6.53846 7.00027L1 1" stroke="" stroke-width="1.5" stroke-miterlimit="10"></path>
+</svg>
+                                                            </div>
+                                                            <div class="text-white viewdetailbtn">View Details</div>
+                                                        </div>
+                                                    </a>
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                                    </div>
+                    </div>
+                </div>
+                <footer class="footer">
+    <div class="footer-container">
+        <div class="d-flex justify-content-center align-items-center gap-5">
+            <div class="footer-top">
+                <h4>Follow Us</h4>
+                <ul class="social-link">
+                    <li><a href="https://www.facebook.com/AtthetopBurjkhalifa/" target="_blank"><img src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2052%2050'%3E%3C/svg%3E" alt="Group photo of visitors at At The Top" width="52" height="50" data-lazy-src="https://ticket.atthetop.ae/wp-content/uploads/sites/2/2023/10/Group-1000012125.png"><noscript><img src="https://ticket.atthetop.ae/wp-content/uploads/sites/2/2023/10/Group-1000012125.png" alt="Group photo of visitors at At The Top" width="52" height="50"/></noscript></a></li><li><a href="https://www.instagram.com/atthetopburjkhalifa/" target="_blank"><img src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2052%2050'%3E%3C/svg%3E" alt="Group photo enjoying the view at At The Top" width="52" height="50" data-lazy-src="https://ticket.atthetop.ae/wp-content/uploads/sites/2/2023/10/Group-1000012126.png"><noscript><img src="https://ticket.atthetop.ae/wp-content/uploads/sites/2/2023/10/Group-1000012126.png" alt="Group photo enjoying the view at At The Top" width="52" height="50"/></noscript></a></li>                </ul>
+            </div>
+        </div>
+
+        <div class="footer-content">
+            <div class="logo-wrap">
+                <a class="logo" href="/index.html">
+                    <img src="images/att-logo-vector-1.svg" alt="At the Top Burj Khalifa logo" width="100%">
+                </a>
+                <p>
+                    We are here to help!                    <br>
+                    Whether you have already booked your visit, or considering a visit to At the Top, Burj Khalifa,
+ we are happy to answer any questions you may have.                </p>
+
+                <a href="/ticket.atthetop.ae/contact-us/index.html" class="btn exp_circle_btn lounge_detail_btn fs-20 p-0">
+                    <div class="circle-btn d-flex align-items-center gap-10">
+                        <div class="circle-icon" data-rocket-lazy-bg-ee9e9788-8aad-4863-a89b-dbfbad271cfa="excluded">
+                            <svg width="8" height="14" viewBox="0 0 8 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M1 13.3125L6.53846 7.31277L1 1.3125" stroke="" stroke-width="1.5" stroke-miterlimit="10"></path>
+                            </svg>
+
+                        </div>
+                        <div class="viewdetailbtn body7">
+                            Contact Us</div>
+                    </div>
+                </a>
+
+                <div class="news-letter for-tablet">
+                    <h4>JOIN OUR<br>
+NEWSLETTER</h4>
+                    <p>Stay up to date on events, promotions, and more.<br>
+ Subscribe to our newsletter. </p>
+                    <!-- Begin::Newletter Form -->
+                                        <div id="newsletter-form">
+                        <div class="wpforms-container wpforms-container-full newsletterform wpforms-render-modern" id="wpforms-3432"><form id="wpforms-form-3432" class="wpforms-validate wpforms-form wpforms-ajax-form" data-formid="3432" method="post" enctype="multipart/form-data" action="/experiences/" data-token="73d612def1534be7b874148f40d1a7b2"><noscript class="wpforms-error-noscript">Please enable JavaScript in your browser to complete this form.</noscript><div class="wpforms-hidden" id="wpforms-error-noscript">Please enable JavaScript in your browser to complete this form.</div><div class="wpforms-field-container"><div id="wpforms-3432-field_1-container" class="wpforms-field wpforms-field-email" data-field-id="1"><label class="wpforms-field-label wpforms-label-hide" for="wpforms-3432-field_1" aria-hidden="false">Email <span class="wpforms-required-label" aria-hidden="true">*</span></label><input type="email" id="wpforms-3432-field_1" class="wpforms-field-large wpforms-field-required" name="wpforms[fields][1]" placeholder="Email address" spellcheck="false" aria-errormessage="wpforms-3432-field_1-error" required=""></div></div><!-- .wpforms-field-container --><div class="wpforms-recaptcha-container wpforms-is-recaptcha"><div class="g-recaptcha" data-sitekey="6Ld_JNIbAAAAAPu9Dbv8WgBHfIYmdKBzNh-7w72X" data-size="invisible"></div></div><div class="wpforms-submit-container"><input type="hidden" name="wpforms[id]" value="3432"><input type="hidden" name="wpforms[author]" value="5"><input type="hidden" name="wpforms[post_id]" value="148"><button type="submit" name="wpforms[submit]" id="wpforms-submit-3432" class="wpforms-submit d-none" data-alt-text="Sending..." data-submit-text="Submit" aria-live="assertive" value="wpforms-submit">Submit</button><img src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2026%2026'%3E%3C/svg%3E" class="wpforms-submit-spinner" style="display: none;" width="26" height="26" alt="Loading" data-lazy-src="https://ticket.atthetop.ae/wp-content/plugins/wpforms/assets/images/submit-spin.svg"><noscript><img src="https://ticket.atthetop.ae/wp-content/plugins/wpforms/assets/images/submit-spin.svg" class="wpforms-submit-spinner" style="display: none;" width="26" height="26" alt="Loading"></noscript></div></form></div>  <!-- .wpforms-container -->                        <div class="newsletter-response"></div>
+                    </div>
+                    <!-- End::Newletter Form -->
+                </div>
+
+            </div>
+            <div class="footer-menu">
+                <ul id="menu-secondary-menu" class="menu-row"><li class="menu-col"><h4 class="menu-title">About<br>Us</h4>
+<ul>
+	<li id="348" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-348"><a target="_blank" rel="noopener" href="https://entertainment.emaar.com/">Emaar Entertainment</a></li>	<li id="1021" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1021"><a target="_blank" rel="noopener" href="https://properties.emaar.com/en/other-emaar-businesses/">Emaar Subsidiaries</a></li></ul>
+</li><li class="menu-col"><h4 class="menu-title">Visitor<br>information</h4>
+<ul>
+	<li id="337" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-337"><a target="_blank" rel="noopener" href="https://maps.app.goo.gl/j4jRLH7bkErFbtvy8">Getting There</a></li>	<li id="339" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-339"><a href="/ticket.atthetop.ae/tickets/frequently-asked-questions/index.html">FAQ</a></li></ul>
+</li><li class="menu-col"><h4 class="menu-title">Quick<br>links</h4>
+<ul>
+	<li id="2199" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2199"><a href="/ticket.atthetop.ae/terms-and-conditions/index.html">Terms and Conditions</a></li>	<li id="2198" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2198"><a href="/ticket.atthetop.ae/privacy-policy/index.html">Privacy Policy</a></li>	<li id="2197" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2197"><a href="/ticket.atthetop.ae/cookies-policy/index.html">Cookies Policy</a></li>	<li id="355" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-355"><a href="/ticket.atthetop.ae/sitemap/index.html">Site Map</a></li></ul>
+</li></ul>                <div class="news-letter for-desktop">
+                    <h4>JOIN OUR<br>
+NEWSLETTER</h4>
+                    <p>Stay up to date on events, promotions, and more.<br>
+ Subscribe to our newsletter. </p>
+                    <!-- <form class="newsletterForm" id="newsletterForm">
+                        <div class="input-group">
+                            <input type="email" name="emailaddress" class="form-control" placeholder="Email Address">
+                            
+                            <div class="g-recaptcha" data-sitekey="" data-size="invisible" data-bind="newsletterForm" data-callback="newsletterSubmitAjax"></div>
+                            <div class="input-group-append">
+                                <button type="submit" class="input-group-text submit-btn">
+                                    <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M0 0H8C10.2091 0 12 1.79086 12 4V8C12 10.2091 10.2091 12 8 12H0V0Z" fill="#A79D96" />
+                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M4.25591 10.8571C3.96187 10.6321 3.9142 10.2217 4.14943 9.9404L7.44504 6L4.14943 2.0596C3.9142 1.77835 3.96187 1.36794 4.25591 1.14294C4.54995 0.91793 4.97901 0.963531 5.21425 1.24479L8.85059 5.59259C9.0498 5.83078 9.0498 6.16922 8.85059 6.40741L5.21425 10.7552C4.97902 11.0365 4.54995 11.0821 4.25591 10.8571Z" fill="white" />
+                                    </svg>
+                                </button>
+                                <button type="button" class="input-group-text submit-load" style="display: none;">
+                                    <i class="fa fa-spinner fa-spin"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </form> -->
+                    <!-- Begin::Newletter Form -->
+                                        <div id="newsletter-form">
+                        <div class="wpforms-container wpforms-container-full newsletterform wpforms-render-modern" id="wpforms-3432"><form id="wpforms-form-3432" class="wpforms-validate wpforms-form wpforms-ajax-form" data-formid="3432" method="post" enctype="multipart/form-data" action="/ticket.atthetop.ae/experiences/index.html" data-token="73d612def1534be7b874148f40d1a7b2"><noscript class="wpforms-error-noscript">Please enable JavaScript in your browser to complete this form.</noscript><div class="wpforms-hidden" id="wpforms-error-noscript">Please enable JavaScript in your browser to complete this form.</div><div class="wpforms-field-container"><div id="wpforms-3432-field_1-container" class="wpforms-field wpforms-field-email" data-field-id="1"><label class="wpforms-field-label wpforms-label-hide" for="wpforms-3432-field_1" aria-hidden="false">Email <span class="wpforms-required-label" aria-hidden="true">*</span></label><input type="email" id="wpforms-3432-field_1" class="wpforms-field-large wpforms-field-required" name="wpforms[fields][1]" placeholder="Email address" spellcheck="false" aria-errormessage="wpforms-3432-field_1-error" required=""></div></div><!-- .wpforms-field-container --><div class="wpforms-recaptcha-container wpforms-is-recaptcha"><div class="g-recaptcha" data-sitekey="6Ld_JNIbAAAAAPu9Dbv8WgBHfIYmdKBzNh-7w72X" data-size="invisible"></div></div><div class="wpforms-submit-container"><input type="hidden" name="wpforms[id]" value="3432"><input type="hidden" name="wpforms[author]" value="5"><input type="hidden" name="wpforms[post_id]" value="148"><button type="submit" name="wpforms[submit]" id="wpforms-submit-3432" class="wpforms-submit d-none" data-alt-text="Sending..." data-submit-text="Submit" aria-live="assertive" value="wpforms-submit">Submit</button><img src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2026%2026'%3E%3C/svg%3E" class="wpforms-submit-spinner" style="display: none;" width="26" height="26" alt="Loading" data-lazy-src="https://ticket.atthetop.ae/wp-content/plugins/wpforms/assets/images/submit-spin.svg"><noscript><img src="https://ticket.atthetop.ae/wp-content/plugins/wpforms/assets/images/submit-spin.svg" class="wpforms-submit-spinner" style="display: none;" width="26" height="26" alt="Loading"></noscript></div></form></div>  <!-- .wpforms-container -->                        <div class="newsletter-response"></div>
+                    </div>
+                    <!-- End::Newletter Form -->
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            ALL RIGHTS RESERVED        </div>
+    </div>
+</footer>
+</section></div></main>
+<div class="cookie-notice d-none">
+                            <div class="cookie_text"><div class="cookie-para"><p>This website uses cookies. We use cookies to make sure you get the best experience on our website. Please read our</p>
+<p><a href="/ticket.atthetop.ae/cookies-policy/index.html">Cookies Policies</a></p>
+</div> </div>
+                            <button type="button" class="accept-cookies">Accept</button>
+                    </div><script src="data:text/javascript;base64,CiAgICAgICAgICAgICAgICAgICAgaWYgKCFDTElfQ29va2llLmV4aXN0cygiY29va2llc19hY2NlcHQiKSl7CiAgICAgICAgICAgICAgICAgICAgICAgIGpRdWVyeSgiLmNvb2tpZS1ub3RpY2UiKS5yZW1vdmVDbGFzcygiZC1ub25lIik7CiAgICAgICAgICAgICAgICAgICAgfQogICAgICAgICAgICAgICAgICAgIGpRdWVyeShkb2N1bWVudCkub24oImNsaWNrIiwgIi5hY2NlcHQtY29va2llcyIsIGZ1bmN0aW9uKCl7IAogICAgICAgICAgICAgICAgICAgICAgICBpZiAoIUNMSV9Db29raWUuZXhpc3RzKCJjb29raWVzX2FjY2VwdCIpKXsKICAgICAgICAgICAgICAgICAgICAgICAgICAgIENMSV9Db29raWUuc2V0KCJjb29raWVzX2FjY2VwdCIsICJ5ZXMiLCAzMCk7CiAgICAgICAgICAgICAgICAgICAgICAgICAgICBqUXVlcnkoIi5jb29raWUtbm90aWNlIikuc2xpZGVVcCgibm9ybWFsIiwgZnVuY3Rpb24oKSB7IGpRdWVyeSgiLmNvb2tpZS1ub3RpY2UiKS5yZW1vdmUoKSB9ICk7CiAgICAgICAgICAgICAgICAgICAgICAgIH0KICAgICAgICAgICAgICAgICAgICB9KTsKICAgICAgICAgICAgICAgICAgICA=" data-rocket-status="executed">
+                    if (!CLI_Cookie.exists("cookies_accept")){
+                        jQuery(".cookie-notice").removeClass("d-none");
+                    }
+                    jQuery(document).on("click", ".accept-cookies", function(){ 
+                        if (!CLI_Cookie.exists("cookies_accept")){
+                            CLI_Cookie.set("cookies_accept", "yes", 30);
+                            jQuery(".cookie-notice").slideUp("normal", function() { jQuery(".cookie-notice").remove() } );
+                        }
+                    });
+                    </script><link rel="stylesheet" id="wpforms-modern-full-css" href="css/wpforms-full.min_1.css" type="text/css" media="all">
+<link rel="stylesheet" id="wpforms-pro-modern-full-css" href="css/wpforms-full.min.css" type="text/css" media="all">
+<script type="text/javascript" id="rocket-browser-checker-js-after">
+/* <![CDATA[ */
+"use strict";var _createClass=function(){function defineProperties(target,props){for(var i=0;i<props.length;i++){var descriptor=props[i];descriptor.enumerable=descriptor.enumerable||!1,descriptor.configurable=!0,"value"in descriptor&&(descriptor.writable=!0),Object.defineProperty(target,descriptor.key,descriptor)}}return function(Constructor,protoProps,staticProps){return protoProps&&defineProperties(Constructor.prototype,protoProps),staticProps&&defineProperties(Constructor,staticProps),Constructor}}();function _classCallCheck(instance,Constructor){if(!(instance instanceof Constructor))throw new TypeError("Cannot call a class as a function")}var RocketBrowserCompatibilityChecker=function(){function RocketBrowserCompatibilityChecker(options){_classCallCheck(this,RocketBrowserCompatibilityChecker),this.passiveSupported=!1,this._checkPassiveOption(this),this.options=!!this.passiveSupported&&options}return _createClass(RocketBrowserCompatibilityChecker,[{key:"_checkPassiveOption",value:function(self){try{var options={get passive(){return!(self.passiveSupported=!0)}};window.addEventListener("test",null,options),window.removeEventListener("test",null,options)}catch(err){self.passiveSupported=!1}}},{key:"initRequestIdleCallback",value:function(){!1 in window&&(window.requestIdleCallback=function(cb){var start=Date.now();return setTimeout(function(){cb({didTimeout:!1,timeRemaining:function(){return Math.max(0,50-(Date.now()-start))}})},1)}),!1 in window&&(window.cancelIdleCallback=function(id){return clearTimeout(id)})}},{key:"isDataSaverModeOn",value:function(){return"connection"in navigator&&!0===navigator.connection.saveData}},{key:"supportsLinkPrefetch",value:function(){var elem=document.createElement("link");return elem.relList&&elem.relList.supports&&elem.relList.supports("prefetch")&&window.IntersectionObserver&&"isIntersecting"in IntersectionObserverEntry.prototype}},{key:"isSlowConnection",value:function(){return"connection"in navigator&&"effectiveType"in navigator.connection&&("2g"===navigator.connection.effectiveType||"slow-2g"===navigator.connection.effectiveType)}}]),RocketBrowserCompatibilityChecker}();
+/* ]]> */
+</script>
+<script type="text/javascript" id="rocket-preload-links-js-extra">
+/* <![CDATA[ */
+var RocketPreloadLinksConfig = {"excludeUris":"\/booking-successful\/|\/(?:.+\/)?feed(?:\/(?:.+\/?)?)?$|\/(?:.+\/)?embed\/|\/(index.php\/)?(.*)wp-json(\/.*|$)|\/refer\/|\/go\/|\/recommend\/|\/recommends\/","usesTrailingSlash":"1","imageExt":"jpg|jpeg|gif|png|tiff|bmp|webp|avif|pdf|doc|docx|xls|xlsx|php","fileExt":"jpg|jpeg|gif|png|tiff|bmp|webp|avif|pdf|doc|docx|xls|xlsx|php|html|htm","siteUrl":"https:\/\/ticket.atthetop.ae","onHoverDelay":"100","rateThrottle":"3"};
+/* ]]> */
+</script>
+<script type="text/javascript" id="rocket-preload-links-js-after">
+/* <![CDATA[ */
+(function() {
+"use strict";var r="function"==typeof Symbol&&"symbol"==typeof Symbol.iterator?function(e){return typeof e}:function(e){return e&&"function"==typeof Symbol&&e.constructor===Symbol&&e!==Symbol.prototype?"symbol":typeof e},e=function(){function i(e,t){for(var n=0;n<t.length;n++){var i=t[n];i.enumerable=i.enumerable||!1,i.configurable=!0,"value"in i&&(i.writable=!0),Object.defineProperty(e,i.key,i)}}return function(e,t,n){return t&&i(e.prototype,t),n&&i(e,n),e}}();function i(e,t){if(!(e instanceof t))throw new TypeError("Cannot call a class as a function")}var t=function(){function n(e,t){i(this,n),this.browser=e,this.config=t,this.options=this.browser.options,this.prefetched=new Set,this.eventTime=null,this.threshold=1111,this.numOnHover=0}return e(n,[{key:"init",value:function(){!this.browser.supportsLinkPrefetch()||this.browser.isDataSaverModeOn()||this.browser.isSlowConnection()||(this.regex={excludeUris:RegExp(this.config.excludeUris,"i"),images:RegExp(".("+this.config.imageExt+")$","i"),fileExt:RegExp(".("+this.config.fileExt+")$","i")},this._initListeners(this))}},{key:"_initListeners",value:function(e){-1<this.config.onHoverDelay&&document.addEventListener("mouseover",e.listener.bind(e),e.listenerOptions),document.addEventListener("mousedown",e.listener.bind(e),e.listenerOptions),document.addEventListener("touchstart",e.listener.bind(e),e.listenerOptions)}},{key:"listener",value:function(e){var t=e.target.closest("a"),n=this._prepareUrl(t);if(null!==n)switch(e.type){case"mousedown":case"touchstart":this._addPrefetchLink(n);break;case"mouseover":this._earlyPrefetch(t,n,"mouseout")}}},{key:"_earlyPrefetch",value:function(t,e,n){var i=this,r=setTimeout(function(){if(r=null,0===i.numOnHover)setTimeout(function(){return i.numOnHover=0},1e3);else if(i.numOnHover>i.config.rateThrottle)return;i.numOnHover++,i._addPrefetchLink(e)},this.config.onHoverDelay);t.addEventListener(n,function e(){t.removeEventListener(n,e,{passive:!0}),null!==r&&(clearTimeout(r),r=null)},{passive:!0})}},{key:"_addPrefetchLink",value:function(i){return this.prefetched.add(i.href),new Promise(function(e,t){var n=document.createElement("link");n.rel="prefetch",n.href=i.href,n.onload=e,n.onerror=t,document.head.appendChild(n)}).catch(function(){})}},{key:"_prepareUrl",value:function(e){if(null===e||"object"!==(void 0===e?"undefined":r(e))||!1 in e||-1===["http:","https:"].indexOf(e.protocol))return null;var t=e.href.substring(0,this.config.siteUrl.length),n=this._getPathname(e.href,t),i={original:e.href,protocol:e.protocol,origin:t,pathname:n,href:t+n};return this._isLinkOk(i)?i:null}},{key:"_getPathname",value:function(e,t){var n=t?e.substring(this.config.siteUrl.length):e;return n.startsWith("/")||(n="/"+n),this._shouldAddTrailingSlash(n)?n+"/":n}},{key:"_shouldAddTrailingSlash",value:function(e){return this.config.usesTrailingSlash&&!e.endsWith("/")&&!this.regex.fileExt.test(e)}},{key:"_isLinkOk",value:function(e){return null!==e&&"object"===(void 0===e?"undefined":r(e))&&(!this.prefetched.has(e.href)&&e.origin===this.config.siteUrl&&-1===e.href.indexOf("?")&&-1===e.href.indexOf("#")&&!this.regex.excludeUris.test(e.href)&&!this.regex.images.test(e.href))}}],[{key:"run",value:function(){"undefined"!=typeof RocketPreloadLinksConfig&&new n(new RocketBrowserCompatibilityChecker({capture:!0,passive:!0}),RocketPreloadLinksConfig).init()}}]),n}();t.run();
+}());
+/* ]]> */
+</script>
+<script type="text/javascript" id="rocket_lazyload_css-js-extra">
+/* <![CDATA[ */
+var rocket_lazyload_css_data = {"threshold":"300"};
+/* ]]> */
+</script>
+<script type="text/javascript" id="rocket_lazyload_css-js-after">
+/* <![CDATA[ */
+!function o(n,c,a){function s(t,e){if(!c[t]){if(!n[t]){var r="function"==typeof require&&require;if(!e&&r)return r(t,!0);if(u)return u(t,!0);throw(r=new Error("Cannot find module '"+t+"'")).code="MODULE_NOT_FOUND",r}r=c[t]={exports:{}},n[t][0].call(r.exports,function(e){return s(n[t][1][e]||e)},r,r.exports,o,n,c,a)}return c[t].exports}for(var u="function"==typeof require&&require,e=0;e<a.length;e++)s(a[e]);return s}({1:[function(e,t,r){"use strict";!function(){const r="undefined"==typeof rocket_pairs?[]:rocket_pairs,e="undefined"==typeof rocket_excluded_pairs?[]:rocket_excluded_pairs;e.map(t=>{var e=t.selector;const r=document.querySelectorAll(e);r.forEach(e=>{e.setAttribute("data-rocket-lazy-bg-".concat(t.hash),"excluded")})});const o=document.querySelector("#wpr-lazyload-bg-container");var t=rocket_lazyload_css_data.threshold||300;const n=new IntersectionObserver(e=>{e.forEach(t=>{if(t.isIntersecting){const e=r.filter(e=>t.target.matches(e.selector));e.map(t=>{var e;t&&((e=document.createElement("style")).textContent=t.style,o.insertAdjacentElement("afterend",e),t.elements.forEach(e=>{n.unobserve(e),e.setAttribute("data-rocket-lazy-bg-".concat(t.hash),"loaded")}))})}})},{rootMargin:t+"px"});function c(){0<(0<arguments.length&&void 0!==arguments[0]?arguments[0]:[]).length&&r.forEach(t=>{try{const e=document.querySelectorAll(t.selector);e.forEach(e=>{"loaded"!==e.getAttribute("data-rocket-lazy-bg-".concat(t.hash))&&"excluded"!==e.getAttribute("data-rocket-lazy-bg-".concat(t.hash))&&(n.observe(e),(t.elements||(t.elements=[])).push(e))})}catch(e){console.error(e)}})}c();const a=function(){const o=window.MutationObserver;return function(e,t){if(e&&1===e.nodeType){const r=new o(t);return r.observe(e,{attributes:!0,childList:!0,subtree:!0}),r}}}();t=document.querySelector("body"),a(t,c)}()},{}]},{},[1]);
+//# sourceMappingURL=lazyload-css.min.js.map
+/* ]]> */
+</script>
+<script type="text/javascript" src="js/jquery.min.js" id="jquery-3.7.0-js"></script>
+<script type="text/javascript" id="ajax-admin-url-js-extra">
+/* <![CDATA[ */
+var Aurl = {"ajaxurl":"https:\/\/ticket.atthetop.ae\/wp-admin\/admin-ajax.php","api_nonce":"2d48861e04","theme_url":"https:\/\/ticket.atthetop.ae\/wp-content\/themes\/salient-att-child","site_url":"https:\/\/ticket.atthetop.ae","newsletter_nonce":"8c24fd7989"};
+/* ]]> */
+</script>
+<script type="text/javascript" src="js/localize-script.js" id="ajax-admin-url-js"></script>
+<script type="text/javascript" src="js/bootstrap.min.js" id="bootstrap-min-js"></script>
+<script type="text/javascript" src="js/gsap.min.js" id="gsap-js"></script>
+<script type="text/javascript" src="js/ScrollMagic.min.js" id="scrollmagic-js"></script>
+<script type="text/javascript" src="js/custom.js" id="custom-js"></script>
+<script type="text/javascript" src="js/owl.carousel.min.js" id="carousel-js-js"></script>
+<script type="text/javascript" src="js/jquery-ui.min.js" id="jquery-ui-js"></script>
+<script type="text/javascript" src="js/fullpagemin.js" id="full-scroll-js-js"></script>
+<script type="text/javascript" src="js/experiences.js" id="experiences-JS-js"></script>
+<script type="text/javascript" src="js/cart-count.js" id="cart-count-js"></script>
+<script type="text/javascript" src="js/page-redirection.js" id="page-redirection-js"></script>
+<script type="text/javascript" src="js/jquery.validate.min.js" id="wpforms-validation-js"></script>
+<script type="text/javascript" src="js/mailcheck.min.js" id="wpforms-mailcheck-js"></script>
+<script type="text/javascript" src="js/punycode.min.js" id="wpforms-punycode-js"></script>
+<script type="text/javascript" src="js/utils.min.js" id="wpforms-generic-utils-js"></script>
+<script type="text/javascript" src="js/wpforms.min.js" id="wpforms-js"></script>
+<script type="text/javascript" src="js/wpforms-modern.min.js" id="wpforms-modern-js"></script>
+<script type="text/javascript" id="wpforms-recaptcha-js" src="js/api.js" data-rocket-status="failed"></script>
+<script type="text/javascript" id="wpforms-recaptcha-js-after">
+/* <![CDATA[ */
+if (!Element.prototype.matches) {
+				Element.prototype.matches = Element.prototype.msMatchesSelector || Element.prototype.webkitMatchesSelector;
+			}
+			if (!Element.prototype.closest) {
+				Element.prototype.closest = function (s) {
+					var el = this;
+					do {
+						if (Element.prototype.matches.call(el, s)) { return el; }
+						el = el.parentElement || el.parentNode;
+					} while (el !== null && el.nodeType === 1);
+					return null;
+				};
+			}
+		var wpformsDispatchEvent = function (el, ev, custom) {
+				var e = document.createEvent(custom ? "CustomEvent" : "HTMLEvents");
+				custom ? e.initCustomEvent(ev, true, true, false) : e.initEvent(ev, true, true);
+				el.dispatchEvent(e);
+			};
+		var wpformsRecaptchaLoad = function () {
+					Array.prototype.forEach.call(document.querySelectorAll(".g-recaptcha"), function (el) {
+						try {
+							var recaptchaID = grecaptcha.render(el, {
+								callback: function () {
+									wpformsRecaptchaCallback(el);
+								}
+							}, true);
+							el.closest("form").querySelector("button[type=submit]").recaptchaID = recaptchaID;
+						} catch (error) {}
+					});
+					wpformsDispatchEvent(document, "wpformsRecaptchaLoaded", true);
+				};
+				var wpformsRecaptchaCallback = function (el) {
+					var $form = el.closest("form");
+					if (typeof wpforms.formSubmit === "function") {
+						wpforms.formSubmit($form);
+					} else {
+						$form.querySelector("button[type=submit]").recaptchaID = false;
+						$form.submit();
+					}
+				};
+			
+/* ]]> */
+</script>
+<script type="text/javascript">
+/* <![CDATA[ */
+var wpforms_settings = {"val_required":"This field is required.","val_email":"Please enter a valid email address.","val_email_suggestion":"Did you mean {suggestion}?","val_email_suggestion_title":"Click to accept this suggestion.","val_email_restricted":"This email address is not allowed.","val_number":"Please enter a valid number.","val_number_positive":"Please enter a valid positive number.","val_confirm":"Field values do not match.","val_checklimit":"You have exceeded the number of allowed selections: {#}.","val_limit_characters":"","val_limit_words":"","val_recaptcha_fail_msg":"Google reCAPTCHA verification failed, please try again later.","val_turnstile_fail_msg":"Cloudflare Turnstile verification failed, please try again later.","val_inputmask_incomplete":"Please fill out the field in required format.","uuid_cookie":"1","locale":"en","wpforms_plugin_url":"https:\/\/ticket.atthetop.ae\/wp-content\/plugins\/wpforms\/","gdpr":"","ajaxurl":"https:\/\/ticket.atthetop.ae\/wp-admin\/admin-ajax.php","mailcheck_enabled":"","mailcheck_domains":[],"mailcheck_toplevel_domains":["dev"],"is_ssl":"1","page_title":"Experiences","page_id":"148","currency_code":"USD","currency_thousands":",","currency_decimals":"2","currency_decimal":".","currency_symbol":"$","currency_symbol_pos":"left","css_vars":["field-border-radius","field-background-color","field-border-color","field-text-color","label-color","label-sublabel-color","label-error-color","button-border-radius","button-background-color","button-text-color","field-size-input-height","field-size-input-spacing","field-size-font-size","field-size-line-height","field-size-padding-h","field-size-checkbox-size","field-size-sublabel-spacing","field-size-icon-size","label-size-font-size","label-size-line-height","label-size-sublabel-font-size","label-size-sublabel-line-height","button-size-font-size","button-size-height","button-size-padding-h","button-size-margin-top"],"val_requiredpayment":"Payment is required.","val_creditcard":"Please enter a valid credit card number.","val_post_max_size":"The total size of the selected files {totalSize} MB exceeds the allowed limit {maxSize} MB.","val_time12h":"Please enter time in 12-hour AM\/PM format (eg 8:45 AM).","val_time24h":"Please enter time in 24-hour format (eg 22:45).","val_time_limit":"Please enter time between {minTime} and {maxTime}.","val_url":"Please enter a valid URL.","val_fileextension":"File type is not allowed.","val_filesize":"File exceeds max size allowed. File was not uploaded.","post_max_size":"104857600","isModernMarkupEnabled":"1","formErrorMessagePrefix":"Form error message","errorMessagePrefix":"Error message","submitBtnDisabled":"Submit button is disabled during form submission.","val_password_strength":"A stronger password is required. Consider using upper and lower case letters, numbers, and symbols.","val_phone":"Please enter a valid phone number.","indicatorStepsPattern":"Step {current} of {total}","richtext_add_media_button":"","entry_preview_iframe_styles":["https:\/\/ticket.atthetop.ae\/wp-includes\/js\/tinymce\/skins\/lightgray\/content.min.css?ver=6.7.1","https:\/\/ticket.atthetop.ae\/wp-includes\/css\/dashicons.min.css?ver=6.7.1","https:\/\/ticket.atthetop.ae\/wp-includes\/js\/tinymce\/skins\/wordpress\/wp-content.css?ver=6.7.1"]}
+/* ]]> */
+</script>
+            <script nowprocket="">
+                jQuery(document).on("wpformsReady",function(){jQuery("form .wpforms-smart-phone-field").each(function(n){var t,i=jQuery(this),e=i.data("plugin_intlTelInput");e.d?t=Object.assign({},e.d):e.options&&(t=Object.assign({},e.options)),t&&(i.intlTelInput("destroy"),t.separateDialCode=!0,i.intlTelInput(t),i.siblings('input[type="hidden"]').attr("name","wpforms[fields]["+t.hiddenInput+"]"))})});
+                jQuery(document).on("wpformsReady",function(){jQuery(".wpforms-smart-phone-field").each(function(n){var i,t=jQuery(this),s=t.data("plugin_intlTelInput");s.d?i=Object.assign({},s.d):s.options&&(i=Object.assign({},s.options)),i&&(t.intlTelInput("destroy"),i.initialCountry="ae",i.preferredCountries=['ae'],t.intlTelInput(i),t.siblings('input[type="hidden"]').attr("name","wpforms[fields]["+i.hiddenInput+"]"))})});
+            </script>
+                    <script type="text/javascript">
+                //remove before space
+                !function(t){t("input[type='text'],input[type='email'], input[type='tel'], textarea").on("keypress keyup keydown",function(e){var n=t.trim(t(this).val());0==n.length&&t(this).val(n)})}(jQuery);
+                //validation for email
+                !function(a){var i={init:function(){a(document).on("wpformsReady",i.customRules)},customRules:function(){if(void 0!==a.fn.validate&&a.validator.addMethod("check_for_email_validate",function(i,t,e){return a(t),this.optional(t)||/^[a-zA-Z][a-zA-Z0-9_]*(\.[a-zA-Z][a-zA-Z0-9_]*)?@[a-z][a-zA-Z-0-9]*\.[a-z]+(\.[a-z]+)?$/.test(i)},a.validator.format("Please enter a valid email.")),a(".email-validate input").length)for(var i=a(".email-validate input"),t=0;t<i.length;t++)a(".email-validate input").eq(t).rules("add",{check_for_email_validate:!0})}};i.init()}(jQuery);
+                //Validation for numbers class -> no-numbers
+                !function(n){var t={init:function(){n(document).on("wpformsReady",t.customRules)},customRules:function(){if(void 0!==n.fn.validate&&n.validator.addMethod("check_for_number",function(t,o,i){return n(o),this.optional(o)||!/\d/.test(t)},n.validator.format("This field cannot accept numbers.")),n(".no-numbers input").length)for(var t=n(".no-numbers input"),o=0;o<t.length;o++)n(".no-numbers input").eq(o).rules("add",{check_for_number:!0})}};t.init()}(jQuery);
+                //Validation form special characters class -> no-special-char
+                !function(a){var i={init:function(){a(document).on("wpformsReady",i.customRules)},customRules:function(){if(void 0!==a.fn.validate&&a.validator.addMethod("check_for_special_characters",function(i,t,c){return a(t),this.optional(t)||!/[^A-Za-z 0-9]/g.test(i)},a.validator.format("This field cannot accept special characters.")),a(".no-special-char input").length)for(var i=a(".no-special-char input"),t=0;t<i.length;t++)a(".no-special-char input").eq(t).rules("add",{check_for_special_characters:!0})}};i.init()}(jQuery);
+                //Validation for positive integer class -> positive-int
+                !function(i){var t={init:function(){i(document).on("wpformsReady",t.customRules)},customRules:function(){if(void 0!==i.fn.validate&&i.validator.addMethod("check_for_positive_integer",function(t,n,e){var o=i(n);return isNaN(parseFloat(t))?(o.val(""),!1):!(0>=parseFloat(t))&&!!Number.isInteger(parseFloat(t))&&(o.val(parseFloat(t)),!0)},i.validator.format("Only Positive Integer allowed")),i(".positive-int input").length)for(var t=i(".positive-int input"),n=0;n<t.length;n++)i(".positive-int input").eq(n).rules("add",{check_for_positive_integer:!0})}};t.init()}(jQuery);
+                //open popup when submission
+                //         jQuery(window).on("load",function(){jQuery(".wpforms-form").on("wpformsAjaxSubmitSuccess",function(o,p){"popupform"==p.type&&(jQuery("#open-confirm-popup .modal-content").html(p.data),jQuery("#open-confirm-popup").modal("show"),setTimeout(function(){var o=jQuery("#open-confirm-popup .target_link_popup").attr("href");""!=o&&void 0!==o?window.location.href=o:window.location.reload()},15e3)),"newletter"==p.type&&(jQuery(".newsletter-response").html(p.data), setTimeout(function() {
+                //     jQuery(".newsletter-response").empty();
+                // }, 5000))})});
+                jQuery(window).on("load",function(){jQuery(".wpforms-form").on("wpformsAjaxSubmitSuccess",function(o,e){"popupform"==e.type&&(jQuery("#open-confirm-popup .modal-content").html(e.data),jQuery("#open-confirm-popup").modal("show"),setTimeout(function(){var o=jQuery("#open-confirm-popup .target_link_popup").attr("href");""!=o&&void 0!==o?window.location.href=o:window.location.reload()},150000000)),"newletter"==e.type&&(jQuery(".newsletter-response").html(e.data),setTimeout(function(){jQuery(".newsletter-response").empty()},5e3))}),jQuery('input[type="email"]').on("keyup",function(){jQuery(".newsletter-response").empty()})});
+                //zero value remove
+                !function(t){var o={init:function(){t(document).on("wpformsReady",o.customRules)},customRules:function(){setTimeout(function(){var o=t(".wpforms-smart-phone-field"),n=o.attr("placeholder");if(n){console.log(n);var e=n.replace(/^0+/,"");o.attr("placeholder",e)}},5e3)}};o.init()}(jQuery),function(t){var o={init:function(){t(document).on("countrychange",o.customRules)},customRules:function(){var o=t(".wpforms-smart-phone-field"),n=o.attr("placeholder");if(n){console.log(n);var e=n.replace(/^0+/,"");o.attr("placeholder",e)}}};o.init()}(jQuery);
+            </script>
+            <style>
+                .wpforms-container .wpforms-submit-spinner {
+                    display: none !important
+                }
+            </style>
+                    <script nowprocket="">
+                jQuery(document).on("wpformsReady",function(){jQuery("#newsletter-form input[type=email]").after('<div class="input-group-append">                                <span class="input-group-text footer_g_text newsletter-submit-btn"><svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M0 0H8C10.2091 0 12 1.79086 12 4V8C12 10.2091 10.2091 12 8 12H0V0Z" fill="#A79D96" /><path fill-rule="evenodd" clip-rule="evenodd" d="M4.25591 10.8571C3.96187 10.6321 3.9142 10.2217 4.14943 9.9404L7.44504 6L4.14943 2.0596C3.9142 1.77835 3.96187 1.36794 4.25591 1.14294C4.54995 0.91793 4.97901 0.963531 5.21425 1.24479L8.85059 5.59259C9.0498 5.83078 9.0498 6.16922 8.85059 6.40741L5.21425 10.7552C4.97902 11.0365 4.54995 11.0821 4.25591 10.8571Z" fill="white" /></svg></span>                              </div>'),jQuery(".newsletter-submit-btn").on("click",function(){jQuery(this).closest("form").submit();})});
+            </script>
+                <script type="text/javascript" src="data:text/javascript;base64,CiAgICAgICAgICAgICAgICAgICAgLy8gUnVuIHRoaXMgc25pcHBldCBvbiBhbGwgV1BGb3JtcyBmb3JtcwogICAgICAgICAgICAgICAgICAgIGpRdWVyeSggJ2Zvcm0ud3Bmb3Jtcy1mb3JtJyApLmJpbmQoICdrZXlwcmVzcyBrZXlkb3duIGtleXVwJywgZnVuY3Rpb24oZSkgewogICAgICAgICAgICAgICAgICAgICAgICBpZiAoZS5rZXlDb2RlID09IDEzKSB7CiAgICAgICAgICAgICAgICAgICAgICAgICAgICBlLnByZXZlbnREZWZhdWx0KCk7CiAgICAgICAgICAgICAgICAgICAgICAgIH0KICAgICAgICAgICAgICAgICAgICB9KTsKICAgICAgICAgICAgICAgIA==" data-rocket-status="executed">
+                    // Run this snippet on all WPForms forms
+                    jQuery( 'form.wpforms-form' ).bind( 'keypress keydown keyup', function(e) {
+                        if (e.keyCode == 13) {
+                            e.preventDefault();
+                        }
+                    });
+                </script>
+            
+        						<style>
+                            .otgs-development-site-front-end a { color: white; }
+                            .otgs-development-site-front-end .icon {
+                                background: var(--wpr-bg-e29dd64c-0c52-4441-9d8c-d35aabd400e8) no-repeat;
+                                width: 20px;
+                                height: 20px;
+                                display: inline-block;
+                                position: absolute;
+                                margin-left: -23px;
+                            }
+                            .otgs-development-site-front-end {
+                                background-size: 32px;
+                                padding: 22px 0px;
+                                font-size: 12px;
+                                font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif;
+                                line-height: 18px;
+                                text-align: center;
+                                color: white;
+                                background-color: #33879E;
+                            }
+						</style>
+						<div class="otgs-development-site-front-end"><span class="icon"></span>This site is registered on <a href="https://wpml.org">wpml.org</a> as a development site. Switch to a production site key to <a href="https://wpml.org/faq/how-to-remove-the-this-site-is-registered-on-wpml-org-as-a-development-site-notice/">remove this banner</a>.</div><script>window.lazyLoadOptions=[{elements_selector:"img[data-lazy-src],.rocket-lazyload,iframe[data-lazy-src]",data_src:"lazy-src",data_srcset:"lazy-srcset",data_sizes:"lazy-sizes",class_loading:"lazyloading",class_loaded:"lazyloaded",threshold:300,callback_loaded:function(element){if(element.tagName==="IFRAME"&&element.dataset.rocketLazyload=="fitvidscompatible"){if(element.classList.contains("lazyloaded")){if(typeof window.jQuery!="undefined"){if(jQuery.fn.fitVids){jQuery(element).parent().fitVids()}}}}}},{elements_selector:".rocket-lazyload",data_src:"lazy-src",data_srcset:"lazy-srcset",data_sizes:"lazy-sizes",class_loading:"lazyloading",class_loaded:"lazyloaded",threshold:300,}];window.addEventListener('LazyLoad::Initialized',function(e){var lazyLoadInstance=e.detail.instance;if(window.MutationObserver){var observer=new MutationObserver(function(mutations){var image_count=0;var iframe_count=0;var rocketlazy_count=0;mutations.forEach(function(mutation){for(var i=0;i<mutation.addedNodes.length;i++){if(typeof mutation.addedNodes[i].getElementsByTagName!=='function'){continue}
+if(typeof mutation.addedNodes[i].getElementsByClassName!=='function'){continue}
+images=mutation.addedNodes[i].getElementsByTagName('img');is_image=mutation.addedNodes[i].tagName=="IMG";iframes=mutation.addedNodes[i].getElementsByTagName('iframe');is_iframe=mutation.addedNodes[i].tagName=="IFRAME";rocket_lazy=mutation.addedNodes[i].getElementsByClassName('rocket-lazyload');image_count+=images.length;iframe_count+=iframes.length;rocketlazy_count+=rocket_lazy.length;if(is_image){image_count+=1}
+if(is_iframe){iframe_count+=1}}});if(image_count>0||iframe_count>0||rocketlazy_count>0){lazyLoadInstance.update()}});var b=document.getElementsByTagName("body")[0];var config={childList:!0,subtree:!0};observer.observe(b,config)}},!1)</script><script data-no-minify="1" async="" src="js/lazyload.min.js"></script>
+
+
+                    
+    
+
+    <!-- <section class="background section">
+   
+</section> -->
+
+
+
+
+
+<!-- This website is like a Rocket, isn't it? Performance optimized by WP Rocket. Learn more: https://wp-rocket.me --></body></html>

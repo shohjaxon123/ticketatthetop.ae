@@ -1,0 +1,12 @@
+.loading-container {
+    position: relative;
+    width: 200px;
+    height: 176px;
+}
+
+.loading-image {
+    position: absolute;
+    top: auto;
+    left: 50%;
+    width: 240px;
+}

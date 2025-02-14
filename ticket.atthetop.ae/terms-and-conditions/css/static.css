@@ -1,0 +1,224 @@
+html {
+    scroll-behavior: smooth;
+  }
+  
+  body {
+    overflow: scroll;
+    overflow-x: hidden;
+  }
+  ::-webkit-scrollbar {
+    width: 0px;
+  }
+  
+  
+.policies.inner-section {
+    margin-top: 145px;
+    padding-left: 76px;
+    padding-right: 76px;
+    padding-bottom: 65px;
+    max-width: 1920px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.policies.inner-section .px-48 {
+    padding-left: 24px;
+    padding-right: 24px;
+}
+
+.policies .heading-lg {
+    font-size: var(--fs-32);
+    font-weight: 600;
+    color: #101010;
+    letter-spacing: 0;
+    margin-bottom: 30px;
+}
+
+.policies .inner-wrap p {
+    font-size: var(--fs-16);
+    font-weight: 400;
+    color: #101010;
+    line-height: 26px;
+    padding-bottom: 45px;
+}
+
+.policies .inner-wrap h2,
+.policies .inner-wrap h3 {
+    font-size: var(--fs-28);
+    font-weight: 500;
+    color: var(--color-dark);
+    line-height: 38.14px;
+    margin-bottom: 20px;
+}
+
+.policies .inner-wrap h5,
+h6 {
+    font-size: var(--fs-20);
+    font-weight: 600;
+    color: #101010;
+    margin-bottom: 5px;
+}
+
+.policies .inner-wrap h4 {
+    font-size: var(--fs-20);
+    font-weight: 600;
+    color: var(--color-dark);
+    line-height: 38.14px;
+    margin-bottom: 10px;
+}
+
+.policies .inner-wrap h4~p {
+    padding-bottom: 10px;
+}
+
+.policies .inner-wrap h5~p {
+    padding-bottom: 10px;
+}
+
+.policies .inner-wrap h6~p {
+    padding-bottom: 0;
+}
+
+.policies ul {
+    padding-left: 25px;
+    margin-bottom: 20px;
+}
+
+.policies ul li {
+    font-size: var(--fs-16);
+    font-weight: 400;
+    color: #101010;
+    line-height: 24px;
+    list-style: disc;
+    margin-bottom: 2px;
+}
+
+@media (max-width: 1280px) {
+    .policies.inner-section .px-48 {
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    .policies.inner-section {
+        padding-left: 70px;
+        padding-right: 70px;
+    }
+}
+
+/* responsive */
+@media screen and (max-width: 1100px) {
+
+    .policies.inner-section {
+        padding-left: 45px;
+        padding-right: 45px;
+    }
+
+    .policies .heading-lg {
+        font-size: var(--fs-20);
+        margin-bottom: 0;
+    }
+
+    .policies.inner-section {
+        margin-top: 100px;
+    }
+
+    .policies .inner-wrap h2,
+    .policies .inner-wrap h3 {
+        font-size: var(--fs-16);
+        margin-bottom: 16px;
+    }
+
+    .policies .inner-wrap p {
+        font-size: var(--fs-14);
+        line-height: 20px;
+        padding-bottom: 20px;
+    }
+
+    .policies .inner-wrap h4 {
+        font-size: var(--fs-16);
+        font-weight: 500;
+    }
+
+    .policies ul li {
+        font-size: var(--fs-14);
+    }
+
+    .policies.inner-section {
+        padding-bottom: 40px;
+    }
+
+}
+
+@media screen and (max-width: 950px) {
+
+    .policies.inner-section {
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+
+    .policies.inner-section {
+        margin-top: 100px;
+    }
+
+    .policies .inner-wrap h2,
+    .policies .inner-wrap h3 {
+        font-size: var(--fs-16);
+        margin-bottom: 16px;
+    }
+
+    .policies .inner-wrap p {
+        font-size: var(--fs-14);
+        line-height: 20px;
+        padding-bottom: 20px;
+    }
+
+    .policies .inner-wrap h4 {
+        font-size: var(--fs-16);
+        font-weight: 500;
+    }
+
+    .policies ul li {
+        font-size: var(--fs-14);
+    }
+
+    .policies.inner-section {
+        padding-bottom: 40px;
+    }
+}
+
+@media screen and (max-width: 576px) {
+
+    .policies.inner-section {
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+
+    .policies.inner-section {
+        margin-top: 80px;
+    }
+
+    .policies .inner-wrap h2,
+    .policies .inner-wrap h3 {
+        font-size: var(--fs-16);
+        margin-bottom: 16px;
+    }
+
+    .policies .inner-wrap p {
+        font-size: var(--fs-14);
+        line-height: 20px;
+        padding-bottom: 20px;
+    }
+
+    .policies .inner-wrap h4 {
+        font-size: var(--fs-16);
+        font-weight: 500;
+    }
+
+    .policies ul li {
+        font-size: var(--fs-14);
+    }
+
+    .policies.inner-section {
+        padding-bottom: 40px;
+    }
+}

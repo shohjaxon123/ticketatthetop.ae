@@ -1,0 +1,3 @@
+/*
+    Used to localize backend variables to frontend. 
+*/

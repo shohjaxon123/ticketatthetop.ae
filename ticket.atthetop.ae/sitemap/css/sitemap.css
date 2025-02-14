@@ -1,0 +1,204 @@
+body {
+    overflow: scroll;
+    overflow-x: hidden;
+  }
+  ::-webkit-scrollbar {
+    width: 0px;
+  }
+  
+  .sitemap{
+    margin-top: 72px;
+    max-width: 1920px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0 100px;
+}
+.sitemap .top-heading{
+    margin-top: 36px;
+    margin-bottom: 40px;
+}
+
+.sitemap .top-heading h1{
+color: #101010;
+ font-size: 32px;
+ font-weight: 400;
+ word-wrap: break-word;
+ margin-bottom: 10px;
+}
+.sitemap .top-heading h3{
+    color: #101010;
+     font-size: 26px;
+     font-weight: 700;
+     word-wrap: break-word;
+     margin-bottom: 0;
+    }
+    .sitemap .top-heading p{
+        font-size: 17px;
+        line-height: 140%;
+        font-weight: 400;
+    }  
+    .sitemap .top-heading p a{
+        color: #CFA76D;
+    }
+.sitemap .nav-list-new{
+    display: flex;
+    justify-content: flex-start;
+    align-items: baseline;
+    gap: 10px;
+    margin-bottom: 40px;
+}
+.sitemap .nav-list-new ul.megamenu, .sitemap #menu-secondary-menu{
+    display: flex;
+    justify-content: flex-start;
+    align-items: baseline;
+    gap: 50px;
+    margin-bottom: 40px;   
+}
+
+.sitemap .nav-list-new ul.megamenu li{
+    width: 225px;
+}
+.sitemap .nav-list-new ul.megamenu li ul{
+    flex-direction: column;
+    gap: 8px;
+    margin-bottom: 0;
+}
+.sitemap .nav-list-new .nav-title, .sitemap #menu-secondary-menu .menu-col h4{
+color: #373534;
+ font-size: 14px;
+ font-weight: 500;
+ line-height: 22px;
+ word-wrap: break-word;
+ text-decoration: none;
+}
+.sitemap .nav-list-new .menu-heading, .sitemap #menu-secondary-menu .menu-col .menu-title{
+color: #A79D96;
+ font-size: 14px;
+ font-weight: 500;
+ text-transform: uppercase;
+ letter-spacing: 1.40px;
+ word-wrap: break-word;
+ margin-bottom: 12px;
+ width: 100%;
+ cursor: default !important;
+    text-decoration: none;
+}
+.sitemap .nav-list-new .item .link-box ul{
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+.sitemap .nav-list-new .item .link-box ul li{
+    
+    
+}
+.sitemap ul li{
+    padding-bottom: 8px;
+}
+.sitemap ul li a, .sitemap .nav-list-new .megamenu>li>ul>li a{
+color: #373534;
+ font-size: 14px;
+ font-weight: 400;
+ word-wrap: break-word;
+ line-height: 21px;
+ cursor: pointer !important;
+ width: 120px;
+}
+.sitemap .nav-list-new .megamenu>li>ul>li a:hover{
+    cursor: pointer;
+    backdrop-filter: none;
+} 
+
+@media screen and (max-width: 1280px){
+    .sitemap{
+        padding: 0 70px;
+    }
+}
+@media screen and (max-width: 1100px){
+    .sitemap {
+        padding: 0 45px;
+    }
+}
+@media screen and (max-width: 950px){
+    .sitemap {
+        padding: 0 30px;
+    }
+    .sitemap .nav-list-new ul.megamenu, .sitemap #menu-secondary-menu {
+        flex-wrap: wrap;
+    }
+}
+
+@media screen and (max-width: 576px){
+    .sitemap .nav-list-new ul.megamenu li {
+        width: 100%;
+        padding: 15px 0;
+    }
+    .sitemap .nav-list-new ul.megamenu, .sitemap #menu-secondary-menu{
+        flex-direction: column;
+        gap: 0;
+    margin-bottom: 10px;
+    }
+    .sitemap .nav-list-new ul.inner-wrap .link-box{
+        width: 100%;
+    }
+    .sitemap{
+        padding: 0 16px;
+        margin-top: 62px;
+    }
+    .sitemap .top-heading {
+        margin-top: 39px;
+    margin-bottom: 0px;
+    }
+    .sitemap .nav-list-new ul.inner-wrap {
+        display: flex;
+        justify-content: flex-start;
+        align-items: baseline;
+        gap: 30px;
+        margin-bottom: 0px;
+        flex-direction: column;
+    }
+    .sitemap .nav-list-new {
+        display: flex;
+        justify-content: flex-start;
+        align-items: baseline;
+        gap: 0px;
+        margin-bottom: 0px;
+        flex-direction: column;
+    }
+    .sitemap .nav-list-new a{
+        color: #373534;
+    font-size: 20px !important;
+    font-weight: 600 !important;
+    line-height: 30px;
+    }
+    .sitemap ul li a, .sitemap .nav-list-new .megamenu>li>ul>li a {
+        color: #373534;
+        font-size: 16px !important;
+        font-weight: 400;
+    }
+    .sitemap .top-heading h1 {
+        font-size: 20px;
+    }
+    .sitemap .nav-list-new .menu-heading{
+        margin-bottom: 15px;
+        max-width: 100%;
+        line-height: 23px;
+        font-size: 16px !important;
+    }
+    .sitemap .nav-list-new .item .link-box ul{
+        gap: 18px;
+    }
+    .sitemap .nav-list-new .link-box .inner-wrap .menu-item a{
+        font-size: 16px;
+        color: #373534;
+        font-weight: 400;
+    }
+    .sitemap .nav-list-new .nav-title {
+        color: #373534;
+        font-size: 20px;
+        font-weight: 600;
+        line-height: 22px;
+        word-wrap: break-word;
+        text-decoration: none;
+    }
+}

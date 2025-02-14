@@ -1,0 +1,296 @@
+.body-scroll-lock {
+    overflow: hidden !important;
+    height: 100% !important;
+}
+
+.lightboxOverlay {
+    opacity: 0.8 !important;
+    background-color: #000 !important;
+}
+
+.lb-outerContainer {
+    position: absolute !important;
+    height: auto !important;
+    /* max-width: calc(100vw - 340px); */
+    max-width: fit-content;
+    max-height: calc(100% - 200px);
+    width: 100vw !important;
+    height: 100vh !important;
+    background: transparent !important;
+    /* pointer-events: none; */
+}
+
+.lb-outerContainer .lb-container {
+    height: calc(100vh - 190px);
+    position: relative;
+    width: auto;
+    /* width: calc(100vw - 330px); */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* .lb-outerContainer .lb-container .lb-nav {
+    position: relative;
+} */
+
+.lightbox {
+    position: fixed !important;
+    top: 0 !important;
+    left: 0 !important;
+    width: 100vw;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.lightbox .lb-image {
+    border: none !important;
+    max-width: 100% !important;
+    max-height: 100% !important;
+    width: auto !important;
+    height: auto !important;
+    object-fit: contain;
+    object-position: center;
+}
+
+.lb-data .lb-details {
+    width: 100%;
+    float: inherit;
+}
+
+.lb-data .lb-details .lb-caption {
+    display: none !important;
+}
+
+.lb-dataContainer .lb-details .lb-number {
+    position: absolute;
+    bottom: 20px;
+    padding-bottom: 0;
+    font-size: 20px;
+    color: white;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 9999;
+}
+
+.lightbox .lb-data .lb-close {
+    position: fixed;
+    right: 99px;
+    opacity: 1;
+    /* touch-action: none; */
+    pointer-events: visible;
+    top: 40px;
+    float: inherit;
+    background: var(--wpr-bg-e907b12e-f704-42f5-bc12-2490ad9ec9ed) top right no-repeat;
+    background-size: 25px;
+}
+
+.lightbox .lb-dataContainer {
+    width: 0 !important;
+    margin: 0;
+}
+
+.lightbox .lb-nav .lb-prev {
+    position: fixed;
+    top: 50%;
+    left: 0;
+    width: 100vw;
+    height: 70px;
+    transform: translateY(-50%) rotate(180deg);
+}
+
+.lightbox .lb-nav .lb-next {
+    position: fixed;
+    top: 50%;
+    right: 0;
+    width: 100vw;
+    height: 70px;
+    transform: translateY(-50%);
+}
+
+.lightbox .lb-nav a {
+    width: 60px !important;
+    opacity: 1 !important;
+    float: inherit !important;
+    height: 60px !important;
+    border-radius: 50%;
+    transition: .3s;
+    position: relative;
+    z-index: 1;
+}
+
+.lightbox .lb-nav a::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8) !important;
+    border-radius: 50%;
+    z-index: -1;
+    opacity: 0;
+    transition: .3s;
+}
+
+.lightbox .lb-nav a::after {
+    content: '';
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    width: 16px;
+    height: 28px;
+    border-radius: 50%;
+    transition: .3s;
+    z-index: 1;
+    background: var(--wpr-bg-818cee00-fc71-4b49-a2c0-ec949ebf3507) no-repeat !important;
+    transform: translate(-50%, -50%) scale(1.2);
+}
+
+.lightbox .lb-nav a:hover::before {
+    opacity: 1;
+}
+
+.lightbox .lb-nav a.lb-prev {
+    background: none;
+    background-position: center;
+    background-size: 20px;
+    margin-left: 78px;
+}
+
+.lightbox .lb-nav a.lb-next {
+    margin-left: auto;
+    /* background: url(../../../../../../../../themes/salient-att-child/assets/images/svg/arrow-right-white.svg) no-repeat; */
+    background-position: center;
+    background: none;
+    background-size: 20px;
+    margin-right: 78px;
+}
+
+.lb-loader {
+    top: 50% !important;
+    height: auto !important;
+    transform: translateY(-50%);
+}
+
+
+@media screen and (max-width: 1280px) {
+    .lb-outerContainer {
+        max-width: calc(100vw - 260px) !important;
+    }
+
+    .lightbox .lb-image {
+        max-width: calc(100vw - 260px) !important;
+        max-height: calc(100% - 180px) !important;
+    }
+
+    .lightbox .lb-data .lb-close {
+        right: 69px;
+    }
+
+    .lightbox .lb-nav a.lb-prev {
+        margin-left: 48px;
+    }
+
+    .lightbox .lb-nav a.lb-next {
+        margin-right: 48px;
+    }
+}
+
+@media screen and (max-width: 1100px) {
+    .lb-outerContainer {
+        max-width: calc(100vw - 210px) !important;
+    }
+
+    .lightbox .lb-image {
+        max-width: calc(100vw - 210px) !important;
+        max-height: calc(100% - 160px) !important;
+    }
+
+    .lightbox .lb-data .lb-close {
+        right: 44px;
+    }
+
+    .lightbox .lb-nav a.lb-prev {
+        margin-left: 23px;
+    }
+
+    .lightbox .lb-nav a.lb-next {
+        margin-right: 23px;
+    }
+}
+
+@media screen and (max-width: 950px) {
+    .lb-outerContainer {
+        max-width: calc(100vw - 180px) !important;
+    }
+
+    .lightbox .lb-image {
+        max-width: calc(100vw - 180px) !important;
+        max-height: calc(100% - 140px) !important;
+    }
+
+    .lightbox .lb-data .lb-close {
+        right: 29px;
+    }
+
+    .lightbox .lb-nav a.lb-prev {
+        margin-left: 12px;
+    }
+
+    .lightbox .lb-nav a.lb-next {
+        margin-right: 12px;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .lb-outerContainer {
+        max-width: calc(100vw - 120px) !important;
+    }
+
+    .lb-outerContainer .lb-container {
+        width: 100%;
+    }
+
+    .lightbox .lb-image {
+        max-width: calc(100vw - 150px) !important;
+        max-height: calc(100% - 120px) !important;
+    }
+
+    .lb-dataContainer .lb-details .lb-number {
+        font-size: 16px;
+    }
+
+    .lightbox .lb-data .lb-close {
+        right: 15px;
+        top: 15px;
+        background-size: 18px;
+        top: 18px;
+        font-size: 14px;
+    }
+
+    .lightbox .lb-nav a {
+        width: 40px !important;
+        height: 40px !important;
+    }
+
+    .lightbox .lb-nav a::after {
+        transform: translate(-50%, -50%) scale(0.8);
+    }
+
+    .lightbox .lb-nav a::before {
+        opacity: 1;
+    }
+
+    .lb-outerContainer {
+        max-height: max-content !important;
+        height: auto !important;
+    }
+
+    .lb-outerContainer .lb-container {
+        height: auto !important;
+    }
+}

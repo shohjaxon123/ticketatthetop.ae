@@ -1,0 +1,68 @@
+<html><head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta charset="UTF-8">
+    <title>Emaar Technologies</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=yes">
+    <link rel="stylesheet" href="../css/style_1.css">
+    <style type="text/css">
+        h2 {
+            font-family: Tahoma;
+            font-size: 20px;
+            color: #fff;
+            margin: 30px 0 25px 0;
+            line-height: 20px;
+            font-weight: 600;
+        }
+
+        h3 {
+            font-family: Tahoma;
+            font-size: 18px;
+            color: #fff;
+            margin: 30px 0 25px 0;
+            line-height: 30px;
+            font-weight: 400;
+        }
+
+        .login__form {
+            top: 10%;
+        }
+
+        P {
+            font-family: Tahoma;
+            font-size: 15px;
+            padding: 1px;
+            color: #ffffff;
+            line-height: 30px;
+            font-weight: 300;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="cont">
+        <div class="demo">
+            <div class="login">
+                <!--<div class="login__check"></div>-->
+                <div class="login__form">
+                    <img src="LOGO.png">
+                    <div style="width:100%;">
+                        <h2>This wasn't something that we expected</h2>
+                        <h3>Sorry for the inconvenience caused, We shall work on the same and 
+
+you could check back in a while.</h3>
+                    </div>
+                    <div style="width:100%;">
+<div id="supportId" style="display:none;">6974162249603811121</div>
+                        <p>Your request has been logged and your support ID is: 6974162249603811121</p>
+                        <p>
+                            For immediate assistance, email us at <a style="color:white;" href="mailto:servicedesk@emaar.ae">servicedesk@emaar.ae</a>
+                        </p>
+                    </div>                    
+                </div>
+            </div>
+        </div>
+    </div>
+    
+
+</body></html>

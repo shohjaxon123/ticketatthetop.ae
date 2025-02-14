@@ -1,0 +1,480 @@
+.school-visit {
+  background-color: #f4f4f4;
+}
+
+.school-visit .breadcrumb {
+  padding: 12px 0;
+}
+
+.inner-section.school-visit {
+  margin-top: 68px;
+  padding-top: 10px;
+  padding-bottom: 60px;
+}
+
+.school-visit .px-48 {
+  padding-left: 100px;
+  padding-right: 100px;
+  max-width: 1920px;
+  margin: auto;
+}
+
+.school-visit ol.breadcrumb {
+  padding: 0;
+}
+
+.school-visit .breadcrumb-item a {
+  text-transform: uppercase;
+}
+
+.school-visit .form-wrap h1 {
+  font-size: var(--fs-32);
+  font-weight: 600;
+  line-height: 43px;
+  color: #000;
+  margin-bottom: 20px;
+}
+
+.inner-section.school-visit .card .card-header {
+  background-color: transparent;
+  padding: 24px 32px;
+}
+
+.inner-section.school-visit .card .card-header h5 {
+  font-size: var(--fs-20);
+  font-weight: 500;
+  letter-spacing: 3px;
+  color: #000;
+}
+.school-visit .form-text{
+  margin-bottom: 10px;
+}
+.school-visit .form-text p{
+  color: #373534;
+font-size: 20px;
+font-weight: 400;
+line-height: 32px;
+word-wrap: break-word;
+margin-bottom: 30px;
+}
+.school-visit .form-text p a{
+  color: #373534;
+font-size: 20px;
+font-weight: 400;
+text-decoration: underline;
+line-height: 32px;
+}
+.school-visit .button-group .btn-action{
+color: #373534;
+ font-size: 16px;
+ background-color: #CFA76D;
+ font-weight: 600;
+ text-transform: uppercase;
+ line-height: 16px;
+ letter-spacing: 3.20px;
+ word-wrap: break-word;
+ width: 100%; 
+ padding-top: 24px; 
+ padding-bottom: 24px; 
+ border-radius: 4px; 
+ justify-content: center; 
+ align-items: center;   
+ display: flex;
+ margin-bottom: 12px;
+}
+
+.school-visit .innner-wrap h4 {
+  font-size: var(--fs-28);
+  font-weight: 500;
+  line-height: 38px;
+  color: #000;
+  margin-bottom: 20px;
+}
+
+.school-visit .innner-wrap p {
+  font-size: var(--fs-20);
+  font-weight: 400;
+  line-height: 32px;
+  color: #373534;
+}
+
+.school-visit .form-wrap .card-body {
+  padding: 1.25rem 37px 37px 37px;
+}
+
+.school-visit .form-wrap .card-body div.wpforms-container-full {
+  margin: 0 auto;
+}
+.school-visit div.wpforms-container-full .wpforms-field.wpforms-field-radio.wpforms-list-inline ul{
+  gap: 120px;
+}
+
+.visit-gallery h4 {
+  font-size: var(--fs-28);
+  font-weight: 500;
+  line-height: 38px;
+  color: #000;
+  margin-bottom: 20px;
+}
+
+.form-wrap {
+  max-width: 95%;
+}
+
+.gallery-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 8px;
+  margin-bottom: 15px;
+  grid-auto-rows: 16rem;
+}
+
+.grid-item {
+  height: 100%;
+}
+
+.grid-item img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  cursor: pointer;
+}
+
+.grid-item:nth-child(1) {
+  grid-row: span 2;
+  grid-row-start: 1;
+}
+
+.grid-item:nth-child(2) {
+  grid-row: span 1;
+  grid-row-start: 2;
+}
+
+.grid-item:nth-child(3) {
+  grid-row: span 2;
+}
+
+.grid-item:nth-child(4) {
+  grid-column: span 2;
+}
+
+.school-visit .wpforms-field-container select {
+  background-image: var(--wpr-bg-b62f2bb3-43c3-41f7-9e5a-544d6f03155d);
+  background-repeat: no-repeat;
+  background-position: center right 18px;
+  background-size: 15px;
+  max-width: 100% !important;
+}
+
+.school-visit div.wpforms-container-full input[type=submit]:not(:hover):not(:active),
+div.wpforms-container-full button[type=submit]:not(:hover):not(:active),
+div.wpforms-container-full .wpforms-page-button:not(:hover):not(:active) {
+  background-color: #CFA76D !important;
+  color: #373534 !important;
+  text-transform: uppercase;
+  height: 60px;
+  letter-spacing: 3.20px;
+}
+
+.school-visit div.wpforms-container-full .wpforms-form button[type=submit]:hover {
+  background-color: #CFA76D !important;
+  background: #CFA76D !important;
+  color: #373534 !important;
+  text-transform: uppercase;
+  height: 60px;
+  letter-spacing: 3.20px;
+}
+
+.school-visit div.wpforms-container-full input[type=submit]:focus:after,
+div.wpforms-container-full button[type=submit]:focus:after,
+div.wpforms-container-full .wpforms-page-button:focus:after {
+  border: none !important;
+}
+
+body .iti--separate-dial-code .iti__selected-flag,
+div.wpforms-container .wpforms-form .iti--separate-dial-code .iti__selected-flag,
+div.wpforms-container-full .wpforms-form .iti--separate-dial-code .iti__selected-flag,
+#wpforms-conversational-form-page .iti--separate-dial-code .iti__selected-flag {
+  background-color: transparent !important;
+  border-right: 1px solid var(--wpforms-field-border-color);
+}
+
+.school-visit .card .card-body body .iti--allow-dropdown input,
+.school-visit .card .card-body body .iti--allow-dropdown input[type=text],
+.school-visit .card .card-body body .iti--allow-dropdown input[type=tel],
+.school-visit .card .card-body body .iti--separate-dial-code input,
+.school-visit .card .card-body body .iti--separate-dial-code input[type=text],
+.school-visit .card .card-body body .iti--separate-dial-code input[type=tel],
+.school-visit .card .card-body div.wpforms-container .wpforms-form .iti--allow-dropdown input,
+.school-visit .card .card-body div.wpforms-container .wpforms-form .iti--allow-dropdown input[type=text],
+.school-visit .card .card-body div.wpforms-container .wpforms-form .iti--allow-dropdown input[type=tel],
+.school-visit .card .card-body div.wpforms-container .wpforms-form .iti--separate-dial-code input,
+.school-visit .card .card-body div.wpforms-container .wpforms-form .iti--separate-dial-code input[type=text],
+.school-visit .card .card-body div.wpforms-container .wpforms-form .iti--separate-dial-code input[type=tel],
+.school-visit .card .card-body div.wpforms-container-full .wpforms-form .iti--allow-dropdown input,
+.school-visit .card .card-body div.wpforms-container-full .wpforms-form .iti--allow-dropdown input[type=text],
+.school-visit .card .card-body div.wpforms-container-full .wpforms-form .iti--allow-dropdown input[type=tel],
+.school-visit .card .card-body div.wpforms-container-full .wpforms-form .iti--separate-dial-code input,
+.school-visit .card .card-body div.wpforms-container-full .wpforms-form .iti--separate-dial-code input[type=text],
+.school-visit .card .card-body div.wpforms-container-full .wpforms-form .iti--separate-dial-code input[type=tel],
+#wpforms-conversational-form-page .iti--allow-dropdown input,
+#wpforms-conversational-form-page .iti--allow-dropdown input[type=text],
+#wpforms-conversational-form-page .iti--allow-dropdown input[type=tel],
+#wpforms-conversational-form-page .iti--separate-dial-code input,
+#wpforms-conversational-form-page .iti--separate-dial-code input[type=text],
+#wpforms-conversational-form-page .iti--separate-dial-code input[type=tel] {
+  padding-left: 95px !important;
+}
+
+.card .card-body div.wpforms-container-full select {
+  line-height: 30px;
+}
+
+.successdialog .modal-body {
+  padding: 32px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 25px;
+  text-align: center;
+}
+
+.successdialog .modal-body h5 {
+  color: #373534;
+  font-size: var(--fs-22);
+  font-weight: 500;
+  line-height: 30.80px;
+  word-wrap: break-word
+}
+
+.successdialog .modal-body p {
+  color: #000;
+  font-size: var(--fs-14);
+  font-weight: 400;
+  line-height: 22.40px;
+  word-wrap: break-word
+}
+
+.successdialog .modal-body .cta-done {
+  text-decoration: none;
+  cursor: pointer;
+  color: #373534;
+  font-size: 16px;
+  font-weight: 600;
+  text-transform: uppercase;
+  line-height: 16px;
+  letter-spacing: 3.20px;
+  word-wrap: break-word;
+  background-color: #CFA76D;
+  width: 100%;
+  height: 62px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.for-mobile {
+  display: none;
+}
+
+body.rtl .school-visit .card .card-body div.wpforms-container .wpforms-form .iti--allow-dropdown input {
+  padding-left: 20px !important;
+  padding-right: 90px !important;
+}
+body.rtl .iti--separate-dial-code .iti__selected-flag{
+  border-right: none !important;
+  border-left: 1px solid var(--wpforms-field-border-color);
+}
+
+@media screen and (max-width: 1280px) {
+  .inner-section.school-visit {
+    margin-top: 60px;
+  }
+
+  .school-visit .px-48 {
+    padding-left: 70px;
+    padding-right: 70px;
+  }
+  .school-visit .form-wrap h1 {
+    font-size: var(--fs-28);
+  }
+  .school-visit .innner-wrap h4 {
+    font-weight: 600;
+  }
+  .visit-gallery h4 {
+    font-weight: 600;
+  }
+}
+
+@media screen and (max-width: 1100px) {
+  .inner-section.school-visit {
+    margin-top: 50px;
+  }
+
+  .school-visit .px-48 {
+    padding-left: 45px;
+    padding-right: 45px;
+  }
+
+  .visit-gallery h4 {
+    font-size: var(--fs-20);
+  }
+
+  .school-visit .form-wrap h1 {
+    font-size: var(--fs-20);
+  }
+
+  .school-visit .innner-wrap h4 {
+    font-size: var(--fs-20);
+  }
+
+  .school-visit .innner-wrap p {
+    font-size: var(--fs-14);
+    line-height: 20px;
+  }
+
+  .form-wrap {
+    max-width: 100%;
+    margin-bottom: 30px;
+  }
+
+  .gallery-container {
+    grid-auto-rows: 14rem
+  }
+
+}
+
+@media screen and (max-width: 950px) {
+  .inner-section.school-visit {
+    margin-top: 60px;
+  }
+
+  .school-visit .px-48 {
+    padding-left: 30px !important;
+    padding-right: 30px !important;
+  }
+
+  .for-mobile {
+    display: block;
+  }
+
+  .for-mobile h1 {
+    font-size: var(--fs-20);
+    font-weight: 600;
+    line-height: 43px;
+    color: #000;
+    margin-bottom: 20px;
+  }
+
+  .form-wrap {
+    max-width: 100%;
+    margin-bottom: 30px;
+  }
+
+  .school-visit .form-wrap h1 {
+    display: none;
+  }
+
+  .inner-section.school-visit .card .card-header h5 {
+    font-size: var(--fs-14);
+  }
+
+  .school-visit .innner-wrap p {
+    font-size: var(--fs-14);
+    line-height: 23px;
+  }
+
+  .school-visit .innner-wrap h4 {
+    font-size: var(--fs-16);
+    font-weight: 600;
+  }
+  .order-1 {
+    order: 2;
+    padding: 0;
+    max-width: 100%;
+    flex: 0 0 100%;
+  }
+
+  .order-2 {
+    order: 1;
+    max-width: 100%;
+    flex: 0 0 100%;
+  }
+
+}
+
+@media screen and (max-width: 576px) {
+  .for-mobile {
+    display: block;
+  }
+
+  .inner-section.school-visit {
+    margin-top: 50px;
+  }
+
+  .school-visit .container-fluid.px-48 {
+    padding-left: 16px !important;
+    padding-right: 16px !important;
+  }
+
+  .form-wrap {
+    max-width: 100%;
+    margin-bottom: 30px;
+  }
+
+  .school-visit .form-wrap h1 {
+    padding-left: 16px;
+  }
+
+  .inner-section.school-visit .card .card-header h5 {
+    font-size: var(--fs-14);
+  }
+
+  .school-visit .innner-wrap p {
+    font-size: var(--fs-14);
+  }
+
+  .school-visit .innner-wrap h4 {
+    font-size: var(--fs-16);
+    font-weight: 600;
+  }
+
+  .school-visit .form-wrap .card {
+    margin-left: 0;
+    width: 100%;
+    border-radius: 0;
+  }
+
+  .inner-section.school-visit .card .card-header {
+    padding: 24px;
+  }
+
+  .school-visit .form-wrap .card-body {
+    padding: 1.25rem 24px 37px 24px;
+  }
+
+  .order-1 {
+    order: 2;
+    padding: 0;
+  }
+
+  .order-2 {
+    order: 1;
+  }
+
+  .school-dialog .modal-dialog {
+    max-width: calc(100vw - 25px);
+    margin-left: 13px;
+  }
+}
+
+
+
+.school-dialog .modal-dialog {
+  max-height: calc(100vh - 100px);
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
