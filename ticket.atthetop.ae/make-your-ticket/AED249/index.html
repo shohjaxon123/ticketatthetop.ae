@@ -957,15 +957,20 @@ NEWSLETTER</h4>
 </div> </div>
                             <button type="button" class="accept-cookies">Accept</button>
                     </div><script>
-                        if (!CLI_Cookie.exists("cookies_accept")){
-                            jQuery(".cookie-notice").removeClass("d-none");
-                        }
-                        jQuery(document).on("click", ".accept-cookies", function(){ 
-                            if (!CLI_Cookie.exists("cookies_accept")){
-                                CLI_Cookie.set("cookies_accept", "yes", 30);
-                                jQuery(".cookie-notice").slideUp("normal", function() { jQuery(".cookie-notice").remove() } );
-                            }
-                        });
+                       var CookieUtil = {
+        exists: function(name) {
+          return document.cookie.split(';').some(function(cookie) {
+            return cookie.trim().indexOf(name + '=') === 0;
+          });
+        },
+        set: function(name, value, days) {
+          var expires = new Date();
+          expires.setTime(expires.getTime() + days * 24 * 60 * 60 * 1000);
+          document.cookie = name + "=" + encodeURIComponent(value) + 
+                            ";expires=" + expires.toUTCString() + 
+                            ";path=/;SameSite=Lax";
+        }
+      };
                         </script><link rel='stylesheet' id='wpforms-modern-full-css' href='https://ticket.atthetop.ae/wp-content/plugins/wpforms/assets/css/frontend/modern/wpforms-full.min.css?ver=1.8.3.2' type='text/css' media='all' />
     <link rel='stylesheet' id='wpforms-pro-modern-full-css' href='https://ticket.atthetop.ae/wp-content/plugins/wpforms/assets/pro/css/frontend/modern/wpforms-full.min.css?ver=1.8.3.2' type='text/css' media='all' />
     <script type="text/javascript" id="rocket-browser-checker-js-after">
@@ -999,7 +1004,7 @@ NEWSLETTER</h4>
     <script type="text/javascript" src="https://ticket.atthetop.ae/wp-content/themes/salient-att-child/assets/js/jquery.min.js?ver=6.7.1" id="jquery-3.7.0-js"></script>
     <script type="text/javascript" id="ajax-admin-url-js-extra">
     /* <![CDATA[ */
-    var Aurl = {"ajaxurl":"https:\/\/ticket.atthetop.ae\/wp-admin\/admin-ajax.php","api_nonce":"db8127dc99","theme_url":"https:\/\/ticket.atthetop.ae\/wp-content\/themes\/salient-att-child","site_url":"https:\/\/ticket.atthetop.ae","newsletter_nonce":"7493474eaf"};
+    var Aurl = {"ajaxurl":"https:\/\/ticket.atthetop.ae\/wp-admin\/admin-ajax.php","api_nonce":"368b4520d7","theme_url":"https:\/\/ticket.atthetop.ae\/wp-content\/themes\/salient-att-child","site_url":"https:\/\/ticket.atthetop.ae","newsletter_nonce":"8a674d630e"};
     /* ]]> */
     </script>
     <script type="text/javascript" src="https://ticket.atthetop.ae/wp-content/themes/salient-att-child/assets/js/localize-script.js?ver=6.7.1" id="ajax-admin-url-js"></script>
