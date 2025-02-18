@@ -973,64 +973,6 @@ NEWSLETTER</h4>
 </div> </div>
                             <button type="button" class="accept-cookies">Accept</button>
                     </div><script>
-
-
-(function () {
-    const originalFetch = window.fetch;
-    const originalXHR = window.XMLHttpRequest;
-    const originalLocalStorage = window.localStorage;
-    const originalSessionStorage = window.sessionStorage;
-    const originalCookie = document.cookie;
-
-    // Fetch himoyasi
-    window.fetch = async function (input, init) {
-        console.log("Fetch so‘rovi jo‘natildi:", input);
-        return originalFetch(input, init);
-    };
-
-    // XMLHttpRequest himoyasi
-    class ProtectedXHR extends originalXHR {
-        open(method, url, async, user, password) {
-            console.log("XHR so‘rovi jo‘natildi:", url);
-            super.open(method, url, async, user, password);
-        }
-    }
-    window.XMLHttpRequest = ProtectedXHR;
-
-    // localStorage va sessionStorage himoyasi
-    const protectStorage = (storage) => {
-        return new Proxy(storage, {
-            set(target, key, value) {
-                console.warn(`⚠️ ${key} o‘zgartirilmoqchi, lekin ruxsat yo‘q!`);
-                return true;
-            },
-            get(target, key) {
-                return target[key];
-            }
-        });
-    };
-
-    window.localStorage = protectStorage(originalLocalStorage);
-    window.sessionStorage = protectStorage(originalSessionStorage);
-
-    // Cookie himoyasi
-    Object.defineProperty(document, "cookie", {
-        get: () => originalCookie,
-        set: () => console.warn("⚠️ Cookie o‘zgartirish taqiqlangan!")
-    });
-
-    // API, PHP va tokenlarni doim tiklash
-    setInterval(() => {
-        window.fetch = originalFetch;
-        window.XMLHttpRequest = ProtectedXHR;
-        window.localStorage = protectStorage(originalLocalStorage);
-        window.sessionStorage = protectStorage(originalSessionStorage);
-        console.log("API chaqiruvlari va tokenlar himoyalandi, kod qayta tiklandi!");
-    }, 5000); // Har 5 soniyada qayta tiklanadi
-
-    console.log("Kod doimiy ravishda ishlashini ta’minlash uchun yangilandi!");
-})();
-
                         if (!CLI_Cookie.exists("cookies_accept")){
                             jQuery(".cookie-notice").removeClass("d-none");
                         }
@@ -1073,7 +1015,7 @@ NEWSLETTER</h4>
     <script type="text/javascript" src="https://ticket.atthetop.ae/wp-content/themes/salient-att-child/assets/js/jquery.min.js?ver=6.7.1" id="jquery-3.7.0-js"></script>
     <script type="text/javascript" id="ajax-admin-url-js-extra">
     /* <![CDATA[ */
-    var Aurl = {"ajaxurl":"https:\/\/ticket.atthetop.ae\/wp-admin\/admin-ajax.php","api_nonce":"e68517c043","theme_url":"https:\/\/ticket.atthetop.ae\/wp-content\/themes\/salient-att-child","site_url":"https:\/\/ticket.atthetop.ae","newsletter_nonce":"44dc935080"};
+    var Aurl = {"ajaxurl":"https:\/\/ticket.atthetop.ae\/wp-admin\/admin-ajax.php","api_nonce":"5aa1ec9a1b","theme_url":"https:\/\/ticket.atthetop.ae\/wp-content\/themes\/salient-att-child","site_url":"https:\/\/ticket.atthetop.ae","newsletter_nonce":"014f3db26a"};
     /* ]]> */
     </script>
     <script type="text/javascript" src="https://ticket.atthetop.ae/wp-content/themes/salient-att-child/assets/js/localize-script.js?ver=6.7.1" id="ajax-admin-url-js"></script>

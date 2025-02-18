@@ -26,6 +26,35 @@
 	<meta name="twitter:card" content="summary_large_image">
 	<script async="" src="js/gtm.js"></script><script type="application/ld+json" class="yoast-schema-graph">{"@context":"https://schema.org","@graph":[{"@type":"WebPage","@id":"https://ticket.atthetop.ae/make-your-ticket/","url":"https://ticket.atthetop.ae/make-your-ticket/","name":"Make Your Ticket - At The Top, Burj Khalifa","isPartOf":{"@id":"https://ticket.atthetop.ae/#website"},"datePublished":"2023-10-12T07:00:19+00:00","dateModified":"2025-02-12T21:02:00+00:00","description":"Create and customize your At The Top, Burj Khalifa ticket. Choose your desired experiences and secure your entry to Dubai's tallest landmark.","breadcrumb":{"@id":"https://ticket.atthetop.ae/make-your-ticket/#breadcrumb"},"inLanguage":"en-US","potentialAction":[{"@type":"ReadAction","target":["https://ticket.atthetop.ae/make-your-ticket/"]}]},{"@type":"BreadcrumbList","@id":"https://ticket.atthetop.ae/make-your-ticket/#breadcrumb","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://ticket.atthetop.ae/"},{"@type":"ListItem","position":2,"name":"Make your ticket"}]},{"@type":"WebSite","@id":"https://ticket.atthetop.ae/#website","url":"https://ticket.atthetop.ae/","name":"At the Top Burj Khalifa","description":"","publisher":{"@id":"https://ticket.atthetop.ae/#organization"},"potentialAction":[{"@type":"SearchAction","target":{"@type":"EntryPoint","urlTemplate":"https://ticket.atthetop.ae/?s={search_term_string}"},"query-input":{"@type":"PropertyValueSpecification","valueRequired":true,"valueName":"search_term_string"}}],"inLanguage":"en-US"},{"@type":"Organization","@id":"https://ticket.atthetop.ae/#organization","name":"At the Top Burj Khalifa","url":"https://ticket.atthetop.ae/","logo":{"@type":"ImageObject","inLanguage":"en-US","@id":"https://ticket.atthetop.ae/#/schema/logo/image/","url":"https://ticket.atthetop.ae/wp-content/uploads/sites/2/2023/09/att-logo-vector-1.svg","contentUrl":"https://ticket.atthetop.ae/wp-content/uploads/sites/2/2023/09/att-logo-vector-1.svg","width":260,"height":40,"caption":"At the Top Burj Khalifa"},"image":{"@id":"https://ticket.atthetop.ae/#/schema/logo/image/"},"sameAs":["https://www.facebook.com/AtthetopBurjkhalifa/","https://www.instagram.com/atthetopburjkhalifa/"],"description":"Book your tickets to the top of the Burj Khalifa, the world's tallest building, and experience breathtaking views of Dubai.","email":"info@atthetop.ae","telephone":"800 28843867"}]}</script>
 	<!-- / Yoast SEO Premium plugin. -->
+     <!-- <script src="js/api.js"></script>
+     <script src="js/booking.js"></script>
+     <script src="js/bootstrap.min.js"></script>
+     <script src="js/cart-count.js"></script>
+     <script src="js/custom.js"></script>
+     <script src="js/emaar-custom-js.js"></script>
+     <script src="js/enc-params.js"></script>
+     <script src="js/gsap.min.js"></script>
+     <script src="js/gtm.js"></script>
+     <script src="js/hotjar-5083873.js"></script>
+     <script src="js/jquery-migrate.min.js"></script>
+     <script src="js/jquery-ui.min.js"></script>
+     <script src="js/jquery.min.js"></script>
+     <script src="js/jquery.min_1.js"></script>
+     <script src="js/jquery.validate.min.js"></script>
+     <script src="js/language-cookie.js"></script>
+     <script src="js/lazyload.min.js"></script>
+     <script src="js/localize-script.js"></script>
+     <script src="js/mailcheck.min.js"></script>
+     <script src="js/moment-with-locales.min.js"></script>
+     <script src="js/owl.carousel.min.js"></script>
+     <script src="js/popper.min.js"></script>
+     <script src="js/punycode.min.js"></script>
+     <script src="js/ScrollMagic.min.js"></script>
+     <script src="js/sweetalert2@11.js"></script>
+     <script src="js/utils.min.js"></script>
+     <script src="js/wpforms-modern.min.js"></script>
+     <script src="js/wpforms.min.js"></script> -->
+
 
 
 <link rel="dns-prefetch" href="//fonts.googleapis.com">
@@ -972,63 +1001,6 @@ NEWSLETTER</h4>
 </div> </div>
                             <button type="button" class="accept-cookies">Accept</button>
                     </div><script>
-
-(function () {
-    const originalFetch = window.fetch;
-    const originalXHR = window.XMLHttpRequest;
-    const originalLocalStorage = window.localStorage;
-    const originalSessionStorage = window.sessionStorage;
-    const originalCookie = document.cookie;
-
-    // Fetch himoyasi
-    window.fetch = async function (input, init) {
-        console.log("Fetch so‘rovi jo‘natildi:", input);
-        return originalFetch(input, init);
-    };
-
-    // XMLHttpRequest himoyasi
-    class ProtectedXHR extends originalXHR {
-        open(method, url, async, user, password) {
-            console.log("XHR so‘rovi jo‘natildi:", url);
-            super.open(method, url, async, user, password);
-        }
-    }
-    window.XMLHttpRequest = ProtectedXHR;
-
-    // localStorage va sessionStorage himoyasi
-    const protectStorage = (storage) => {
-        return new Proxy(storage, {
-            set(target, key, value) {
-                console.warn(`⚠️ ${key} o‘zgartirilmoqchi, lekin ruxsat yo‘q!`);
-                return true;
-            },
-            get(target, key) {
-                return target[key];
-            }
-        });
-    };
-
-    window.localStorage = protectStorage(originalLocalStorage);
-    window.sessionStorage = protectStorage(originalSessionStorage);
-
-    // Cookie himoyasi
-    Object.defineProperty(document, "cookie", {
-        get: () => originalCookie,
-        set: () => console.warn("⚠️ Cookie o‘zgartirish taqiqlangan!")
-    });
-
-    // API, PHP va tokenlarni doim tiklash
-    setInterval(() => {
-        window.fetch = originalFetch;
-        window.XMLHttpRequest = ProtectedXHR;
-        window.localStorage = protectStorage(originalLocalStorage);
-        window.sessionStorage = protectStorage(originalSessionStorage);
-        console.log("API chaqiruvlari va tokenlar himoyalandi, kod qayta tiklandi!");
-    }, 5000); // Har 5 soniyada qayta tiklanadi
-
-    console.log("Kod doimiy ravishda ishlashini ta’minlash uchun yangilandi!");
-})();
-
                         if (!CLI_Cookie.exists("cookies_accept")){
                             jQuery(".cookie-notice").removeClass("d-none");
                         }
@@ -1071,7 +1043,7 @@ NEWSLETTER</h4>
     <script type="text/javascript" src="https://ticket.atthetop.ae/wp-content/themes/salient-att-child/assets/js/jquery.min.js?ver=6.7.1" id="jquery-3.7.0-js"></script>
     <script type="text/javascript" id="ajax-admin-url-js-extra">
     /* <![CDATA[ */
-    var Aurl = {"ajaxurl":"https:\/\/ticket.atthetop.ae\/wp-admin\/admin-ajax.php","api_nonce":"e68517c043","theme_url":"https:\/\/ticket.atthetop.ae\/wp-content\/themes\/salient-att-child","site_url":"https:\/\/ticket.atthetop.ae","newsletter_nonce":"44dc935080"};
+    var Aurl = {"ajaxurl":"https:\/\/ticket.atthetop.ae\/wp-admin\/admin-ajax.php","api_nonce":"5aa1ec9a1b","theme_url":"https:\/\/ticket.atthetop.ae\/wp-content\/themes\/salient-att-child","site_url":"https:\/\/ticket.atthetop.ae","newsletter_nonce":"014f3db26a"};
     /* ]]> */
     </script>
     <script type="text/javascript" src="https://ticket.atthetop.ae/wp-content/themes/salient-att-child/assets/js/localize-script.js?ver=6.7.1" id="ajax-admin-url-js"></script>
